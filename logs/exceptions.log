@@ -1,0 +1,3483 @@
+2025-05-30 12:05:40 [ERROR]: uncaughtException: Cannot find module '@/middleware/validation'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+Error: Cannot find module '@/middleware/validation'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:2:1)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts"
+    ]
+  },
+  "stack": "Error: Cannot find module '@/middleware/validation'\nRequire stack:\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:2:1)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:05:40 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 13800,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 54185984,
+      "heapTotal": 18403328,
+      "heapUsed": 12707952,
+      "external": 2260759,
+      "arrayBuffers": 66659
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061738.281
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._resolveFilename",
+      "line": 1401,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1057,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1062,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1211,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1487,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 135,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 1,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:05:49 [ERROR]: uncaughtException: Cannot find module '@/middleware/validation'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+Error: Cannot find module '@/middleware/validation'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:2:1)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts"
+    ]
+  },
+  "stack": "Error: Cannot find module '@/middleware/validation'\nRequire stack:\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:2:1)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:05:49 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 2644,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 53551104,
+      "heapTotal": 18927616,
+      "heapUsed": 12174984,
+      "external": 2260759,
+      "arrayBuffers": 66659
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061747.625
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._resolveFilename",
+      "line": 1401,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1057,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1062,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1211,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1487,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 135,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 1,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:06:22 [ERROR]: uncaughtException: Cannot find module '@/types/events'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+Error: Cannot find module '@/types/events'
+Require stack:
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\app.ts
+- C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)
+    at Function._load (node:internal/modules/cjs/loader:1211:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:2:1)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14) {
+  "error": {
+    "code": "MODULE_NOT_FOUND",
+    "requireStack": [
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts",
+      "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts"
+    ]
+  },
+  "stack": "Error: Cannot find module '@/types/events'\nRequire stack:\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\app.ts\n- C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts\n    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)\n    at defaultResolveImpl (node:internal/modules/cjs/loader:1057:19)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1062:22)\n    at Function._load (node:internal/modules/cjs/loader:1211:37)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)\n    at Module.require (node:internal/modules/cjs/loader:1487:12)\n    at require (node:internal/modules/helpers:135:16)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:2:1)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:06:22 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 32476,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 54554624,
+      "heapTotal": 18403328,
+      "heapUsed": 12877424,
+      "external": 2257934,
+      "arrayBuffers": 66348
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061780.562
+  },
+  "trace": [
+    {
+      "column": 15,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._resolveFilename",
+      "line": 1401,
+      "method": "_resolveFilename",
+      "native": false
+    },
+    {
+      "column": 19,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "defaultResolveImpl",
+      "line": 1057,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "resolveForCJSWithHooks",
+      "line": 1062,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 37,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Function._load",
+      "line": 1211,
+      "method": "_load",
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:diagnostics_channel",
+      "function": "TracingChannel.traceSync",
+      "line": 322,
+      "method": "traceSync",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "wrapModuleLoad",
+      "line": 235,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 12,
+      "file": "node:internal/modules/cjs/loader",
+      "function": "Module.require",
+      "line": 1487,
+      "method": "require",
+      "native": false
+    },
+    {
+      "column": 16,
+      "file": "node:internal/modules/helpers",
+      "function": "require",
+      "line": 135,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 1,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": null,
+      "line": 2,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:06:59 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-493421728342468.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-493421728342468.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-493421728342468.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:06:59 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 29136,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67379200,
+      "heapTotal": 34131968,
+      "heapUsed": 15070432,
+      "external": 2470092,
+      "arrayBuffers": 115718
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061816.718
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-493421728342468.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:07:17 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-4335988101456376.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-4335988101456376.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-4335988101456376.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:07:17 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 7876,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67457024,
+      "heapTotal": 33013760,
+      "heapUsed": 17220792,
+      "external": 2470092,
+      "arrayBuffers": 115758
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061835.468
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-4335988101456376.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:07:43 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8864938814501295.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8864938814501295.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8864938814501295.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:07:43 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 12424,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67805184,
+      "heapTotal": 33275904,
+      "heapUsed": 17226096,
+      "external": 2470092,
+      "arrayBuffers": 115758
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061861.546
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8864938814501295.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:09:20 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-32614279608901087.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-32614279608901087.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-32614279608901087.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:09:20 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 2568,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67710976,
+      "heapTotal": 33013760,
+      "heapUsed": 17195576,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061958.296
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:09:36 [ERROR]: uncaughtException: Cannot read properties of undefined (reading 'match')
+TypeError: Cannot read properties of undefined (reading 'match')
+    at tryParseConnectionString (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\connectionString.ts:25:19)
+    at parseConnectionString (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\connectionString.ts:39:34)
+    at Object.parseClientArguments (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\clientArguments.ts:62:44)
+    at new parseClientArguments (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-email\src\emailClient.ts:56:33)
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:16:24)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-32614279608901087.js:69:33) {
+  "error": {},
+  "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at tryParseConnectionString (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts:25:19)\n    at parseConnectionString (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts:39:34)\n    at Object.parseClientArguments (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\clientArguments.ts:62:44)\n    at new parseClientArguments (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-email\\src\\emailClient.ts:56:33)\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:16:24)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js:69:33)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:09:36 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 20680,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67493888,
+      "heapTotal": 32559104,
+      "heapUsed": 18842800,
+      "external": 2484002,
+      "arrayBuffers": 129676
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061974.5
+  },
+  "trace": [
+    {
+      "column": 19,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts",
+      "function": "tryParseConnectionString",
+      "line": 25,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 34,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts",
+      "function": "parseConnectionString",
+      "line": 39,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 44,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\clientArguments.ts",
+      "function": "Object.parseClientArguments",
+      "line": 62,
+      "method": "parseClientArguments",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-email\\src\\emailClient.ts",
+      "function": "new parseClientArguments",
+      "line": 56,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 16,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-32614279608901087.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:09:41 [ERROR]: uncaughtException: Cannot read properties of undefined (reading 'match')
+TypeError: Cannot read properties of undefined (reading 'match')
+    at tryParseConnectionString (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\connectionString.ts:25:19)
+    at parseConnectionString (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\connectionString.ts:39:34)
+    at Object.parseClientArguments (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-common\src\credential\clientArguments.ts:62:44)
+    at new parseClientArguments (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\@azure\communication-email\src\emailClient.ts:56:33)
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:16:24)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-42849275275964693.js:69:33) {
+  "error": {},
+  "stack": "TypeError: Cannot read properties of undefined (reading 'match')\n    at tryParseConnectionString (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts:25:19)\n    at parseConnectionString (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts:39:34)\n    at Object.parseClientArguments (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\clientArguments.ts:62:44)\n    at new parseClientArguments (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-email\\src\\emailClient.ts:56:33)\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:16:24)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-42849275275964693.js:69:33)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:09:41 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 15560,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67784704,
+      "heapTotal": 34131968,
+      "heapUsed": 16893832,
+      "external": 2483962,
+      "arrayBuffers": 129636
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1061979.109
+  },
+  "trace": [
+    {
+      "column": 19,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts",
+      "function": "tryParseConnectionString",
+      "line": 25,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 34,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\connectionString.ts",
+      "function": "parseConnectionString",
+      "line": 39,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 44,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-common\\src\\credential\\clientArguments.ts",
+      "function": "Object.parseClientArguments",
+      "line": 62,
+      "method": "parseClientArguments",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\communication-email\\src\\emailClient.ts",
+      "function": "new parseClientArguments",
+      "line": 56,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 16,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-42849275275964693.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:10:07 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:10:07 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 29220,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67854336,
+      "heapTotal": 34131968,
+      "heapUsed": 14978416,
+      "external": 2470092,
+      "arrayBuffers": 115718
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062004.968
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:10:38 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-7366956712471739.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:10:38 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 28300,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67313664,
+      "heapTotal": 32559104,
+      "heapUsed": 16966128,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062036.578
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-7366956712471739.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:10:44 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:10:44 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 16564,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67297280,
+      "heapTotal": 33869824,
+      "heapUsed": 14947256,
+      "external": 2459716,
+      "arrayBuffers": 105342
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062041.89
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:10:59 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8720684471877846.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:10:59 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 13988,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67100672,
+      "heapTotal": 32821248,
+      "heapUsed": 17045744,
+      "external": 2470092,
+      "arrayBuffers": 115758
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062057.531
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8720684471877846.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:11:07 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:11:07 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 11900,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67923968,
+      "heapTotal": 32751616,
+      "heapUsed": 17208848,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062064.968
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:11:23 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-3267943262859463.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:11:23 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 31588,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67477504,
+      "heapTotal": 32821248,
+      "heapUsed": 16951000,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062080.812
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-3267943262859463.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:11:37 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:11:37 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 6232,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67264512,
+      "heapTotal": 34131968,
+      "heapUsed": 15047456,
+      "external": 2470092,
+      "arrayBuffers": 115718
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062094.718
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:12:06 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-6999066385972781.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:12:06 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 18844,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67620864,
+      "heapTotal": 32821248,
+      "heapUsed": 17057056,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062123.734
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-6999066385972781.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:12:17 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:12:17 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 23476,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67403776,
+      "heapTotal": 34131968,
+      "heapUsed": 14998376,
+      "external": 2470092,
+      "arrayBuffers": 115718
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062135.468
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:12:31 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:12:31 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 18276,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67092480,
+      "heapTotal": 32559104,
+      "heapUsed": 17044912,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062149.25
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:12:35 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:12:35 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 14056,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67465216,
+      "heapTotal": 32821248,
+      "heapUsed": 17032000,
+      "external": 2459716,
+      "arrayBuffers": 105382
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062153.14
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:13:11 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-43879081785965246.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:13:11 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 7080,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67137536,
+      "heapTotal": 32821248,
+      "heapUsed": 16929856,
+      "external": 2459716,
+      "arrayBuffers": 105128
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062189.265
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-43879081785965246.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 12:13:17 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-47626062661679724.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-47626062661679724.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-47626062661679724.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 12:13:17 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 32756,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67698688,
+      "heapTotal": 34131968,
+      "heapUsed": 14952376,
+      "external": 2470092,
+      "arrayBuffers": 105088
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1062195.515
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-47626062661679724.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 13:14:48 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:14:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8742414188942387.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8742414188942387.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-8742414188942387.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:14:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 13:14:48 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 31216,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67190784,
+      "heapTotal": 32821248,
+      "heapUsed": 17060256,
+      "external": 2459716,
+      "arrayBuffers": 105128
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1065886.359
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 14,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-8742414188942387.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 13:15:32 [ERROR]: uncaughtException: AZURE_COMMUNICATION_CONNECTION_STRING is required
+Error: AZURE_COMMUNICATION_CONNECTION_STRING is required
+    at new EmailHandler (C:\Users\prave\OneDrive\Desktop\communication-service\src\handlers\emailHandler.ts:13:13)
+    at new EmailService (C:\Users\prave\OneDrive\Desktop\communication-service\src\services\emailService.ts:15:25)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\routes\emailRoutes.ts:15:22)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-488471101123066.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-488471101123066.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-488471101123066.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {},
+  "stack": "Error: AZURE_COMMUNICATION_CONNECTION_STRING is required\n    at new EmailHandler (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:13:13)\n    at new EmailService (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:15:25)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:15:22)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 13:15:32 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 24212,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 67997696,
+      "heapTotal": 34131968,
+      "heapUsed": 14923144,
+      "external": 2459716,
+      "arrayBuffers": 105088
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1065929.984
+  },
+  "trace": [
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts",
+      "function": "new EmailHandler",
+      "line": 13,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts",
+      "function": "new EmailService",
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 22,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts",
+      "function": null,
+      "line": 15,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-488471101123066.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 17:45:55 [ERROR]: uncaughtException: options.port should be >= 0 and < 65536. Received type number (98427).
+RangeError: options.port should be >= 0 and < 65536. Received type number (98427).
+    at Server.listen (node:net:2090:5)
+    at Function.listen (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts:41:20)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {
+    "code": "ERR_SOCKET_BAD_PORT"
+  },
+  "stack": "RangeError: options.port should be >= 0 and < 65536. Received type number (98427).\n    at Server.listen (node:net:2090:5)\n    at Function.listen (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts:41:20)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 17:45:55 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 16724,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 70520832,
+      "heapTotal": 32034816,
+      "heapUsed": 20736272,
+      "external": 2450854,
+      "arrayBuffers": 96819
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1082153.39
+  },
+  "trace": [
+    {
+      "column": 5,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2090,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts",
+      "function": null,
+      "line": 41,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 17:48:18 [ERROR]: uncaughtException: options.port should be >= 0 and < 65536. Received type number (98427).
+RangeError: options.port should be >= 0 and < 65536. Received type number (98427).
+    at Server.listen (node:net:2090:5)
+    at Function.listen (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts:41:20)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-5499726927423543.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {
+    "code": "ERR_SOCKET_BAD_PORT"
+  },
+  "stack": "RangeError: options.port should be >= 0 and < 65536. Received type number (98427).\n    at Server.listen (node:net:2090:5)\n    at Function.listen (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts:41:20)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 17:48:18 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 6068,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 72126464,
+      "heapTotal": 32296960,
+      "heapUsed": 17447016,
+      "external": 2450854,
+      "arrayBuffers": 96819
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1082296.203
+  },
+  "trace": [
+    {
+      "column": 5,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2090,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts",
+      "function": null,
+      "line": 41,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-5499726927423543.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}
+2025-05-30 17:48:25 [ERROR]: uncaughtException: options.port should be >= 0 and < 65536. Received type number (98427).
+RangeError: options.port should be >= 0 and < 65536. Received type number (98427).
+    at Server.listen (node:net:2090:5)
+    at Function.listen (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (C:\Users\prave\OneDrive\Desktop\communication-service\src\index.ts:41:20)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)
+    at Module._compile (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\source-map-support\source-map-support.js:521:25)
+    at Module.m._compile (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-12702552306226766.js:69:33)
+    at node:internal/modules/cjs/loader:1895:10
+    at require.extensions..jsx.require.extensions..js (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-12702552306226766.js:114:20)
+    at require.extensions.<computed> (C:\Users\prave\AppData\Local\Temp\ts-node-dev-hook-12702552306226766.js:71:20)
+    at Object.nodeDevHook [as .ts] (C:\Users\prave\OneDrive\Desktop\communication-service\node_modules\ts-node-dev\lib\hook.js:63:13) {
+  "error": {
+    "code": "ERR_SOCKET_BAD_PORT"
+  },
+  "stack": "RangeError: options.port should be >= 0 and < 65536. Received type number (98427).\n    at Server.listen (node:net:2090:5)\n    at Function.listen (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js:635:24)\n    at Object.<anonymous> (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts:41:20)\n    at Module.<anonymous> (node:internal/modules/cjs/loader:1730:14)\n    at Module._compile (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js:521:25)\n    at Module.m._compile (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js:69:33)\n    at node:internal/modules/cjs/loader:1895:10\n    at require.extensions..jsx.require.extensions..js (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js:114:20)\n    at require.extensions.<computed> (C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js:71:20)\n    at Object.nodeDevHook [as .ts] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js:63:13)",
+  "exception": true,
+  "date": "Fri May 30 2025 17:48:25 GMT+0530 (India Standard Time)",
+  "process": {
+    "pid": 2760,
+    "uid": null,
+    "gid": null,
+    "cwd": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service",
+    "execPath": "C:\\nvm4w\\nodejs\\node.exe",
+    "version": "v22.15.0",
+    "argv": [
+      "C:\\nvm4w\\nodejs\\node.exe",
+      "src/index.ts"
+    ],
+    "memoryUsage": {
+      "rss": 70266880,
+      "heapTotal": 32034816,
+      "heapUsed": 20582504,
+      "external": 2450854,
+      "arrayBuffers": 96819
+    }
+  },
+  "os": {
+    "loadavg": [
+      0,
+      0,
+      0
+    ],
+    "uptime": 1082302.89
+  },
+  "trace": [
+    {
+      "column": 5,
+      "file": "node:net",
+      "function": "Server.listen",
+      "line": 2090,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 24,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\application.js",
+      "function": "Function.listen",
+      "line": 635,
+      "method": "listen",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\index.ts",
+      "function": null,
+      "line": 41,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 14,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1730,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 25,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\source-map-support\\source-map-support.js",
+      "function": "Module._compile",
+      "line": 521,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 33,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js",
+      "function": "Module.m._compile",
+      "line": 69,
+      "method": "_compile",
+      "native": false
+    },
+    {
+      "column": 10,
+      "file": "node:internal/modules/cjs/loader",
+      "function": null,
+      "line": 1895,
+      "method": null,
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js",
+      "function": "require.extensions..jsx.require.extensions..js",
+      "line": 114,
+      "method": ".js",
+      "native": false
+    },
+    {
+      "column": 20,
+      "file": "C:\\Users\\prave\\AppData\\Local\\Temp\\ts-node-dev-hook-12702552306226766.js",
+      "function": "require.extensions.<computed>",
+      "line": 71,
+      "method": "<computed>",
+      "native": false
+    },
+    {
+      "column": 13,
+      "file": "C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\ts-node-dev\\lib\\hook.js",
+      "function": "Object.nodeDevHook [as .ts]",
+      "line": 63,
+      "method": "ts]",
+      "native": false
+    }
+  ],
+  "service": "email-service"
+}

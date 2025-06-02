@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to ${data.companyName || "Incorp"}</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0;">
+  <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      ${
+        data.logoUrl
+          ? `<img src="${data.logoUrl}" alt="${
+              data.companyName || "Incorp"
+            } - An ascentium Company" style="max-width: 150px; height: auto;" />`
+          : `<h2>${data.companyName || "Incorp"}</h2>`
+      }
+    </div>
+
+    <div style="padding: 20px; background-color: #f7f7f7; border-radius: 5px; margin-bottom: 20px;">
+      <h2>Welcome to ${data.companyName || "Incorp"}!</h2>
+      ${data.recipientName ? `<p>Dear ${data.recipientName},</p>` : ""}
+      <p>
+        Thank you for choosing ${
+          data.companyName || "Incorp"
+        } for your business incorporation needs.
+        We're excited to help you start your entrepreneurial journey!
+      </p>
+      <p>
+        To begin your incorporation process, please click the button below to
+        start the onboarding flow. The process is simple and should take just
+        a few minutes to complete.
+      </p>
+    </div>
+
+    ${
+      data.url
+        ? `
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="${data.url}" style="display: inline-block; background-color: #bb2121; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 16px;">START YOUR INCORPORATION</a>
+    </div>
+    `
+        : ""
+    }
+
+    <p>
+      If you have any questions, please don't hesitate to contact our support
+      team at
+      <a href="mailto:${
+        data.supportEmail || "notifications@incorp.asia"
+      }" style="color: #bb2121; text-decoration: none;">${
+  data.supportEmail || "notifications@incorp.asia"
+}</a>.
+    </p>
+
+    <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px;">
+      <p>&copy; ${new Date().getFullYear()} ${
+  data.companyName || "Incorp"
+}. All rights reserved.</p>
+      ${
+        data.companyAddress
+          ? `<p>${data.companyAddress}</p>`
+          : "<p>123 Business Street, Suite 100, Business City, BC 12345</p>"
+      }
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,3959 @@
+2025-05-30 12:11:23 [INFO]: Initializing EmailHandler with connection string: {
+  "service": "email-service"
+}
+2025-05-30 12:11:37 [INFO]: Initializing EmailHandler with connection string: {
+  "service": "email-service"
+}
+2025-05-30 13:18:50 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:18:50 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:18:50 [INFO]: 🚀 Email service started successfully {
+  "service": "email-service",
+  "port": 3000,
+  "environment": "development",
+  "nodeVersion": "v22.15.0",
+  "endpoints": {
+    "health": "http://localhost:3000/health",
+    "api": "http://localhost:3000/api/email",
+    "docs": "http://localhost:3000/"
+  }
+}
+2025-05-30 13:18:50 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:18:50 [INFO]: 🔗 Health check: http://localhost:3000/health {
+  "service": "email-service"
+}
+2025-05-30 13:18:50 [INFO]: 📊 API documentation: http://localhost:3000/ {
+  "service": "email-service"
+}
+2025-05-30 13:19:26 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:19:26 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:19:26 [INFO]: 🚀 Email service started successfully {
+  "service": "email-service",
+  "port": 3000,
+  "environment": "development",
+  "nodeVersion": "v22.15.0",
+  "endpoints": {
+    "health": "http://localhost:3000/health",
+    "api": "http://localhost:3000/api/email",
+    "docs": "http://localhost:3000/"
+  }
+}
+2025-05-30 13:19:26 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:20:22 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:20:22 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:20:22 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:20:37 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:20:37 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:20:38 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:21:06 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:21:06 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:21:06 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:34:49 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:34:49 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:34:50 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:35:10 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:35:10 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:35:10 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:35:24 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:35:24 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:35:25 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:37:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:37:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:37:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:40:05 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:40:05 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:40:13 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:40:17 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:40:17 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:40:17 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:40:24 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:40:24 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:40:24 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:40:31 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:40:31 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:40:32 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:40:33 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:40:33 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:40:33 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:41:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:41:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:41:58 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:45:01 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-05-30 13:45:03 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:45:03 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:45:03 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:45:17 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "hasCustomContent": true
+}
+2025-05-30 13:45:17 [INFO]: Initiating email send for event: 8d1ac7d6-322a-475a-ae86-605c61c52d50 {
+  "service": "email-service",
+  "type": "custom",
+  "recipientCount": 1
+}
+2025-05-30 13:45:17 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-05-30 13:45:17 [INFO]: Processing email event: 8d1ac7d6-322a-475a-ae86-605c61c52d50 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-05-30 13:45:17 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-05-30 13:45:22 [INFO]: Email sent successfully with ID: 98db42b5-c6c3-4325-818a-b310e478d882 {
+  "service": "email-service"
+}
+2025-05-30 13:45:22 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8d1ac7d6-322a-475a-ae86-605c61c52d50"
+}
+2025-05-30 13:45:22 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5712ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-05-30 13:55:26 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-05-30 13:55:26 [INFO]: Initiating email send for event: f4736458-69df-4530-a2c5-a781d1e95f6a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-05-30 13:55:26 [INFO]: Processing email event: f4736458-69df-4530-a2c5-a781d1e95f6a of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-05-30 13:55:26 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-05-30 13:55:26 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-05-30 13:55:32 [INFO]: Email sent successfully with ID: a9fa4d3c-a17e-4ab2-8d6b-ff36bc05bce4 {
+  "service": "email-service"
+}
+2025-05-30 13:55:32 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "f4736458-69df-4530-a2c5-a781d1e95f6a"
+}
+2025-05-30 13:55:32 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5755ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-05-30 13:56:36 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:56:36 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:56:36 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:56:54 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:56:54 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:56:54 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 13:56:56 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 13:56:56 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 13:56:56 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 14:51:43 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-05-30 17:45:46 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 17:48:18 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 17:48:24 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 17:49:07 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 17:49:07 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 17:49:08 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 17:57:33 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 17:57:33 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 17:57:34 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 18:08:13 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 18:08:13 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 18:08:13 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 18:08:45 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-05-30 18:08:49 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 18:08:49 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 18:08:50 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 18:09:04 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-05-30 18:09:04 [INFO]: Initiating email send for event: bdf44cd2-085e-4fe2-ade2-b82fde020906 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-05-30 18:09:04 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-05-30 18:09:04 [INFO]: Processing email event: bdf44cd2-085e-4fe2-ade2-b82fde020906 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-05-30 18:09:04 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-05-30 18:09:04 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-05-30 18:09:11 [INFO]: Email sent successfully with ID: 863f05b5-ba58-498b-afe5-ecbe4b38abe2 {
+  "service": "email-service"
+}
+2025-05-30 18:09:11 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "bdf44cd2-085e-4fe2-ade2-b82fde020906"
+}
+2025-05-30 18:09:11 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7105ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-05-30 18:10:08 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-05-30 18:10:08 [INFO]: Initiating email send for event: c06d500d-48cf-43a0-9ac5-c03b63e6e42a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-05-30 18:10:08 [INFO]: Processing email event: c06d500d-48cf-43a0-9ac5-c03b63e6e42a of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-05-30 18:10:08 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-05-30 18:10:08 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-05-30 18:10:14 [INFO]: Email sent successfully with ID: b1fa37ac-0008-4b6d-ac4e-20836682ffd1 {
+  "service": "email-service"
+}
+2025-05-30 18:10:14 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "c06d500d-48cf-43a0-9ac5-c03b63e6e42a"
+}
+2025-05-30 18:10:14 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6380ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-05-30 18:11:18 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-05-30 18:11:18 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-05-30 18:11:19 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-05-30 18:25:07 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-05-30 18:25:07 [INFO]: Initiating email send for event: 305bc837-fa73-4c2a-ae6d-3fa9c07e5cb7 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-05-30 18:25:07 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-05-30 18:25:07 [INFO]: Processing email event: 305bc837-fa73-4c2a-ae6d-3fa9c07e5cb7 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-05-30 18:25:07 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-05-30 18:25:07 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-05-30 18:25:14 [INFO]: Email sent successfully with ID: 3d7dcc49-5ba4-4a33-a635-9e5f863f1879 {
+  "service": "email-service"
+}
+2025-05-30 18:25:14 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "305bc837-fa73-4c2a-ae6d-3fa9c07e5cb7"
+}
+2025-05-30 18:25:14 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7123ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 09:45:10 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 09:45:10 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 09:45:18 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 09:45:22 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 09:45:22 [INFO]: Initiating email send for event: d1f47997-de10-47ff-8fcb-3db0ed6a01bb {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 09:45:22 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 09:45:22 [INFO]: Processing email event: d1f47997-de10-47ff-8fcb-3db0ed6a01bb of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 09:45:22 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 09:45:22 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 09:45:29 [INFO]: Email sent successfully with ID: fccd4b87-d50a-45b0-a878-4c1fd90bffeb {
+  "service": "email-service"
+}
+2025-06-02 09:45:29 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "d1f47997-de10-47ff-8fcb-3db0ed6a01bb"
+}
+2025-06-02 09:45:29 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6658ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 09:48:00 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 09:48:00 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 09:48:09 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 09:48:16 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 09:48:16 [INFO]: Initiating email send for event: 23f4170c-3f51-4286-ad51-3c30616ae655 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 09:48:16 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 09:48:16 [INFO]: Processing email event: 23f4170c-3f51-4286-ad51-3c30616ae655 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 09:48:16 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 09:48:16 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 09:48:20 [INFO]: Email sent successfully with ID: 6f6b8dd4-14eb-46c2-8c67-f710c2c38a02 {
+  "service": "email-service"
+}
+2025-06-02 09:48:20 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "23f4170c-3f51-4286-ad51-3c30616ae655"
+}
+2025-06-02 09:48:20 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "3902ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 09:50:21 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 09:50:21 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 09:50:21 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:14:18 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:14:18 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:14:20 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:14:32 [WARN]: Request validation failed: {
+  "0": {
+    "field": "templateId",
+    "message": "\"templateId\" must be one of [OTP_VERIFICATION, DOCUMENT_GENERATION, WELCOME]",
+    "value": "PRELIM_KYC_SUBMITTED"
+  },
+  "service": "email-service"
+}
+2025-06-02 10:14:32 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "27ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 10:15:04 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:15:04 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:15:04 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:15:10 [WARN]: Request validation failed: {
+  "0": {
+    "field": "templateId",
+    "message": "\"templateId\" must be one of [OTP_VERIFICATION, DOCUMENT_GENERATION, WELCOME]",
+    "value": "PRELIM_KYC_SUBMITTED"
+  },
+  "service": "email-service"
+}
+2025-06-02 10:15:10 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "12ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 10:15:24 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 10:15:26 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:15:26 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:15:27 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:15:30 [WARN]: Request validation failed: {
+  "0": {
+    "field": "templateId",
+    "message": "\"templateId\" must be one of [OTP_VERIFICATION, DOCUMENT_GENERATION, WELCOME]",
+    "value": "PRELIM_KYC_SUBMITTED"
+  },
+  "service": "email-service"
+}
+2025-06-02 10:15:30 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "8ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 10:16:15 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:16:15 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:16:16 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:39:08 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:39:08 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:39:08 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:42:42 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:42:42 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:42:42 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:42:50 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-02 10:42:50 [INFO]: Initiating email send for event: 436c84de-4e2a-44e2-a830-960fe1bf916c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-02 10:42:50 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 10:42:50 [INFO]: Processing email event: 436c84de-4e2a-44e2-a830-960fe1bf916c of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 10:42:50 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-02 10:42:50 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 10:42:56 [INFO]: Email sent successfully with ID: 64aec683-84aa-40e8-8d37-a7185838edd5 {
+  "service": "email-service"
+}
+2025-06-02 10:42:56 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "436c84de-4e2a-44e2-a830-960fe1bf916c"
+}
+2025-06-02 10:42:56 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5620ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 10:43:44 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:43:44 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:43:44 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:55:26 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:55:26 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:55:27 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:55:51 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:55:51 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:55:52 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:55:56 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:55:56 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:55:56 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 10:57:06 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-02 10:57:06 [INFO]: Initiating email send for event: 49df4c69-1fb7-410a-96b6-d59f49be1638 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-02 10:57:06 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 10:57:06 [INFO]: Processing email event: 49df4c69-1fb7-410a-96b6-d59f49be1638 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 10:57:06 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-02 10:57:06 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 10:57:11 [INFO]: Email sent successfully with ID: 96113412-200c-4bd6-b24d-fd19410be315 {
+  "service": "email-service"
+}
+2025-06-02 10:57:11 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "49df4c69-1fb7-410a-96b6-d59f49be1638"
+}
+2025-06-02 10:57:11 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4912ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 10:57:54 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 10:57:54 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 10:57:54 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:11:56 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:11:56 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:11:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:12:09 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:12:09 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:12:10 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:12:50 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:12:50 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:12:51 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:14:23 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:14:23 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:14:23 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:14:53 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:14:53 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:14:53 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:15:34 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:15:34 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:15:34 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:15:49 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:15:49 [INFO]: Initiating email send for event: d531fe4b-c160-405a-be8b-29acb58d7f58 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:15:49 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:15:49 [INFO]: Processing email event: d531fe4b-c160-405a-be8b-29acb58d7f58 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:15:49 [ERROR]: Template generation failed for SUBMISSION_SUCCESS: Template SUBMISSION_SUCCESS not found {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\templates\\templateService.ts:939:13)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:80:54)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)"
+}
+2025-06-02 11:15:49 [ERROR]: Failed to handle email event d531fe4b-c160-405a-be8b-29acb58d7f58: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:15:49 [ERROR]: Failed to send email: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:15:49 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template SUBMISSION_SUCCESS failed and no fallback content provided"
+}
+2025-06-02 11:15:49 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "40ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:16:07 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:16:07 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:16:08 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:16:13 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:16:13 [INFO]: Initiating email send for event: 1f0f3172-18e8-462b-a9f4-3cedef0c7358 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:16:13 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:16:13 [INFO]: Processing email event: 1f0f3172-18e8-462b-a9f4-3cedef0c7358 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:16:13 [ERROR]: Template generation failed for SUBMISSION_SUCCESS: Template SUBMISSION_SUCCESS not found {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\templates\\templateService.ts:939:13)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:80:54)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)"
+}
+2025-06-02 11:16:13 [ERROR]: Failed to handle email event 1f0f3172-18e8-462b-a9f4-3cedef0c7358: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:16:13 [ERROR]: Failed to send email: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:16:13 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template SUBMISSION_SUCCESS failed and no fallback content provided"
+}
+2025-06-02 11:16:13 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "29ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:16:16 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:16:18 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:16:18 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:16:19 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:16:24 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:16:24 [INFO]: Initiating email send for event: d999c08a-404e-4eca-bf5d-35d8bf6fc59a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:16:24 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:16:24 [INFO]: Processing email event: d999c08a-404e-4eca-bf5d-35d8bf6fc59a of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:16:24 [ERROR]: Template generation failed for SUBMISSION_SUCCESS: Template SUBMISSION_SUCCESS not found {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\templates\\templateService.ts:939:13)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:80:54)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)"
+}
+2025-06-02 11:16:24 [ERROR]: Failed to handle email event d999c08a-404e-4eca-bf5d-35d8bf6fc59a: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:16:24 [ERROR]: Failed to send email: Template SUBMISSION_SUCCESS failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template SUBMISSION_SUCCESS failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:96:17)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\handlers\\emailHandler.ts:41:22)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\services\\emailService.ts:75:31)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\routes\\emailRoutes.ts:49:39\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:95:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\route.js:119:3)"
+}
+2025-06-02 11:16:24 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template SUBMISSION_SUCCESS failed and no fallback content provided"
+}
+2025-06-02 11:16:24 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "29ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:16:59 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:16:59 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:16:59 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:17:04 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:17:04 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:17:05 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:17:12 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:17:12 [INFO]: Initiating email send for event: 3fe2e937-fe7f-4711-8944-c70a80099204 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:17:12 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:17:12 [INFO]: Processing email event: 3fe2e937-fe7f-4711-8944-c70a80099204 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:17:12 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:17:12 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:17:19 [INFO]: Email sent successfully with ID: 86c092e8-ecd4-4a61-96c1-cfa3100c7342 {
+  "service": "email-service"
+}
+2025-06-02 11:17:19 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "3fe2e937-fe7f-4711-8944-c70a80099204"
+}
+2025-06-02 11:17:19 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7176ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:22:18 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:22:23 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:22:23 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:22:24 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:22:40 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:22:40 [INFO]: Initiating email send for event: 8afaea35-3b35-4a48-89c9-629ae38fc39f {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:22:40 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:22:40 [INFO]: Processing email event: 8afaea35-3b35-4a48-89c9-629ae38fc39f of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:22:40 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:22:40 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:22:42 [ERROR]: Failed to handle email event 8afaea35-3b35-4a48-89c9-629ae38fc39f: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:52:42 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "ANhD1nzPAEetx7j/Kn1/Cw.0",
+    "mise-correlation-id": "74dec0a8-116a-4fb8-bb62-c791d4f1804b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055240Z-r1c56577f965462jhC1MAAeb1w0000000fk00000000019rc",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:22:42 [ERROR]: Failed to send email: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:52:42 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "ANhD1nzPAEetx7j/Kn1/Cw.0",
+    "mise-correlation-id": "74dec0a8-116a-4fb8-bb62-c791d4f1804b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055240Z-r1c56577f965462jhC1MAAeb1w0000000fk00000000019rc",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:22:42 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "The specified sender domain has not been linked."
+}
+2025-06-02 11:22:42 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "1945ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:23:48 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:23:49 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:23:49 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:23:50 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:23:53 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:23:53 [INFO]: Initiating email send for event: 66b41c2a-a4e0-4a0e-ad5d-d2edf9475846 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:23:53 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:23:53 [INFO]: Processing email event: 66b41c2a-a4e0-4a0e-ad5d-d2edf9475846 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:23:53 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:23:53 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:23:55 [ERROR]: Failed to handle email event 66b41c2a-a4e0-4a0e-ad5d-d2edf9475846: Request body validation error. See property 'senderAddress' {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 400,
+  "details": {
+    "date": "Mon, 02 Jun 2025 05:53:55 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "150",
+    "connection": "keep-alive",
+    "ms-cv": "SXdf6HWolUCOSgtEws3xWw.0",
+    "mise-correlation-id": "bfbb4333-5bd6-42f7-983f-e01f4181b8e8",
+    "x-azure-ref": "20250602T055353Z-r1c56577f96stwlphC1MAAttr80000000g7g00000000kdnw",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Request body validation error. See property 'senderAddress'",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Request body validation error. See property 'senderAddress'\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:23:55 [ERROR]: Failed to send email: Request body validation error. See property 'senderAddress' {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 400,
+  "details": {
+    "date": "Mon, 02 Jun 2025 05:53:55 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "150",
+    "connection": "keep-alive",
+    "ms-cv": "SXdf6HWolUCOSgtEws3xWw.0",
+    "mise-correlation-id": "bfbb4333-5bd6-42f7-983f-e01f4181b8e8",
+    "x-azure-ref": "20250602T055353Z-r1c56577f96stwlphC1MAAttr80000000g7g00000000kdnw",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Request body validation error. See property 'senderAddress'",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Request body validation error. See property 'senderAddress'\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:23:55 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Request body validation error. See property 'senderAddress'"
+}
+2025-06-02 11:23:55 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "1586ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:25:36 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:25:36 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:25:36 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:25:38 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:25:39 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:25:39 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:25:40 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:25:43 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:25:43 [INFO]: Initiating email send for event: 9956c949-5b39-40aa-b8ab-d4defc81ad55 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:25:43 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:25:43 [INFO]: Processing email event: 9956c949-5b39-40aa-b8ab-d4defc81ad55 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:25:43 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:25:43 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:25:44 [ERROR]: Failed to handle email event 9956c949-5b39-40aa-b8ab-d4defc81ad55: Request body validation error. See property 'senderAddress' {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 400,
+  "details": {
+    "date": "Mon, 02 Jun 2025 05:55:44 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "150",
+    "connection": "keep-alive",
+    "ms-cv": "NnEDDbkmGkWiZrF5vgZh/g.0",
+    "mise-correlation-id": "8604e228-94fc-4ad8-a900-ef8691c4193c",
+    "x-azure-ref": "20250602T055543Z-r1c56577f967d45nhC1MAA35s00000000670000000006p9b",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Request body validation error. See property 'senderAddress'",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Request body validation error. See property 'senderAddress'\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:25:44 [ERROR]: Failed to send email: Request body validation error. See property 'senderAddress' {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 400,
+  "details": {
+    "date": "Mon, 02 Jun 2025 05:55:44 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "150",
+    "connection": "keep-alive",
+    "ms-cv": "NnEDDbkmGkWiZrF5vgZh/g.0",
+    "mise-correlation-id": "8604e228-94fc-4ad8-a900-ef8691c4193c",
+    "x-azure-ref": "20250602T055543Z-r1c56577f967d45nhC1MAA35s00000000670000000006p9b",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Request body validation error. See property 'senderAddress'",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Request body validation error. See property 'senderAddress'\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:25:44 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Request body validation error. See property 'senderAddress'"
+}
+2025-06-02 11:25:44 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "1157ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:26:34 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:26:36 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:26:36 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:26:37 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:26:41 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:26:41 [INFO]: Initiating email send for event: a7ccc665-732d-4db2-b33d-80e41f9e25fd {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:26:41 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:26:41 [INFO]: Processing email event: a7ccc665-732d-4db2-b33d-80e41f9e25fd of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:26:41 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:26:41 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:26:44 [ERROR]: Failed to handle email event a7ccc665-732d-4db2-b33d-80e41f9e25fd: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:56:43 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "5NFp+YZ1REOwNM2Qe4YwHA.0",
+    "mise-correlation-id": "bd2c1424-1d3d-40a0-94d6-5d887adf7a3b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055641Z-r1c56577f96248s5hC1MAAku340000000gqg00000000cfza",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:26:44 [ERROR]: Failed to send email: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:56:43 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "5NFp+YZ1REOwNM2Qe4YwHA.0",
+    "mise-correlation-id": "bd2c1424-1d3d-40a0-94d6-5d887adf7a3b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055641Z-r1c56577f96248s5hC1MAAku340000000gqg00000000cfza",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:26:44 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "The specified sender domain has not been linked."
+}
+2025-06-02 11:26:44 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "2384ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:27:02 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:27:06 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:27:06 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:27:06 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:27:09 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:27:09 [INFO]: Initiating email send for event: 70e27698-d6d6-4a8a-a38a-a3c24a0b3dff {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:27:09 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:27:09 [INFO]: Processing email event: 70e27698-d6d6-4a8a-a38a-a3c24a0b3dff of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:27:09 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:27:09 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:27:12 [ERROR]: Failed to handle email event 70e27698-d6d6-4a8a-a38a-a3c24a0b3dff: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:57:11 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "Tp4gQv0mX0+EyQc/LOFdaQ.0",
+    "mise-correlation-id": "e2aabba8-02fe-4c4e-8f8b-bd03d65b7852",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055709Z-r1c56577f96stwlphC1MAAttr80000000g8g00000000g5xs",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:27:12 [ERROR]: Failed to send email: The specified sender domain has not been linked. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "DomainNotLinked",
+  "statusCode": 404,
+  "details": {
+    "xMsErrorCode": "DomainNotLinked",
+    "date": "Mon, 02 Jun 2025 05:57:11 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "144",
+    "connection": "keep-alive",
+    "ms-cv": "Tp4gQv0mX0+EyQc/LOFdaQ.0",
+    "mise-correlation-id": "e2aabba8-02fe-4c4e-8f8b-bd03d65b7852",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250602T055709Z-r1c56577f96stwlphC1MAAttr80000000g8g00000000g5xs",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "DomainNotLinked",
+      "message": "The specified sender domain has not been linked.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: The specified sender domain has not been linked.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\src\\restError.ts:81:12)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:255:17)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\src\\deserializationPolicy.ts:159:43)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-02 11:27:12 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "The specified sender domain has not been linked."
+}
+2025-06-02 11:27:12 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 400,
+  "duration": "2328ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:27:18 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:28:47 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:28:47 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:28:48 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:28:52 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 11:28:52 [INFO]: Initiating email send for event: e102318f-2e73-4de1-aa91-c99c7a13b423 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 11:28:52 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:28:52 [INFO]: Processing email event: e102318f-2e73-4de1-aa91-c99c7a13b423 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:28:52 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 11:28:52 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:28:56 [INFO]: Email sent successfully with ID: cbc31738-bbf9-495b-b795-9ae676e2fc41 {
+  "service": "email-service"
+}
+2025-06-02 11:28:56 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "e102318f-2e73-4de1-aa91-c99c7a13b423"
+}
+2025-06-02 11:28:56 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4187ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:39:19 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:39:19 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:39:19 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:39:40 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-02 11:39:40 [INFO]: Initiating email send for event: 7636a80f-a0d8-415c-8465-2e474cf2deef {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-02 11:39:40 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:39:40 [INFO]: Processing email event: 7636a80f-a0d8-415c-8465-2e474cf2deef of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:39:40 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-02 11:39:40 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:39:47 [INFO]: Email sent successfully with ID: 683b6c1d-0ead-46cc-bdf5-71a309128dcf {
+  "service": "email-service"
+}
+2025-06-02 11:39:47 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "7636a80f-a0d8-415c-8465-2e474cf2deef"
+}
+2025-06-02 11:39:47 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6719ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:40:52 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:40:52 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:40:52 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:40:54 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 11:40:56 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:40:56 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:40:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:41:06 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-02 11:41:06 [INFO]: Initiating email send for event: 5c5159ac-dcbe-4d97-961d-9d42ef9c7e5b {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-02 11:41:06 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:41:06 [INFO]: Processing email event: 5c5159ac-dcbe-4d97-961d-9d42ef9c7e5b of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:41:06 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-02 11:41:06 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:41:14 [INFO]: Email sent successfully with ID: faae46c2-6d61-4ce3-8dc5-350c2eaee9dc {
+  "service": "email-service"
+}
+2025-06-02 11:41:14 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "5c5159ac-dcbe-4d97-961d-9d42ef9c7e5b"
+}
+2025-06-02 11:41:14 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7596ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 11:41:44 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:41:44 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:41:44 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:41:50 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:41:50 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:41:51 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:47:18 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 11:47:18 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 11:47:18 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 11:47:37 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 11:47:37 [INFO]: Initiating email send for event: 8b2cfd26-6f63-4873-b91e-4671b148ae2c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 11:47:37 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 11:47:37 [INFO]: Processing email event: 8b2cfd26-6f63-4873-b91e-4671b148ae2c of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 11:47:37 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 11:47:37 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 11:47:41 [INFO]: Email sent successfully with ID: 24cdc970-5ca5-4b49-82d4-c4b5b393cb96 {
+  "service": "email-service"
+}
+2025-06-02 11:47:41 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8b2cfd26-6f63-4873-b91e-4671b148ae2c"
+}
+2025-06-02 11:47:41 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4095ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:00:29 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:00:29 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:00:29 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:00:40 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 12:00:40 [INFO]: Initiating email send for event: ff6fe795-ff69-40ab-adf4-7dd2e60162c3 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 12:00:40 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 12:00:40 [INFO]: Processing email event: ff6fe795-ff69-40ab-adf4-7dd2e60162c3 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:00:40 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 12:00:40 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:00:46 [INFO]: Email sent successfully with ID: 069a550d-5b0c-4ac9-8c68-3294a740fb5d {
+  "service": "email-service"
+}
+2025-06-02 12:00:46 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "ff6fe795-ff69-40ab-adf4-7dd2e60162c3"
+}
+2025-06-02 12:00:46 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6303ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:01:20 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:01:20 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:01:20 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:02:25 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:02:25 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:02:25 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:02:55 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:02:55 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:02:55 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:03:00 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-02 12:03:00 [INFO]: Initiating email send for event: e9a3573d-0021-46a2-bda5-197f44ccd458 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-02 12:03:00 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 12:03:00 [INFO]: Processing email event: e9a3573d-0021-46a2-bda5-197f44ccd458 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:03:00 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-02 12:03:00 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:03:07 [INFO]: Email sent successfully with ID: c61c51e2-aea0-47c3-b24c-20eb24019e83 {
+  "service": "email-service"
+}
+2025-06-02 12:03:07 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "e9a3573d-0021-46a2-bda5-197f44ccd458"
+}
+2025-06-02 12:03:07 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7054ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:03:30 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 12:03:30 [INFO]: Initiating email send for event: 0475e3af-e049-4458-a252-94208f256b2f {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 12:03:30 [INFO]: Processing email event: 0475e3af-e049-4458-a252-94208f256b2f of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:03:30 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 12:03:30 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:03:34 [INFO]: Email sent successfully with ID: eca30036-e7ec-45aa-ae3f-d6541b34fae5 {
+  "service": "email-service"
+}
+2025-06-02 12:03:34 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "0475e3af-e049-4458-a252-94208f256b2f"
+}
+2025-06-02 12:03:34 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4284ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:04:30 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:04:30 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:04:31 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:05:03 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:05:03 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:05:03 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:17:31 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:17:31 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:17:31 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:17:59 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-02 12:17:59 [INFO]: Initiating email send for event: 14588297-be9c-45e3-99b9-d087f3960613 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-02 12:17:59 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 12:17:59 [INFO]: Processing email event: 14588297-be9c-45e3-99b9-d087f3960613 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:17:59 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-02 12:17:59 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:18:01 [INFO]: Email sent successfully with ID: 7b028080-8c12-42fb-96dd-2f0ced772d8e {
+  "service": "email-service"
+}
+2025-06-02 12:18:01 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "14588297-be9c-45e3-99b9-d087f3960613"
+}
+2025-06-02 12:18:01 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "2121ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:25:20 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:25:20 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:25:21 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:48:32 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:48:32 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:48:32 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:49:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:49:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:49:58 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:50:18 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-02 12:50:18 [INFO]: Initiating email send for event: 8125ed37-bf09-4c82-b185-ebee172e305c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-02 12:50:18 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 12:50:18 [INFO]: Processing email event: 8125ed37-bf09-4c82-b185-ebee172e305c of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:50:18 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-02 12:50:18 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:50:23 [INFO]: Email sent successfully with ID: 34f0b45a-8ef0-4b99-8d9b-0954a41615d4 {
+  "service": "email-service"
+}
+2025-06-02 12:50:23 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8125ed37-bf09-4c82-b185-ebee172e305c"
+}
+2025-06-02 12:50:23 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5546ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:50:52 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:50:52 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:50:53 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:50:56 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-02 12:50:56 [INFO]: Initiating email send for event: 308395e2-8d96-4b26-b82e-b5643b93cb82 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-02 12:50:56 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 12:50:56 [INFO]: Processing email event: 308395e2-8d96-4b26-b82e-b5643b93cb82 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 12:50:56 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-02 12:50:56 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 12:51:01 [INFO]: Email sent successfully with ID: 10bf909a-b8bd-4a28-8985-22c974016685 {
+  "service": "email-service"
+}
+2025-06-02 12:51:01 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "308395e2-8d96-4b26-b82e-b5643b93cb82"
+}
+2025-06-02 12:51:01 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4362ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 12:51:41 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:51:41 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:51:42 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:55:44 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:55:44 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:55:45 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:55:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:55:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:55:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 12:56:59 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 12:56:59 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 12:57:00 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:06:01 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:06:01 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:06:01 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:06:15 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-02 13:06:15 [INFO]: Initiating email send for event: 9f6b906b-32d3-4161-898b-0e5580081e68 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-02 13:06:15 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:06:15 [INFO]: Processing email event: 9f6b906b-32d3-4161-898b-0e5580081e68 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:06:15 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-02 13:06:15 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:06:22 [INFO]: Email sent successfully with ID: 687248b7-26d1-42fd-86b7-0a7eb5908506 {
+  "service": "email-service"
+}
+2025-06-02 13:06:22 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "9f6b906b-32d3-4161-898b-0e5580081e68"
+}
+2025-06-02 13:06:22 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7010ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:06:39 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:06:39 [INFO]: Initiating email send for event: b3335db8-7df3-4084-98e8-078d035a31c2 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:06:39 [INFO]: Processing email event: b3335db8-7df3-4084-98e8-078d035a31c2 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:06:39 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:06:39 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:06:44 [INFO]: Email sent successfully with ID: d5a33182-846b-476e-a138-7586ccbee4f2 {
+  "service": "email-service"
+}
+2025-06-02 13:06:44 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "b3335db8-7df3-4084-98e8-078d035a31c2"
+}
+2025-06-02 13:06:44 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4673ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:09:36 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:09:36 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:09:37 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:09:53 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:09:53 [INFO]: Initiating email send for event: e4a49290-c805-494c-9767-02b9f3f13be0 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:09:53 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:09:53 [INFO]: Processing email event: e4a49290-c805-494c-9767-02b9f3f13be0 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:09:53 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:09:53 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:09:58 [INFO]: Email sent successfully with ID: 95d5c78b-9a57-4760-8344-650a0a3e476f {
+  "service": "email-service"
+}
+2025-06-02 13:09:58 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "e4a49290-c805-494c-9767-02b9f3f13be0"
+}
+2025-06-02 13:09:58 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5825ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:11:11 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:11:11 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:11:11 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:11:34 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:11:34 [INFO]: Initiating email send for event: e487c404-8fac-4ee0-ba2a-3ed643faa72a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:11:34 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:11:34 [INFO]: Processing email event: e487c404-8fac-4ee0-ba2a-3ed643faa72a of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:11:34 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:11:34 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:11:40 [INFO]: Email sent successfully with ID: 9283df62-41e6-4e9f-b4f8-4f50e740fb9a {
+  "service": "email-service"
+}
+2025-06-02 13:11:40 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "e487c404-8fac-4ee0-ba2a-3ed643faa72a"
+}
+2025-06-02 13:11:40 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5198ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:12:23 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:12:23 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:12:23 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:12:29 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:12:29 [INFO]: Initiating email send for event: 1200e40d-dcfb-4f5d-a12f-b6cbcc17d439 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:12:29 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:12:29 [INFO]: Processing email event: 1200e40d-dcfb-4f5d-a12f-b6cbcc17d439 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:12:29 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:12:29 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:12:36 [INFO]: Email sent successfully with ID: ae193000-4227-4076-a3ea-f6563c346744 {
+  "service": "email-service"
+}
+2025-06-02 13:12:36 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "1200e40d-dcfb-4f5d-a12f-b6cbcc17d439"
+}
+2025-06-02 13:12:36 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6935ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:13:02 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:13:02 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:13:02 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:13:04 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:13:04 [INFO]: Initiating email send for event: a4ac33b5-6018-407e-9288-7a084ae8bc2a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:13:04 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:13:04 [INFO]: Processing email event: a4ac33b5-6018-407e-9288-7a084ae8bc2a of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:13:04 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:13:04 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:13:08 [INFO]: Email sent successfully with ID: 9c045e25-d650-4801-8e21-886f15ae6ace {
+  "service": "email-service"
+}
+2025-06-02 13:13:08 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "a4ac33b5-6018-407e-9288-7a084ae8bc2a"
+}
+2025-06-02 13:13:08 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "3990ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:16:07 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:16:07 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:16:07 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:16:23 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-02 13:16:23 [INFO]: Initiating email send for event: b7e38df7-33b7-424f-b3c9-3ffc31913df5 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-02 13:16:23 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:16:23 [INFO]: Processing email event: b7e38df7-33b7-424f-b3c9-3ffc31913df5 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:16:23 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-02 13:16:23 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:16:29 [INFO]: Email sent successfully with ID: cd7d4454-52a8-406b-a5e3-e6292bcdcbc2 {
+  "service": "email-service"
+}
+2025-06-02 13:16:29 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "b7e38df7-33b7-424f-b3c9-3ffc31913df5"
+}
+2025-06-02 13:16:29 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5422ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:16:49 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:16:49 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:16:50 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:21:56 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:21:56 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:21:56 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:22:03 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-02 13:22:03 [INFO]: Initiating email send for event: bbebcc84-f491-4e6e-bfe0-b18ce7bc04f5 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-02 13:22:03 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:22:03 [INFO]: Processing email event: bbebcc84-f491-4e6e-bfe0-b18ce7bc04f5 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:22:03 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-02 13:22:03 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:22:08 [INFO]: Email sent successfully with ID: 7a57e58d-dca6-47e6-9d49-f720358059d6 {
+  "service": "email-service"
+}
+2025-06-02 13:22:08 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "bbebcc84-f491-4e6e-bfe0-b18ce7bc04f5"
+}
+2025-06-02 13:22:08 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4757ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:22:54 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:22:54 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:22:55 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:22:57 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-02 13:22:57 [INFO]: Initiating email send for event: 2beb6f92-bbea-4a95-bf7e-8099f6e87e90 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-02 13:22:57 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:22:57 [INFO]: Processing email event: 2beb6f92-bbea-4a95-bf7e-8099f6e87e90 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:22:57 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-02 13:22:57 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:23:03 [INFO]: Email sent successfully with ID: b08a66f7-4ba1-4b09-8c0b-48fd481c84b9 {
+  "service": "email-service"
+}
+2025-06-02 13:23:03 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "2beb6f92-bbea-4a95-bf7e-8099f6e87e90"
+}
+2025-06-02 13:23:03 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5928ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:23:34 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:23:34 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:23:34 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:26:35 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-02 13:26:35 [INFO]: Initiating email send for event: 9a80e7da-a5c5-41a5-a928-80bc2f8273d2 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-02 13:26:35 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:26:35 [INFO]: Processing email event: 9a80e7da-a5c5-41a5-a928-80bc2f8273d2 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:26:35 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-02 13:26:35 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:26:39 [INFO]: Email sent successfully with ID: 8f3fbedd-cc09-4cf5-89f0-1c426e303aa7 {
+  "service": "email-service"
+}
+2025-06-02 13:26:39 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "9a80e7da-a5c5-41a5-a928-80bc2f8273d2"
+}
+2025-06-02 13:26:39 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "3220ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:37:08 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:37:08 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:37:08 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:37:20 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-02 13:37:20 [INFO]: Initiating email send for event: 308f3a75-12b2-4930-b4f9-0556b87ba8d0 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-02 13:37:20 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:37:20 [INFO]: Processing email event: 308f3a75-12b2-4930-b4f9-0556b87ba8d0 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:37:20 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-02 13:37:20 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:37:23 [INFO]: Email sent successfully with ID: 7a7248aa-6966-4df4-8042-a4f9857e6c0e {
+  "service": "email-service"
+}
+2025-06-02 13:37:23 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "308f3a75-12b2-4930-b4f9-0556b87ba8d0"
+}
+2025-06-02 13:37:23 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "3768ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:37:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:37:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:37:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:39:15 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:39:15 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:39:15 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:39:27 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-02 13:39:27 [INFO]: Initiating email send for event: adccbf44-3668-4cda-bff0-9129e3f49330 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-02 13:39:27 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:39:27 [INFO]: Processing email event: adccbf44-3668-4cda-bff0-9129e3f49330 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:39:27 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-02 13:39:27 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:39:35 [INFO]: Email sent successfully with ID: ec5ed27b-67d1-4ac5-9f9c-c301c62a83c2 {
+  "service": "email-service"
+}
+2025-06-02 13:39:35 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "adccbf44-3668-4cda-bff0-9129e3f49330"
+}
+2025-06-02 13:39:35 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7341ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:40:16 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 13:40:16 [INFO]: Initiating email send for event: 1d6ed277-8451-4157-99a4-3a14a5172405 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 13:40:16 [INFO]: Processing email event: 1d6ed277-8451-4157-99a4-3a14a5172405 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:40:16 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 13:40:16 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:40:22 [INFO]: Email sent successfully with ID: a2923864-3f5a-4f0c-b5f4-e6fb94af4c3e {
+  "service": "email-service"
+}
+2025-06-02 13:40:22 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "1d6ed277-8451-4157-99a4-3a14a5172405"
+}
+2025-06-02 13:40:22 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5596ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:45:11 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:45:11 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:45:11 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:45:18 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 13:45:18 [INFO]: Initiating email send for event: 26fe40d6-6f0f-4d72-b493-18557540c720 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 13:45:18 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:45:18 [INFO]: Processing email event: 26fe40d6-6f0f-4d72-b493-18557540c720 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:45:18 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 13:45:18 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:45:23 [INFO]: Email sent successfully with ID: 03564e38-d527-4d4a-a4c8-1fc31644fbce {
+  "service": "email-service"
+}
+2025-06-02 13:45:23 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "26fe40d6-6f0f-4d72-b493-18557540c720"
+}
+2025-06-02 13:45:23 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "4221ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:48:17 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:48:17 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:48:17 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:48:30 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:48:30 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:48:30 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:48:33 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 13:48:33 [INFO]: Initiating email send for event: 0e0e4103-a441-42e5-9f2d-415e7baf019d {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 13:48:33 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:48:33 [INFO]: Processing email event: 0e0e4103-a441-42e5-9f2d-415e7baf019d of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:48:33 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 13:48:33 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:48:39 [INFO]: Email sent successfully with ID: 95f2df4f-837b-4019-bc4f-c706e36ce95a {
+  "service": "email-service"
+}
+2025-06-02 13:48:39 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "0e0e4103-a441-42e5-9f2d-415e7baf019d"
+}
+2025-06-02 13:48:39 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5733ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:50:27 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:50:27 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:50:28 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 13:50:36 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 13:50:36 [INFO]: Initiating email send for event: a31bf9f1-86e8-4029-b4ee-4db94704af01 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 13:50:36 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 13:50:36 [INFO]: Processing email event: a31bf9f1-86e8-4029-b4ee-4db94704af01 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 13:50:36 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 13:50:36 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 13:50:41 [INFO]: Email sent successfully with ID: 3ee3f63a-b66d-4fbe-9580-68f69ac55f6c {
+  "service": "email-service"
+}
+2025-06-02 13:50:41 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "a31bf9f1-86e8-4029-b4ee-4db94704af01"
+}
+2025-06-02 13:50:41 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "5503ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 13:51:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 13:51:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 13:51:57 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:15:00 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:15:00 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:15:08 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:21:07 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 14:21:07 [INFO]: Initiating email send for event: 993b58ac-c3ca-493e-a234-0695d3ed759f {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 14:21:07 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 14:21:07 [INFO]: Processing email event: 993b58ac-c3ca-493e-a234-0695d3ed759f of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 14:21:07 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 14:21:07 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 14:21:10 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:21:10 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:21:10 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:21:16 [WARN]: API key not provided {
+  "service": "email-service"
+}
+2025-06-02 14:21:16 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 401,
+  "duration": "3ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:21:48 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:21:48 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:21:48 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:22:42 [WARN]: Invalid API key provided {
+  "service": "email-service"
+}
+2025-06-02 14:22:42 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 403,
+  "duration": "4ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:22:45 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 14:22:53 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:22:53 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:22:53 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:23:00 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 14:23:00 [INFO]: Initiating email send for event: 610f0241-e903-446d-b826-4fdc8be3a786 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 14:23:00 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 14:23:00 [INFO]: Processing email event: 610f0241-e903-446d-b826-4fdc8be3a786 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 14:23:00 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 14:23:00 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 14:23:07 [INFO]: Email sent successfully with ID: 3cd19342-f089-4f1d-b7a8-1963692ab119 {
+  "service": "email-service"
+}
+2025-06-02 14:23:07 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "610f0241-e903-446d-b826-4fdc8be3a786"
+}
+2025-06-02 14:23:07 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "7059ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:23:19 [WARN]: Invalid API key provided {
+  "service": "email-service"
+}
+2025-06-02 14:23:19 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 403,
+  "duration": "1ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:23:22 [WARN]: Invalid API key provided {
+  "service": "email-service"
+}
+2025-06-02 14:23:22 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 403,
+  "duration": "1ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:23:27 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 14:23:27 [INFO]: Initiating email send for event: 9f57096f-a7e8-4c6e-a62a-e5e129f0c662 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 14:23:27 [INFO]: Processing email event: 9f57096f-a7e8-4c6e-a62a-e5e129f0c662 of type: EMAIL_SEND {
+  "service": "email-service"
+}
+2025-06-02 14:23:27 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 14:23:27 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 14:23:34 [INFO]: Email sent successfully with ID: df4dd01e-c3e2-4708-8fef-bc2502696a54 {
+  "service": "email-service"
+}
+2025-06-02 14:23:34 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "9f57096f-a7e8-4c6e-a62a-e5e129f0c662"
+}
+2025-06-02 14:23:34 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 200,
+  "duration": "6480ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:25:46 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 14:26:09 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:26:09 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:26:10 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:36:59 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:36:59 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:37:01 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:37:20 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:37:20 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:37:20 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:37:28 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:124:14\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:37:28 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "10ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:37:50 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:37:50 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:37:51 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:37:52 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:37:52 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:37:53 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:37:53 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 14:37:55 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:37:55 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:37:56 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:38:04 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:124:14\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:38:04 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "8ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:38:07 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:136:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:38:07 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "2ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:38:23 [WARN]: Invalid API key provided {
+  "service": "email-service"
+}
+2025-06-02 14:38:23 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 403,
+  "duration": "2ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:38:28 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:136:5\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:38:28 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "2ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:39:34 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:39:34 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:39:34 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:39:40 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:124:14\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:39:40 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "9ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:39:55 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 14:39:57 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:39:57 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:39:58 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:40:02 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:10:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:146:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:124:14\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:40:02 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "8ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:40:23 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:40:23 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:40:24 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:40:34 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:40:34 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:40:34 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:40:47 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:40:47 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:40:48 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:40:53 [ERROR]: Error in authentication middleware: JWT Secret is required for encryption {
+  "service": "email-service",
+  "stack": "Error: JWT Secret is required for encryption\n    at new EncryptionHelper (file:///C:/Users/prave/OneDrive/Desktop/communication-service/node_modules/@Mahe-5563/commons/dist/index.js:12:13)\n    at checkHMACDecryption (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\utils\\decryption.ts:11:28)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:147:59\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\src\\middleware\\validation.ts:124:14\n    at Layer.handle [as handle_request] (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\express\\lib\\router\\layer.js:95:5)"
+}
+2025-06-02 14:40:53 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 500,
+  "duration": "10ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:42:06 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:42:06 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:42:06 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:42:08 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 14:42:13 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:42:13 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:42:14 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:42:20 [WARN]: Invalid HMAC signature or decryption failed {
+  "service": "email-service"
+}
+2025-06-02 14:42:20 [INFO]: Request completed {
+  "service": "email-service",
+  "method": "POST",
+  "url": "/send",
+  "statusCode": 403,
+  "duration": "5ms",
+  "userAgent": "PostmanRuntime/7.44.0",
+  "ip": "::1"
+}
+2025-06-02 14:42:42 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:42:42 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:42:42 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:42:59 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:42:59 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:42:59 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:43:15 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:43:15 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:43:15 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 14:43:27 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 14:43:27 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 14:43:27 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 15:02:06 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 15:56:50 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 15:56:50 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 15:56:51 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 15:57:14 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 15:57:14 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 15:57:14 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 15:57:17 [INFO]: POST /api/email/send {
+  "service": "email-service",
+  "ip": "::1",
+  "userAgent": "PostmanRuntime/7.44.0"
+}
+2025-06-02 15:57:17 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 15:57:17 [INFO]: Initiating email send for event: 460e20e4-526d-4b18-bda1-b941dda30101 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 15:57:17 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 15:57:17 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 15:57:17 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 15:57:20 [INFO]: Email sent successfully with ID: ccc906ff-7842-4f8f-8347-b28f0466eb09 {
+  "service": "email-service"
+}
+2025-06-02 15:57:20 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "460e20e4-526d-4b18-bda1-b941dda30101"
+}
+2025-06-02 15:57:40 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 15:57:40 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 15:57:40 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 15:57:42 [INFO]: Received SIGINT, starting graceful shutdown... {
+  "service": "email-service"
+}
+2025-06-02 15:59:20 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 15:59:20 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:05:31 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:05:31 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:05:31 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:12:15 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:12:15 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:12:15 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:14:30 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:14:30 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:14:30 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:16:17 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:16:17 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:16:18 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:21:03 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:21:03 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:21:03 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:23:38 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:23:38 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:23:38 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:25:06 [INFO]: 🚀 Starting Email Service... {
+  "service": "email-service",
+  "nodeVersion": "v22.15.0",
+  "environment": "development"
+}
+2025-06-02 16:25:06 [INFO]: ✅ Environment variables validated successfully {
+  "service": "email-service"
+}
+2025-06-02 16:25:06 [INFO]: 📋 Service is ready to accept requests {
+  "service": "email-service"
+}
+2025-06-02 16:34:21 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-02 16:34:21 [INFO]: Initiating email send for event: b62daedd-9f18-4b06-aeeb-17fa1a80fdf6 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-02 16:34:21 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-02 16:34:21 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-02 16:34:21 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-02 16:34:26 [INFO]: Email sent successfully with ID: ee5d61ea-472f-400b-bb5d-9acf82b0ceda {
+  "service": "email-service"
+}
+2025-06-02 16:34:26 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "b62daedd-9f18-4b06-aeeb-17fa1a80fdf6"
+}
