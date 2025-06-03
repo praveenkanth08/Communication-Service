@@ -1,30 +1,22 @@
 {
   "name": "email-service",
   "version": "1.0.0",
-  "description": "Email service with template support using Azure Communication Services",
+  "description": "Email service with template support using Azure Communication Services - Azure Functions Only",
   "main": "dist/functions/index.js",
   "scripts": {
     "build": "tsc && tsc-alias",
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.ts",
     "test": "jest",
-    "// Express Scripts": "",
-    "start": "node dist/functions/index.js",
-    "start:express": "node dist/functions/index.js",
-    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
-    "dev:express": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
-    "// Azure Functions Scripts": "",
+    "start": "npm run build && func start",
+    "dev": "npm run build && func start",
     "start:func": "npm run build && func start",
     "dev:func": "npm run build && func start",
-    "func:init": "func init --typescript --worker-runtime node",
-    "// Build Scripts": "",
-    "prebuild": "npm run clean",
-    "build:express": "tsc && tsc-alias",
-    "build:functions": "tsc && tsc-alias",
+    "build:prod": "tsc && tsc-alias",
     "watch": "tsc -w",
-    "// Development Scripts": "",
-    "dev:watch": "concurrently \"npm run watch\" \"func start\"",
-    "postinstall": "npm run build"
+    "func:init": "func init --typescript --worker-runtime node",
+    "func:deploy": "func azure functionapp publish",
+    "prebuild": "npm run clean"
   },
   "keywords": [
     "email",
@@ -32,7 +24,6 @@
     "communication",
     "service",
     "typescript",
-    "express",
     "functions",
     "serverless"
   ],
@@ -42,38 +33,30 @@
     "@azure/communication-email": "^1.0.0",
     "@azure/functions": "^4.7.2",
     "@Mahe-5563/commons": "1.0.106",
-    "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^4.18.2",
-    "helmet": "^7.0.0",
     "joi": "^17.9.2",
+    "path": "^0.12.7",
     "uuid": "^9.0.0",
     "winston": "^3.10.0"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.13",
-    "@types/express": "^4.17.17",
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
     "@types/uuid": "^9.0.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
     "azure-functions-core-tools": "^4.0.5455",
-    "concurrently": "^8.2.0",
     "eslint": "^8.45.0",
     "jest": "^29.6.1",
     "rimraf": "^5.0.1",
-    "tsc-alias": "^1.8.8",
     "ts-jest": "^29.1.1",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
+    "tsc-alias": "^1.8.8",
     "typescript": "^5.1.6"
   },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=8.0.0"
   },
-  "// Azure Functions Configuration": "",
   "funcIgnore": [
     "*.js.map",
     "*.ts.map",
@@ -84,6 +67,7 @@
     "tsconfig.json",
     ".funcignore",
     ".gitignore",
-    "*.md"
+    "*.md",
+    "src/"
   ]
 }

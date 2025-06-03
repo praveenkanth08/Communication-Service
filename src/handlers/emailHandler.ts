@@ -7,7 +7,6 @@ import dotenv from "dotenv";
 // Load environment variables from .env file
 dotenv.config();
 
-
 export class EmailHandler {
   private emailClient: EmailClient | null = null;
   private templateService: EmailTemplateService;
@@ -71,6 +70,7 @@ export class EmailHandler {
     let subject = data.subject || "";
     let htmlContent = data.content || "";
     let plainTextContent = "";
+    let templateAttachments: any[] = [];
 
     if (data.templateId && data.templateData) {
       try {
@@ -81,6 +81,7 @@ export class EmailHandler {
         subject = data.subject || templateContent.subject;
         htmlContent = templateContent.html;
         plainTextContent = templateContent.plainText;
+        templateAttachments = templateContent.templateAttachments || [];
 
         logger.info(`Generated content using template: ${data.templateId}`);
       } catch (templateError) {
@@ -114,6 +115,8 @@ export class EmailHandler {
         contentInBase64: att.contentInBase64,
       })) || [];
 
+    const updatedAttachments = [...attachments, ...templateAttachments];
+    console.log("Updated attachments:", updatedAttachments);
     // Build email message
     const emailMessage = {
       senderAddress: data.from,
@@ -134,14 +137,15 @@ export class EmailHandler {
           }),
       },
       ...(data.replyTo && { replyTo: [{ address: data.replyTo }] }),
-      ...(attachments.length > 0 && { attachments }),
+      ...(updatedAttachments.length > 0 && { attachments: updatedAttachments }),
     };
 
+    logger.info("Constructed email message:", emailMessage);
     logger.info(`Sending email to: ${data.to.join(", ")}`);
-    logger.debug("Email message structure:", {
+    logger.info("Email message structure:", {
       senderAddress: emailMessage.senderAddress,
       recipientCount: data.to.length,
-      hasAttachments: attachments.length > 0,
+      hasAttachments: updatedAttachments.length > 0,
       hasCC: data.cc && data.cc.length > 0,
       hasBCC: data.bcc && data.bcc.length > 0,
     });

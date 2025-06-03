@@ -1,4 +1,5 @@
 import { EmailTemplate } from "@/types/events";
+// Then use logoBase64 in your template instead of the hardcoded base64 string
 
 export class EmailTemplateService {
   private templates: Map<
@@ -114,169 +115,133 @@ ${data.companyName || "InCorp"} Team
       `,
       })
     );
-    
+
     // Document Generation Template
     this.templates.set(
-      EmailTemplate.DOCUMENT_GENERATION,
+      EmailTemplate.NEED_CLARIFICATION,
       (data: {
         recipientName?: string;
-        documentType?: string;
-        documentName?: string;
         companyName?: string;
-        customMessage?: string;
-        generatedBy?: string;
-        documentId?: string;
+        clarificationNotes?: string | string[] | Record<string, string>;
+        url?: string;
       }) => ({
-        subject: `Document Ready: ${
-          data.documentName || data.documentType || "Your Document"
-        }`,
-        html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <meta charset="utf-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Document Generated</title>
-          <style>
-            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 0; background-color: #f5f5f5; }
-            .container { background: white; margin: 20px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-            .header { background: linear-gradient(135deg, #28a745 0%, #20c997 100%); color: white; padding: 40px 30px; text-align: center; }
-            .header h1 { margin: 0; font-size: 28px; font-weight: 600; }
-            .header p { margin: 10px 0 0 0; opacity: 0.9; }
-            .content { padding: 40px 30px; }
-            .document-card { background: linear-gradient(135deg, #f8fff9 0%, #e8f5e8 100%); border: 1px solid #28a745; border-radius: 12px; padding: 25px; margin: 25px 0; }
-            .document-icon { font-size: 48px; text-align: center; margin-bottom: 15px; }
-            .document-details { background: white; padding: 20px; border-radius: 8px; margin: 20px 0; }
-            .detail-row { display: flex; justify-content: space-between; margin: 10px 0; padding: 8px 0; border-bottom: 1px solid #eee; }
-            .detail-label { font-weight: 600; color: #555; }
-            .detail-value { color: #333; }
-            .download-notice { background: #e7f3ff; border: 1px solid #b3d9ff; padding: 20px; border-radius: 8px; margin: 25px 0; text-align: center; }
-            .footer { background: #f8f9fa; padding: 20px; text-align: center; color: #666; font-size: 12px; }
-            @media (max-width: 600px) {
-              .container { margin: 10px; }
-              .content, .header { padding: 20px; }
-              .detail-row { flex-direction: column; }
-              .detail-label { margin-bottom: 5px; }
-            }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1>📄 Document Ready</h1>
-              <p>Your document has been successfully generated</p>
-            </div>
-            <div class="content">
-              <p><strong>Hello ${data.recipientName || "User"},</strong></p>
-              <p>Great news! Your requested document has been successfully generated and is ready for download.</p>
-              
-              <div class="document-card">
-                <div class="document-icon">📋</div>
-                <h3 style="text-align: center; margin: 0 0 20px 0; color: #28a745;">
-                  ${
-                    data.documentName ||
-                    data.documentType ||
-                    "Generated Document"
-                  }
+        subject: `KYC Clarification Required - ${data.companyName || "InCorp"}`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preliminary KYC Form - Clarification Required</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
+         <img src="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" 
+         alt="Incorp - An ascentium Company" />
+            <h1 style="color: #2f465a; margin: 0; font-size: 22px; font-weight: normal;">
+                Preliminary KYC Review Required 📋
+            </h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${
+                  data.recipientName || "[Customer Name]"
+                }</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
+            </p>
+
+            <!-- Dynamic Clarification Notes Section -->
+            <div style="margin: 25px 0;">
+                <h3 style="color: #2f465a; font-size: 18px; margin: 0 0 15px 0; font-weight: 600;">
+                    📝 Clarification Notes:
                 </h3>
                 
-                <div class="document-details">
-                  <div class="detail-row">
-                    <span class="detail-label">Document Type:</span>
-                    <span class="detail-value">${
-                      data.documentType || "CDD Document"
-                    }</span>
-                  </div>
-                  <div class="detail-row">
-                    <span class="detail-label">Generated:</span>
-                    <span class="detail-value">${new Date().toLocaleString()}</span>
-                  </div>
-                  <div class="detail-row">
-                    <span class="detail-label">Format:</span>
-                    <span class="detail-value">Microsoft Word (.docx)</span>
-                  </div>
-                  ${
-                    data.generatedBy
-                      ? `
-                  <div class="detail-row">
-                    <span class="detail-label">Generated By:</span>
-                    <span class="detail-value">${data.generatedBy}</span>
-                  </div>
-                  `
-                      : ""
-                  }
-                  ${
-                    data.documentId
-                      ? `
-                  <div class="detail-row">
-                    <span class="detail-label">Document ID:</span>
-                    <span class="detail-value">${data.documentId}</span>
-                  </div>
-                  `
-                      : ""
-                  }
+                <div style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
+                    ${this.renderClarificationNotes(data.clarificationNotes)}
                 </div>
-              </div>
-              
-              <div class="download-notice">
-                <p><strong>📎 Document Attached</strong></p>
-                <p>The document is attached to this email. Click on the attachment to download and open it.</p>
-              </div>
-              
-              ${
-                data.customMessage
-                  ? `
-              <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                <p style="margin: 0;"><strong>Additional Information:</strong></p>
-                <p style="margin: 10px 0 0 0;">${data.customMessage}</p>
-              </div>
-              `
-                  : ""
-              }
-              
-              <p>If you have any questions about this document or need assistance, please don't hesitate to contact our support team.</p>
-              
-              <p style="margin-top: 30px;">
-                Best regards,<br>
-                <strong>${data.companyName || "Your Company"} Team</strong>
-              </p>
             </div>
-            <div class="footer">
-              <p>This document was generated automatically. Please keep this email for your records.</p>
-              <p>&copy; ${new Date().getFullYear()} ${
-          data.companyName || "Your Company"
-        }. All rights reserved.</p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
+                To review and update your KYC information, kindly click the button below:
+            </p>
+            
+            <!-- CTA Button -->
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="${
+                  data.url || "#"
+                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    🔗 Review & Update Your KYC
+                </a>
             </div>
-          </div>
-        </body>
-        </html>
-      `,
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 15px 0; line-height: 1.6;">
+              To keep the process on track, we encourage you to complete the updates as soon as possible.
+            </p>
+            <p style="font-size: 16px; color: #2f465a; margin: 15px 0 0 0; line-height: 1.6;">If you require any further clarification, please feel free to contact us</p>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 0px 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+        <!-- Footer Information -->
+        <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
+            <p style="margin: 0 0 15px 0;">This is an automated message regarding your preliminary KYC verification. Please do not reply to this email.</p>
+            <div style="margin-top: 15px;">
+                <p style="margin: 0 0 10px 0;">&copy; 2025 ${
+                  data.companyName || "InCorp"
+                }. All rights reserved.</p>
+                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>`,
         plainText: `
-DOCUMENT GENERATED SUCCESSFULLY
+KYC CLARIFICATION REQUIRED
 
 Hello ${data.recipientName || "User"},
 
-Your requested document has been successfully generated and is attached to this email.
+Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
 
-DOCUMENT DETAILS:
-- Type: ${data.documentType || "CDD Document"}
-- Name: ${data.documentName || "Generated Document"}
-- Generated: ${new Date().toLocaleString()}
-- Format: Microsoft Word Document (.docx)
-${data.generatedBy ? `- Generated By: ${data.generatedBy}` : ""}
-${data.documentId ? `- Document ID: ${data.documentId}` : ""}
-
+CLARIFICATION NOTES:
 ${
-  data.customMessage ? `\nADDITIONAL INFORMATION:\n${data.customMessage}\n` : ""
+  typeof data.clarificationNotes === "string"
+    ? data.clarificationNotes
+    : Array.isArray(data.clarificationNotes)
+    ? data.clarificationNotes.map((note) => `- ${note}`).join("\n")
+    : typeof data.clarificationNotes === "object" &&
+      data.clarificationNotes !== null
+    ? Object.entries(data.clarificationNotes)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join("\n")
+    : "Please review your submitted information."
 }
 
-The document is attached to this email. Please download and save it for your records.
+To review and update your KYC information, please visit: ${
+          data.url || "your account portal"
+        }
 
-If you have any questions, please contact our support team.
+To keep the process on track, we encourage you to complete the updates as soon as possible.
+
+If you require any further clarification, please feel free to contact us.
 
 Best regards,
-${data.companyName || "Your Company"} Team
-      `,
+${data.companyName || "InCorp"} Team
+  `,
       })
     );
 
@@ -308,14 +273,7 @@ ${data.companyName || "Your Company"} Team
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <!-- Header -->
         <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
-            ${
-              data?.logoUrl
-                ? `<img src="${data.logoUrl ? data.logoUrl : ""}" alt="${
-                    data?.companyName || "InCorp"
-                  } Logo" style="max-height: 60px; margin-bottom: 15px;">`
-                : ""
-            }
-            <h1 style="color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;">Welcome Aboard! 🎉</h1>
+           <img src="cid:incorp-logo" alt="Company Logo" style="max-width: 150px; height: auto;" />      <h1 style="color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;">Welcome Aboard! 🎉</h1>
         </div>
         
         <!-- Main Content -->
@@ -398,6 +356,15 @@ ${data.companyName || "InCorp"} Team
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       `,
+        templateAttachments: [
+          {
+            name: "logo.png",
+            contentType: "image/png",
+            contentId: "incorp-logo",
+            contentInBase64:
+              "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",
+          },
+        ],
       })
     );
     // prelim KYC Submitted Template
@@ -739,12 +706,52 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
   public generateEmailContent(
     template: EmailTemplate,
     data: any
-  ): { subject: string; html: string; plainText: string } {
+  ): {
+    subject: string;
+    html: string;
+    plainText: string;
+    templateAttachments?: any[];
+  } {
     const templateFunction = this.templates.get(template);
     if (!templateFunction) {
       throw new Error(`Template ${template} not found`);
     }
     return templateFunction(data);
+  }
+
+  private renderClarificationNotes(
+    notes: string | string[] | Record<string, string> | undefined
+  ): string {
+    if (!notes) {
+      return '<p style="font-size: 15px; color: #2c5282; margin: 0; line-height: 1.6;">Please review your submitted information for any missing or incorrect details.</p>';
+    }
+
+    if (typeof notes === "string") {
+      return `<p style="font-size: 15px; color: #2c5282; margin: 0; line-height: 1.6;">${notes}</p>`;
+    }
+
+    if (Array.isArray(notes)) {
+      return `<ul style="margin: 0; padding-left: 18px; color: #2c5282; font-size: 15px; line-height: 1.7;">
+      ${notes
+        .map((note) => `<li style="margin-bottom: 6px;">${note}</li>`)
+        .join("")}
+    </ul>`;
+    }
+
+    if (typeof notes === "object" && notes !== null) {
+      return Object.entries(notes)
+        .map(
+          ([key, value]) => `
+      <div style="margin-bottom: 12px;">
+        <strong style="color: #1a365d; font-size: 15px;">${key}:</strong>
+        <p style="margin: 4px 0 0 0; color: #2c5282; font-size: 15px; line-height: 1.6;">${value}</p>
+      </div>
+    `
+        )
+        .join("");
+    }
+
+    return '<p style="font-size: 15px; color: #2c5282; margin: 0; line-height: 1.6;">Please review your submitted information.</p>';
   }
 
   public registerCustomTemplate(

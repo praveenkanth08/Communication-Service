@@ -50,10 +50,12 @@ const attachmentSchema = Joi.object({
 
 const templateDataSchema = Joi.object().pattern(
   Joi.string(),
+ 
   Joi.alternatives().try(
     Joi.string(),
     Joi.number(),
     Joi.boolean(),
+    Joi.array(),
     Joi.object()
   )
 );
@@ -158,7 +160,6 @@ export class EmailController {
       if (!apiKey) {
         return { authenticated: false, error: "Unauthorized user" };
       }
-
       if (apiKey !== process.env.API_KEY) {
         logger.warn("Invalid API key provided");
         return { authenticated: false, error: "Forbidden: Invalid API key" };
@@ -201,19 +202,19 @@ export class EmailController {
   async handleEmailSend(context: RequestContext): Promise<HandlerResponse> {
     try {
       // Rate limiting
-    //   const rateLimitResult = this.checkRateLimit(context.clientId);
-    //   if (!rateLimitResult.allowed) {
-    //     return {
-    //       statusCode: 429,
-    //       body: {
-    //         success: false,
-    //         error: "Rate limit exceeded",
-    //         retryAfter: rateLimitResult.retryAfter,
-    //       },
-    //     };
-    //   }
+      const rateLimitResult = this.checkRateLimit(context.clientId);
+      if (!rateLimitResult.allowed) {
+        return {
+          statusCode: 429,
+          body: {
+            success: false,
+            error: "Rate limit exceeded",
+            retryAfter: rateLimitResult.retryAfter,
+          },
+        };
+      }
 
-    //   // Authentication
+    //  Authentication
     //   const authResult = await this.authenticateRequest(
     //     context.headers,
     //     context.body
@@ -239,17 +240,17 @@ export class EmailController {
         emailSendSchema,
         context.body
       );
-    //   if (!validationResult.isValid) {
-    //     logger.warn("Request validation failed:", validationResult.error);
-    //     return {
-    //       statusCode: 400,
-    //       body: {
-    //         success: false,
-    //         error: "Validation failed",
-    //         details: validationResult.error,
-    //       },
-    //     };
-    //   }
+      //   if (!validationResult.isValid) {
+      //     logger.warn("Request validation failed:", validationResult.error);
+      //     return {
+      //       statusCode: 400,
+      //       body: {
+      //         success: false,
+      //         error: "Validation failed",
+      //         details: validationResult.error,
+      //       },
+      //     };
+      //   }
 
       // Send email
       logger.info("Email send request received", {
