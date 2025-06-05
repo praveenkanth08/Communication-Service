@@ -6478,3 +6478,1307 @@
   "service": "email-service",
   "messageId": "65f4a355-1e07-44e3-869d-c33363ca4fa8"
 }
+2025-06-03 15:54:29 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-03 15:54:29 [INFO]: Initiating email send for event: 8f88bab5-1406-4532-9e16-0faf13e521d7 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-03 15:54:29 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-03 15:54:29 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-03 15:54:29 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n           <img src=\"cid:incorp-logo\" alt=\"Company Logo\" style=\"max-width: 150px; height: auto;\" />      <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenkanthk@incorp.asia"
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "name": "logo.png",
+      "contentType": "image/png",
+      "contentId": "incorp-logo",
+      "contentInBase64": "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"
+    }
+  ]
+}
+2025-06-03 15:54:29 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-03 15:54:29 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-03 15:54:36 [INFO]: Email sent successfully with ID: 783698ce-984a-4edf-96e0-b9b3a9275167 {
+  "service": "email-service"
+}
+2025-06-03 15:54:36 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8f88bab5-1406-4532-9e16-0faf13e521d7"
+}
+2025-06-03 15:57:39 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-03 15:57:39 [INFO]: Initiating email send for event: 8b821255-909e-41d5-a0ca-d9631f469ec4 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-03 15:57:39 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-03 15:57:39 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-03 15:57:39 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n           <img src=\"cid:incorp-logo\" alt=\"Company Logo\" style=\"max-width: 150px; height: auto;\" />      <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenkanthk@incorp.asia"
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "name": "logo.png",
+      "contentType": "image/png",
+      "contentId": "incorp-logo",
+      "contentInBase64": "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"
+    }
+  ]
+}
+2025-06-03 15:57:39 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-03 15:57:39 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-03 15:57:43 [INFO]: Email sent successfully with ID: b70923ef-104e-4d94-9cca-ec8a66a491c8 {
+  "service": "email-service"
+}
+2025-06-03 15:57:43 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8b821255-909e-41d5-a0ca-d9631f469ec4"
+}
+2025-06-04 10:05:55 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:05:55 [INFO]: Initiating email send for event: a7479ffb-0086-41d6-b257-179e6c62798b {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:05:55 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:05:55 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:05:55 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n           <img src=\"cid:incorp-logo\" alt=\"Company Logo\" style=\"max-width: 150px; height: auto;\" />      <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenkanthk@incorp.asia"
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "name": "logo.png",
+      "contentType": "image/png",
+      "contentId": "incorp-logo",
+      "contentInBase64": "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"
+    }
+  ]
+}
+2025-06-04 10:05:55 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-04 10:05:55 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-04 10:06:00 [INFO]: Email sent successfully with ID: 8bb6c4ce-7300-45ec-b9d8-b3e4344789af {
+  "service": "email-service"
+}
+2025-06-04 10:06:00 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "a7479ffb-0086-41d6-b257-179e6c62798b"
+}
+2025-06-04 10:06:16 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:06:16 [INFO]: Initiating email send for event: 7f6e7342-0043-4134-8480-01bbe9256536 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:06:16 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:06:16 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n           <img src=\"cid:incorp-logo\" alt=\"Company Logo\" style=\"max-width: 150px; height: auto;\" />      <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "name": "logo.png",
+      "contentType": "image/png",
+      "contentId": "incorp-logo",
+      "contentInBase64": "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"
+    }
+  ]
+}
+2025-06-04 10:06:16 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:06:16 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-04 10:06:21 [INFO]: Email sent successfully with ID: 6aa651c5-f9f5-4590-9a00-8bcc7e1ca2f9 {
+  "service": "email-service"
+}
+2025-06-04 10:06:21 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "7f6e7342-0043-4134-8480-01bbe9256536"
+}
+2025-06-04 10:07:29 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:07:29 [INFO]: Initiating email send for event: 587f3072-b294-40ed-95ca-cccf3a87563c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:07:29 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:07:29 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:07:29 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n           <img src=\"cid:incorp-logo\" alt=\"Company Logo\" style=\"max-width: 150px; height: auto;\" />      <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  },
+  "attachments": [
+    {
+      "name": "logo.png",
+      "contentType": "image/png",
+      "contentId": "incorp-logo",
+      "contentInBase64": "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"
+    }
+  ]
+}
+2025-06-04 10:07:29 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:07:29 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-04 10:07:40 [INFO]: Email sent successfully with ID: 673949e6-8b34-48ab-8977-b728178ca34b {
+  "service": "email-service"
+}
+2025-06-04 10:07:40 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "587f3072-b294-40ed-95ca-cccf3a87563c"
+}
+2025-06-04 10:08:21 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:08:21 [INFO]: Initiating email send for event: 45fa2731-269a-4aaf-bb73-a17b680b1c8d {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:08:21 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:08:21 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:08:21 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n         <div style=\"background-image: url('image/png;base64,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');\" />\n            \n             <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:08:21 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:08:21 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:08:27 [INFO]: Email sent successfully with ID: 3bca8d43-6a9d-49a0-8329-4ae44108239a {
+  "service": "email-service"
+}
+2025-06-04 10:08:27 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "45fa2731-269a-4aaf-bb73-a17b680b1c8d"
+}
+2025-06-04 10:09:38 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:09:38 [INFO]: Initiating email send for event: d41e2b60-ed28-4a3b-bd8b-1dcfe9588468 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:09:38 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:09:38 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:09:38 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n         <div style=\"background-image: url('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');\" />\n            \n             <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:09:38 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:09:38 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:09:50 [INFO]: Email sent successfully with ID: 718365b5-4207-44d7-91bb-bcc7674780e1 {
+  "service": "email-service"
+}
+2025-06-04 10:09:50 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "d41e2b60-ed28-4a3b-bd8b-1dcfe9588468"
+}
+2025-06-04 10:10:48 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:10:48 [INFO]: Initiating email send for event: d79d221b-8d01-4bf0-88fb-92ca83a1db11 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:10:48 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:10:48 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:10:48 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n        <div style=\"\n    background-image: url('data:image/png;base64,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');\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: contain;\n    max-width: 150px;\n    height: 60px;\n    margin: 0 auto 15px auto;\n  \"></div>   \n             <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:10:48 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:10:48 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:10:57 [INFO]: Email sent successfully with ID: ef36efe2-1b44-4a8a-bde3-77ed40b96f4a {
+  "service": "email-service"
+}
+2025-06-04 10:10:57 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "d79d221b-8d01-4bf0-88fb-92ca83a1db11"
+}
+2025-06-04 10:16:20 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-04 10:16:20 [INFO]: Initiating email send for event: cd1e8214-3e7c-40c0-8669-d7bacffa7409 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-04 10:16:20 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:16:20 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-04 10:16:20 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your One-Time Password (OTP) to Continue",
+    "plainText": "\nVERIFICATION CODE REQUIRED\n\nHello Sarah,\n\nYour verification code: 1234\n\nThis code will expire in 3 minutes.\n\nSECURITY NOTICE:\n- Do not share this code with anyone\n- This code is for one-time use only\n- If you didn't request this, please ignore this email\n\nFor support: notifications@incorp.asia\n\n\nBest regards,\nInCorp Team\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your OTP for KYC Verification</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Logo Header - Centered and Compact -->\n        <div style=\"padding: 15px 30px; background-color: #ffffff; text-align: center; border-bottom: 1px solid #eeeeee;\">\n            <div style=\"color: #2f465a; font-size: 16px; font-weight: 600;\">InCorp</div>\n        </div>\n        \n        <!-- Main Blue Header -->\n        <div style=\"background-color: #2f465a; color: #ffffff; padding: 40px 30px;\">\n            <h1 style=\"margin: 0 0 10px 0; font-size: 24px; font-weight: 600;\">\n                Welcome, Sarah!\n            </h1>\n            \n            <p style=\"margin: 0 0 24px 0; font-size: 13px; line-height: 1.5;\">\n                Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within 3 minutes.\n            </p>\n            \n            <!-- Large OTP Display -->\n            <div style=\"font-size: 50px; font-weight: bold; font-family: 'Courier New', monospace;\">\n                1234\n            </div>\n            \n        </div>\n        \n        <!-- Footer Content -->\n        <div style=\"padding: 40px 30px; text-align: center; background-color: #ffffff;\">\n            <div style=\"margin-bottom: 30px;\">\n                <h3 style=\"margin: 0 0 10px 0; font-size: 16px; color: #666666; font-weight: 600;\">\n                    Do Not Share This Email\n                </h3>\n                <p style=\"margin: 0; font-size: 14px; color: #888888; line-height: 1.5;\">\n                    This email contains a secure code for InCorp. Please do not share this email, link, or access code with others.\n                </p>\n            </div>\n        </div>\n        \n        <!-- Email Footer -->\n        <div style=\"font-size: 12px; text-align: center; color: #888888; padding: 20px 30px; border-top: 1px solid #eeeeee; background-color: #f9f9f9;\">\n            <p style=\"margin: 0 0 10px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n            <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:16:20 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:16:20 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:16:23 [INFO]: Email sent successfully with ID: aac2616d-fe3b-498a-9cb8-d33d2973b865 {
+  "service": "email-service"
+}
+2025-06-04 10:16:23 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "cd1e8214-3e7c-40c0-8669-d7bacffa7409"
+}
+2025-06-04 10:16:40 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-04 10:16:40 [INFO]: Initiating email send for event: 420ef777-8018-44bc-8523-c8bc2d947ba9 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-04 10:16:40 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-04 10:16:40 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Confirmation of Preliminary KYC Submission",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>KYC Submission Received - InCorp</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0;\">\n  <div style=\"max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff;\">\n    <div style=\"text-align: center; margin-bottom: 20px;\">\n      <h2 style=\"margin: 0;\">InCorp</h2>\n    </div>\n\n    <p>Hi Sarah,</p>\n    \n    <p>\n      🎉 <strong>Great news!</strong> We've received your KYC details successfully.\n    </p>\n    \n    <p>\n      <strong>What happens next?</strong><br>\n      Our team is now reviewing your information to ensure everything looks good. This quick review helps us maintain security and compliance standards.\n    </p>\n    \n    <p>\n      📧 <strong>We'll keep you updated!</strong><br>\n      Once our review is complete, you'll hear from us with the next steps.\n    </p>\n    \n    <p>\n      <strong>Questions?</strong> We're just a message away and happy to help! 😊\n    </p>\n\n    <!-- Thank You -->\n    <div style=\"text-align: left; margin: 30px 0;\">\n        <p style=\"margin: 0; color: #333; font-size: 16px;\">\n            Best regards,\n        </p>\n        <p style=\"margin: 5px 0 0 0; color: #bb2121; font-size: 16px; font-weight: bold;\">\n            InCorp Team\n        </p>\n    </div>\n\n    <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px;\">\n      <p>This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n      <div style=\"margin-top: 15px;\">\n        <p>&copy; 2025 InCorp. All rights reserved.</p>\n        <p>36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:16:40 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:16:40 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:16:45 [INFO]: Email sent successfully with ID: d3b317b9-b5f1-4bed-9f6a-32a5d8524db9 {
+  "service": "email-service"
+}
+2025-06-04 10:16:45 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "420ef777-8018-44bc-8523-c8bc2d947ba9"
+}
+2025-06-04 10:17:08 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-04 10:17:08 [INFO]: Initiating email send for event: 884c5ebe-c328-4267-81e2-009cf0d11ef9 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-04 10:17:08 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:17:08 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-04 10:17:08 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your One-Time Password (OTP) to Continue",
+    "plainText": "\nVERIFICATION CODE REQUIRED\n\nHello Sarah,\n\nYour verification code: 1234\n\nThis code will expire in 3 minutes.\n\nSECURITY NOTICE:\n- Do not share this code with anyone\n- This code is for one-time use only\n- If you didn't request this, please ignore this email\n\nFor support: notifications@incorp.asia\n\n\nBest regards,\nInCorp Team\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your OTP for KYC Verification</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Logo Header - Centered and Compact -->\n        <div style=\"padding: 15px 30px; background-color: #ffffff; text-align: center; border-bottom: 1px solid #eeeeee;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n        </div>\n        \n        <!-- Main Blue Header -->\n        <div style=\"background-color: #2f465a; color: #ffffff; padding: 40px 30px;\">\n            <h1 style=\"margin: 0 0 10px 0; font-size: 24px; font-weight: 600;\">\n                Welcome, Sarah!\n            </h1>\n            \n            <p style=\"margin: 0 0 24px 0; font-size: 13px; line-height: 1.5;\">\n                Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within 3 minutes.\n            </p>\n            \n            <!-- Large OTP Display -->\n            <div style=\"font-size: 50px; font-weight: bold; font-family: 'Courier New', monospace;\">\n                1234\n            </div>\n            \n        </div>\n        \n        <!-- Footer Content -->\n        <div style=\"padding: 40px 30px; text-align: center; background-color: #ffffff;\">\n            <div style=\"margin-bottom: 30px;\">\n                <h3 style=\"margin: 0 0 10px 0; font-size: 16px; color: #666666; font-weight: 600;\">\n                    Do Not Share This Email\n                </h3>\n                <p style=\"margin: 0; font-size: 14px; color: #888888; line-height: 1.5;\">\n                    This email contains a secure code for InCorp. Please do not share this email, link, or access code with others.\n                </p>\n            </div>\n        </div>\n        \n        <!-- Email Footer -->\n        <div style=\"font-size: 12px; text-align: center; color: #888888; padding: 20px 30px; border-top: 1px solid #eeeeee; background-color: #f9f9f9;\">\n            <p style=\"margin: 0 0 10px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n            <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:17:08 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:17:08 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:17:14 [INFO]: Email sent successfully with ID: 75f5202f-b582-4f9b-bd32-796b690a4b34 {
+  "service": "email-service"
+}
+2025-06-04 10:17:14 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "884c5ebe-c328-4267-81e2-009cf0d11ef9"
+}
+2025-06-04 10:17:17 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-04 10:17:17 [INFO]: Initiating email send for event: 1935ee34-2b1a-40e1-a3e7-f117f3e1637b {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-04 10:17:17 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-04 10:17:17 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Confirmation of Preliminary KYC Submission",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n  <title>KYC Submission Received - InCorp</title>\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0;\">\n  <div style=\"max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff;\">\n    <div style=\"text-align: center; margin-bottom: 20px;\">\n      <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n    </div>\n\n    <p>Hi Sarah,</p>\n    \n    <p>\n      🎉 <strong>Great news!</strong> We've received your KYC details successfully.\n    </p>\n    \n    <p>\n      <strong>What happens next?</strong><br>\n      Our team is now reviewing your information to ensure everything looks good. This quick review helps us maintain security and compliance standards.\n    </p>\n    \n    <p>\n      📧 <strong>We'll keep you updated!</strong><br>\n      Once our review is complete, you'll hear from us with the next steps.\n    </p>\n    \n    <p>\n      <strong>Questions?</strong> We're just a message away and happy to help! 😊\n    </p>\n\n    <!-- Thank You -->\n    <div style=\"text-align: left; margin: 30px 0;\">\n        <p style=\"margin: 0; color: #333; font-size: 16px;\">\n            Best regards,\n        </p>\n        <p style=\"margin: 5px 0 0 0; color: #bb2121; font-size: 16px; font-weight: bold;\">\n            InCorp Team\n        </p>\n    </div>\n\n    <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px;\">\n      <p>This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n      <div style=\"margin-top: 15px;\">\n        <p>&copy; 2025 InCorp. All rights reserved.</p>\n        <p>36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n      </div>\n    </div>\n  </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:17:17 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:17:17 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:17:21 [INFO]: Email sent successfully with ID: d4e239bb-aa6a-4af2-830f-01426253a48b {
+  "service": "email-service"
+}
+2025-06-04 10:17:21 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "1935ee34-2b1a-40e1-a3e7-f117f3e1637b"
+}
+2025-06-04 10:17:26 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-04 10:17:26 [INFO]: Initiating email send for event: 0de5671a-1bf5-48f3-87ac-25e1dfd40a22 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-04 10:17:26 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-04 10:17:26 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your Preliminary KYC is Complete – Proceed to the Next Step",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KYC Verification Complete</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n        <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 22px; font-weight: normal;\">KYC Verified Successfully! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, 👋\n            </p>\n            \n            <div style=\"background-color: #d4edda; color: #155724; padding: 15px 20px; border-radius: 8px; font-size: 16px; font-weight: 600; margin: 25px 0; border: 1px solid #c3e6cb;\">\n                🎉 Great news – your preliminary KYC verification has been successfully completed!\n            </div>            \n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                🚀 <strong>Ready for the next step?</strong> You can now proceed to fill in your company and shareholder information as part of the incorporation process.\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;\">\n                To proceed, simply click the button below:\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                    👉 Complete Next Step\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions or need assistance, please don't hesitate to contact our support team. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:17:26 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:17:26 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:17:30 [INFO]: Email sent successfully with ID: 759d84b2-03d4-4058-bc1f-a4fad2cdcf33 {
+  "service": "email-service"
+}
+2025-06-04 10:17:30 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "0de5671a-1bf5-48f3-87ac-25e1dfd40a22"
+}
+2025-06-04 10:17:36 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-04 10:17:36 [INFO]: Initiating email send for event: 4747a4c5-3784-43a9-9b23-74d47edc5e21 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-04 10:17:36 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-04 10:17:36 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Submission Confirmation ",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Details Under Review</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center;>\n          <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n           \n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hello <strong>Sarah</strong>! 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team.\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                We'll notify you as soon as the verification is complete or if any additional details are needed.\n            </p>\n            \n            <div style=\"background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;\">\n             <h3 style=\"margin: 0 0 15px 0; color: #2f465a; font-size: 18px; font-weight: 600;\">📋 What Happens Next:</h3>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   🔍  Our team is carefully reviewing your submitted information.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   📞 If anything’s missing or needs clarification, we’ll get in touch with you directly.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                    📧 You’ll receive timely updates on your incorporation progress.\n                </p>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                Appreciate your patience and cooperation in the meantime. 🙏\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your incorporation process. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:17:36 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:17:36 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:17:40 [INFO]: Email sent successfully with ID: bd7ab79b-fd40-40b1-adca-b4fb4a6f8d85 {
+  "service": "email-service"
+}
+2025-06-04 10:17:40 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "4747a4c5-3784-43a9-9b23-74d47edc5e21"
+}
+2025-06-04 10:20:57 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-04 10:20:57 [INFO]: Initiating email send for event: 1c1847d6-559c-4adc-b8c7-9e8a5ced5da0 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-04 10:20:57 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-04 10:20:57 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Submission Confirmation ",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Details Under Review</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center;>\n          <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n           \n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hello <strong>Sarah</strong>! 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team.\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                We'll notify you as soon as the verification is complete or if any additional details are needed.\n            </p>\n            \n            <div style=\"background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;\">\n             <h3 style=\"margin: 0 0 15px 0; color: #2f465a; font-size: 18px; font-weight: 600;\">📋 What Happens Next:</h3>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   🔍  Our team is carefully reviewing your submitted information.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   📞 If anything’s missing or needs clarification, we’ll get in touch with you directly.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                    📧 You’ll receive timely updates on your incorporation progress.\n                </p>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                Appreciate your patience and cooperation in the meantime. 🙏\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your incorporation process. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:20:57 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:20:57 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:21:04 [INFO]: Email sent successfully with ID: 4162eb60-4cac-410e-a84a-41689d996733 {
+  "service": "email-service"
+}
+2025-06-04 10:21:04 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "1c1847d6-559c-4adc-b8c7-9e8a5ced5da0"
+}
+2025-06-04 10:21:47 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-04 10:21:47 [INFO]: Initiating email send for event: 6936baec-1301-4065-ae91-e9c6c6756f86 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-04 10:21:47 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:21:47 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-04 10:21:47 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Submission Confirmation ",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Details Under Review</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>   \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Details Under Review! 📋</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hello <strong>Sarah</strong>! 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                We'll notify you as soon as the verification is complete or if any additional details are needed. 🔐\n            </p>\n            \n            <div style=\"background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;\">\n                <h3 style=\"margin: 0 0 15px 0; color: #2f465a; font-size: 18px; font-weight: 600;\">📋 What Happens Next:</h3>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   🔍  Our team is carefully reviewing your submitted information.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   📞 If anything's missing or needs clarification, we'll get in touch with you directly.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                    📧 You'll receive timely updates on your incorporation progress.\n                </p>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                Appreciate your patience and cooperation in the meantime. 🙏\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your incorporation process. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:21:47 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:21:47 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:21:58 [INFO]: Email sent successfully with ID: f42fdac9-98dc-4a1d-ab42-925706e47d35 {
+  "service": "email-service"
+}
+2025-06-04 10:21:58 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "6936baec-1301-4065-ae91-e9c6c6756f86"
+}
+2025-06-04 10:22:01 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-04 10:22:01 [INFO]: Initiating email send for event: 666ce2a1-2f44-40aa-91a1-428a0ebf7f0a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-04 10:22:01 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-04 10:22:01 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Submission Confirmation ",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Details Under Review</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>   \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Details Under Review! 📋</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hello <strong>Sarah</strong>! 👋\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                We'll notify you as soon as the verification is complete or if any additional details are needed. 🔐\n            </p>\n            \n            <div style=\"background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;\">\n                <h3 style=\"margin: 0 0 15px 0; color: #2f465a; font-size: 18px; font-weight: 600;\">📋 What Happens Next:</h3>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   🔍  Our team is carefully reviewing your submitted information.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   📞 If anything's missing or needs clarification, we'll get in touch with you directly.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                    📧 You'll receive timely updates on your incorporation progress.\n                </p>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                Appreciate your patience and cooperation in the meantime. 🙏\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, 🌟\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your incorporation process. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenkanthk@incorp.asia"
+      }
+    ]
+  }
+}
+2025-06-04 10:22:01 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-04 10:22:01 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:22:06 [INFO]: Email sent successfully with ID: 11acb732-ff12-4484-801f-635975e9985a {
+  "service": "email-service"
+}
+2025-06-04 10:22:06 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "666ce2a1-2f44-40aa-91a1-428a0ebf7f0a"
+}
+2025-06-04 10:26:07 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "SUBMISSION_SUCCESS",
+  "hasCustomContent": false
+}
+2025-06-04 10:26:07 [INFO]: Initiating email send for event: 02a25346-bd34-4a22-a2b7-55a8caf3f013 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "SUBMISSION_SUCCESS",
+  "recipientCount": 1
+}
+2025-06-04 10:26:07 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 10:26:07 [INFO]: Generated content using template: SUBMISSION_SUCCESS {
+  "service": "email-service"
+}
+2025-06-04 10:26:07 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Submission Confirmation ",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Details Under Review</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>   \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Details Under Review! 📋</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hello <strong>Sarah</strong>! \n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                We'll notify you as soon as the verification is complete or if any additional details are needed. 🔐\n            </p>\n            \n            <div style=\"background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;\">\n                <h3 style=\"margin: 0 0 15px 0; color: #2f465a; font-size: 18px; font-weight: 600;\">📋 What Happens Next:</h3>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   🔍  Our team is carefully reviewing your submitted information.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                   📞 If anything's missing or needs clarification, we'll get in touch with you directly.\n                </p>\n                <p style=\"margin: 0 0 10px 0; color: #2f465a; font-size: 15px; line-height: 1.6;\">\n                    📧 You'll receive timely updates on your incorporation progress.\n                </p>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                Appreciate your patience and cooperation in the meantime. 🙏\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, \n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your incorporation process. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:26:07 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:26:07 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:26:11 [INFO]: Email sent successfully with ID: dd4206e2-2ac0-44b1-aaea-f92cec61af3f {
+  "service": "email-service"
+}
+2025-06-04 10:26:11 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "02a25346-bd34-4a22-a2b7-55a8caf3f013"
+}
+2025-06-04 10:26:17 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-04 10:26:17 [INFO]: Initiating email send for event: 64bdbc3b-33a4-4184-a5a8-b298dd403c5c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-04 10:26:17 [INFO]: Generated content using template: PRELIM_KYC_VERIFIED {
+  "service": "email-service"
+}
+2025-06-04 10:26:17 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your Preliminary KYC is Complete – Proceed to the Next Step",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KYC Verification Complete</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n        <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 22px; font-weight: normal;\">KYC Verified Successfully! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, \n            </p>\n            \n            <div style=\"background-color: #d4edda; color: #155724; padding: 15px 20px; border-radius: 8px; font-size: 16px; font-weight: 600; margin: 25px 0; border: 1px solid #c3e6cb;\">\n                🎉 Great news – your preliminary KYC verification has been successfully completed!\n            </div>            \n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                🚀 <strong>Ready for the next step?</strong> You can now proceed to fill in your company and shareholder information as part of the incorporation process.\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;\">\n                To proceed, simply click the button below:\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                     Complete Next Step\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions or need assistance, please don't hesitate to contact our support team. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, \n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:26:17 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:26:17 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:26:22 [INFO]: Email sent successfully with ID: feb88548-be2d-4966-9151-2ffaef5a7282 {
+  "service": "email-service"
+}
+2025-06-04 10:26:22 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "64bdbc3b-33a4-4184-a5a8-b298dd403c5c"
+}
+2025-06-04 10:26:29 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-04 10:26:29 [INFO]: Initiating email send for event: aa331e96-4134-4e36-ac90-280d4aeed9f5 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-04 10:26:29 [INFO]: Generated content using template: PRELIM_KYC_SUBMITTED {
+  "service": "email-service"
+}
+2025-06-04 10:26:29 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Confirmation of Preliminary KYC Submission",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>KYC Submission Received - InCorp</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>   \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">KYC Submission Received! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, \n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                🎉 <strong>Great news!</strong> We've received your KYC details successfully. \n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                <strong>What happens next?</strong><br>\n                Our team is now reviewing your information to ensure everything looks good. This quick review helps us maintain security and compliance standards. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                📧 <strong>We'll keep you updated!</strong><br>\n                Once our review is complete, you'll hear from us with the next steps. ⏱️\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                <strong>Questions?</strong> We're just a message away and happy to help! 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Best regards, \n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:26:29 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:26:29 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:26:38 [INFO]: Email sent successfully with ID: 95573091-d68a-4593-a0d9-15e4c5270a06 {
+  "service": "email-service"
+}
+2025-06-04 10:26:38 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "aa331e96-4134-4e36-ac90-280d4aeed9f5"
+}
+2025-06-04 10:26:40 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 10:26:40 [INFO]: Initiating email send for event: 96c13eba-6715-444e-aa43-9011c796db51 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 10:26:40 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 10:26:40 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>   \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, \n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                     Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, \n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:26:40 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:26:40 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:26:45 [INFO]: Email sent successfully with ID: f9131008-11b4-4b85-860c-c58193fd9d79 {
+  "service": "email-service"
+}
+2025-06-04 10:26:45 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "96c13eba-6715-444e-aa43-9011c796db51"
+}
+2025-06-04 10:26:50 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "NEED_CLARIFICATION",
+  "hasCustomContent": false
+}
+2025-06-04 10:26:50 [INFO]: Initiating email send for event: 43a4ac9a-5273-47b0-b783-60281aa2893e {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "NEED_CLARIFICATION",
+  "recipientCount": 1
+}
+2025-06-04 10:26:50 [INFO]: Generated content using template: NEED_CLARIFICATION {
+  "service": "email-service"
+}
+2025-06-04 10:26:50 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "KYC Clarification Required - InCorp",
+    "plainText": "\nKYC CLARIFICATION REQUIRED\n\nHello Sarah,\n\nThank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.\n\nCLARIFICATION NOTES:\nPlease review your submitted information.\n\nTo review and update your KYC information, please visit: https://portal.incorp.com/kyc-review/abc123\n\nTo keep the process on track, we encourage you to complete the updates as soon as possible.\n\nIf you require any further clarification, please feel free to contact us.\n\nBest regards,\nInCorp Team\n  ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Preliminary KYC Form - Clarification Required</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n        <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 22px; font-weight: normal;\">\n                Preliminary KYC Review Required 📋\n            </h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Dear <strong>Sarah</strong>,\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.\n            </p>\n\n            <!-- Dynamic Clarification Notes Section -->\n            <div style=\"margin: 25px 0;\">\n                <h3 style=\"color: #2f465a; font-size: 18px; margin: 0 0 15px 0; font-weight: 600;\">\n                    📝 Clarification Notes:\n                </h3>\n                \n                <div style=\"background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;\">\n                    <p style=\"font-size: 15px; color: #2c5282; margin: 0; line-height: 1.6;\">Please review your submitted information for any missing or incorrect details.</p>\n                </div>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;\">\n                To review and update your KYC information, kindly click the button below:\n            </p>\n            \n            <!-- CTA Button -->\n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1);\">\n                    🔗 Review & Update Your KYC\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 15px 0; line-height: 1.6;\">\n              To keep the process on track, we encourage you to complete the updates as soon as possible.\n            </p>\n            <p style=\"font-size: 16px; color: #2f465a; margin: 15px 0 0 0; line-height: 1.6;\">If you require any further clarification, please feel free to contact us</p>\n            \n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 0px 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards,\n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <!-- Footer Information -->\n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your preliminary KYC verification. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:26:50 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:26:50 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:26:58 [INFO]: Email sent successfully with ID: ffb78cbd-e418-4d91-857a-2a1a55ccd059 {
+  "service": "email-service"
+}
+2025-06-04 10:26:58 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "43a4ac9a-5273-47b0-b783-60281aa2893e"
+}
+2025-06-04 10:27:00 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-04 10:27:00 [INFO]: Initiating email send for event: 125277a1-31b7-4e0c-b4e5-9aae5d369f1a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-04 10:27:00 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-04 10:27:00 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your One-Time Password (OTP) to Continue",
+    "plainText": "\nVERIFICATION CODE REQUIRED\n\nHello Sarah,\n\nYour verification code: 1234\n\nThis code will expire in 3 minutes.\n\nSECURITY NOTICE:\n- Do not share this code with anyone\n- This code is for one-time use only\n- If you didn't request this, please ignore this email\n\nFor support: notifications@incorp.asia\n\n\nBest regards,\nInCorp Team\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your OTP for KYC Verification</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Logo Header - Centered and Compact -->\n        <div style=\"padding: 15px 30px; background-color: #ffffff; text-align: center; border-bottom: 1px solid #eeeeee;\">\n            <div style=\"\n            background-repeat: no-repeat;\n            background-image: url('https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png');\n            background-size: contain;\n            background-position: center;\n            height: 60px;\n            max-width: 150px;\n             margin: 0 auto 15px auto;\n             \"></div>  \n        </div>\n        \n        <!-- Main Blue Header -->\n        <div style=\"background-color: #2f465a; color: #ffffff; padding: 40px 30px;\">\n            <h1 style=\"margin: 0 0 10px 0; font-size: 24px; font-weight: 600;\">\n                Welcome, Sarah!\n            </h1>\n            \n            <p style=\"margin: 0 0 24px 0; font-size: 13px; line-height: 1.5;\">\n                Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within 3 minutes.\n            </p>\n            \n            <!-- Large OTP Display -->\n            <div style=\"font-size: 50px; font-weight: bold; font-family: 'Courier New', monospace;\">\n                1234\n            </div>\n            \n        </div>\n        \n        <!-- Footer Content -->\n        <div style=\"padding: 40px 30px; text-align: center; background-color: #ffffff;\">\n            <div style=\"margin-bottom: 30px;\">\n                <h3 style=\"margin: 0 0 10px 0; font-size: 16px; color: #666666; font-weight: 600;\">\n                    Do Not Share This Email\n                </h3>\n                <p style=\"margin: 0; font-size: 14px; color: #888888; line-height: 1.5;\">\n                    This email contains a secure code for InCorp. Please do not share this email, link, or access code with others.\n                </p>\n            </div>\n        </div>\n        \n        <!-- Email Footer -->\n        <div style=\"font-size: 12px; text-align: center; color: #888888; padding: 20px 30px; border-top: 1px solid #eeeeee; background-color: #f9f9f9;\">\n            <p style=\"margin: 0 0 10px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n            <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 10:27:00 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 10:27:00 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 10:27:12 [INFO]: Email sent successfully with ID: 927e2b88-28e0-477f-8196-4fa2951c0c4f {
+  "service": "email-service"
+}
+2025-06-04 10:27:12 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "125277a1-31b7-4e0c-b4e5-9aae5d369f1a"
+}
+2025-06-04 11:28:23 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "OTP_VERIFICATION",
+  "hasCustomContent": false
+}
+2025-06-04 11:28:23 [INFO]: Initiating email send for event: 8efaf1ac-2c52-4b22-963a-f3b113fbf586 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "OTP_VERIFICATION",
+  "recipientCount": 1
+}
+2025-06-04 11:28:23 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 11:28:23 [INFO]: Generated content using template: OTP_VERIFICATION {
+  "service": "email-service"
+}
+2025-06-04 11:28:23 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Your One-Time Password (OTP) to Continue",
+    "plainText": "\nVERIFICATION CODE REQUIRED\n\nHello Sarah,\n\nYour verification code: 1234\n\nThis code will expire in 3 minutes.\n\nSECURITY NOTICE:\n- Do not share this code with anyone\n- This code is for one-time use only\n- If you didn't request this, please ignore this email\n\nFor support: notifications@incorp.asia\n\n\nBest regards,\nInCorp Team\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Your OTP for KYC Verification</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Logo Header - Centered and Compact -->\n        <div style=\"padding: 15px 30px; background-color: #ffffff; text-align: center; border-bottom: 1px solid #eeeeee;\">\n           <img src=\"https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png\" alt=\"Incorp\" style=\"max-width: 150px; height: auto;\" />\n        </div>\n        \n        <!-- Main Blue Header -->\n        <div style=\"background-color: #2f465a; color: #ffffff; padding: 40px 30px;\">\n            <h1 style=\"margin: 0 0 10px 0; font-size: 24px; font-weight: 600;\">\n                Welcome, Sarah!\n            </h1>\n            \n            <p style=\"margin: 0 0 24px 0; font-size: 13px; line-height: 1.5;\">\n                Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within 3 minutes.\n            </p>\n            \n            <!-- Large OTP Display -->\n            <div style=\"font-size: 50px; font-weight: bold; font-family: 'Courier New', monospace;\">\n                1234\n            </div>\n            \n        </div>\n        \n        <!-- Footer Content -->\n        <div style=\"padding: 40px 30px; text-align: center; background-color: #ffffff;\">\n            <div style=\"margin-bottom: 30px;\">\n                <h3 style=\"margin: 0 0 10px 0; font-size: 16px; color: #666666; font-weight: 600;\">\n                    Do Not Share This Email\n                </h3>\n                <p style=\"margin: 0; font-size: 14px; color: #888888; line-height: 1.5;\">\n                    This email contains a secure code for InCorp. Please do not share this email, link, or access code with others.\n                </p>\n            </div>\n        </div>\n        \n        <!-- Email Footer -->\n        <div style=\"font-size: 12px; text-align: center; color: #888888; padding: 20px 30px; border-top: 1px solid #eeeeee; background-color: #f9f9f9;\">\n            <p style=\"margin: 0 0 10px 0;\">This is an automated message regarding your KYC verification. Please do not reply to this email.</p>\n            <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n            <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 11:28:23 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 11:28:23 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 11:28:30 [INFO]: Email sent successfully with ID: 520245a1-3a5f-431c-9a15-1abd8b21f432 {
+  "service": "email-service"
+}
+2025-06-04 11:28:30 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "8efaf1ac-2c52-4b22-963a-f3b113fbf586"
+}
+2025-06-04 11:30:00 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-04 11:30:00 [INFO]: Initiating email send for event: 495f9d04-f642-4ba6-8349-f17d57e0aa48 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-04 11:30:00 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-04 11:30:00 [INFO]: Generated content using template: WELCOME {
+  "service": "email-service"
+}
+2025-06-04 11:30:00 [INFO]: Constructed email message: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "content": {
+    "subject": "Welcome! Let’s Get Started with Your KYC",
+    "plainText": "\nWelcome to InCorp!\n\nDear Sarah,\n\nThank you for choosing InCorp for your business inorporation needs. We're excited to help you start your entrepreneurial journey!\n\nTo begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.\n\nStart your incorporation: https://portal.incorp.com/kyc-review/abc123\n\nIf you have any questions, please don't hesitate to contact our support team at notifications@incorp.asia.\n\nBest regards,\nInCorp Team\n\n© 2025 InCorp. All rights reserved.\n36 Robinson Rd, #20-01 City House, Singapore 068877\n      ",
+    "html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Welcome - KYC Process</title>\n</head>\n<body style=\"margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;\">\n    <div style=\"max-width: 600px; margin: 0 auto; background-color: #ffffff;\">\n        <!-- Header -->\n        <div style=\"background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;\">\n             <img src=\"https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png\" alt=\"Incorp\" style=\"max-width: 150px; height: auto;\" /> \n            <h1 style=\"color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;\">Welcome Aboard! 🎉</h1>\n        </div>\n        \n        <!-- Main Content -->\n        <div style=\"padding: 30px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                Hi <strong>Sarah</strong>, \n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;\">\n                Welcome aboard! We're excited to have you with us. ✨\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;\">\n                To get things started, we'll need a few quick details from you. As part of our standard <strong>Prelim KYC (Know Your Customer)</strong> process, you'll be prompted to share some basic information. This helps our agents verify your identity and ensure a secure experience. 🔐\n            </p>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;\">\n                It's simple and won't take long. ⏱️\n            </p>\n            \n            <div style=\"text-align: center; margin: 30px 0;\">\n                <a href=\"https://portal.incorp.com/kyc-review/abc123\" style=\"display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;\">\n                     Submit KYC Details\n                </a>\n            </div>\n            \n            <p style=\"font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;\">\n                If you have any questions, feel free to reach out—we're here to help. 💬\n            </p>\n        </div>\n        \n        <!-- Footer -->\n        <div style=\"padding: 25px;\">\n            <p style=\"font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;\">\n                Warm regards, \n            </p>\n            <p style=\"font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;\">\n                InCorp Team\n            </p>\n        </div>\n        \n        <div style=\"font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;\">\n            <p style=\"margin: 0 0 15px 0;\">This is an automated message regarding your KYC submission. Please do not reply to this email.</p>\n            <div style=\"margin-top: 15px;\">\n                <p style=\"margin: 0 0 10px 0;\">&copy; 2025 InCorp. All rights reserved.</p>\n                <p style=\"margin: 0;\">36 Robinson Rd, #20-01 City House, Singapore 068877</p>\n            </div>\n        </div>\n    </div>\n</body>\n</html>"
+  },
+  "recipients": {
+    "to": [
+      {
+        "address": "praveenusain111@gmail.com"
+      }
+    ]
+  }
+}
+2025-06-04 11:30:00 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-04 11:30:00 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-04 11:30:14 [INFO]: Email sent successfully with ID: c00154dc-a2eb-4bf3-ab0a-b4233c216018 {
+  "service": "email-service"
+}
+2025-06-04 11:30:14 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "495f9d04-f642-4ba6-8349-f17d57e0aa48"
+}
