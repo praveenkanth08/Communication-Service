@@ -554,3 +554,59 @@
   "service": "email-service",
   "error": "Error \"message.attachments.name cannot be null or undefined.\" occurred in serializing the payload - undefined."
 }
+2025-06-05 13:19:55 [ERROR]: Template generation failed for OTP: Template OTP not found {
+  "service": "email-service",
+  "stack": "Error: Template OTP not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\templates\\templateService.js:566:19)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:71:62)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:19:55 [ERROR]: Failed to handle email event 7351994e-c73f-4afd-82d3-6402affe76ea: Template OTP failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template OTP failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:82:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:19:55 [ERROR]: Failed to send email: Template OTP failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template OTP failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:82:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:19:55 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template OTP failed and no fallback content provided"
+}
+2025-06-05 13:20:05 [ERROR]: Template generation failed for OTP: Template OTP not found {
+  "service": "email-service",
+  "stack": "Error: Template OTP not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\templates\\templateService.js:566:19)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:71:62)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:20:05 [ERROR]: Failed to handle email event c6463ac1-ede2-4cd3-823b-02c095cef7b6: Template OTP failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template OTP failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:82:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:20:05 [ERROR]: Failed to send email: Template OTP failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template OTP failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:82:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-05 13:20:05 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template OTP failed and no fallback content provided"
+}
+2025-06-05 17:33:58 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:173:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}
+2025-06-05 17:36:51 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:173:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}
+2025-06-05 17:38:16 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:174:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}
+2025-06-05 17:39:43 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:174:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}
+2025-06-05 17:40:33 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:174:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}
+2025-06-05 17:41:04 [ERROR]: Email send handler error: Cannot read properties of undefined (reading 'to') {
+  "service": "email-service",
+  "stack": "TypeError: Cannot read properties of undefined (reading 'to')\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:174:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)"
+}

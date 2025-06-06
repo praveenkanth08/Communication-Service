@@ -43,18 +43,18 @@ export class EmailTemplateService {
         
         <!-- Main Blue Header -->
         <div style="background-color: #2f465a; color: #ffffff; padding: 40px 30px;">
-            <h1 style="margin: 0 0 10px 0; font-size: 24px; font-weight: 600;">
+            <h1 style="margin: 0 0 10px 0; font-size: 24px; font-weight: 600; color: #ffffff;">
                 Welcome, ${data?.recipientName || "User"}!
             </h1>
             
-            <p style="margin: 0 0 24px 0; font-size: 13px; line-height: 1.5;">
+            <p style="margin: 0 0 24px 0; font-size: 13px; color: #ffffff; line-height: 1.5;">
                 Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within ${
                   data?.expirationMinutes
                 } minutes.
             </p>
             
             <!-- Large OTP Display -->
-            <div style="font-size: 50px; font-weight: bold; font-family: 'Courier New', monospace;">
+            <div style="font-size: 50px; font-weight: bold; color: #ffffff; font-family: 'Courier New', monospace;">
                 ${data?.otp}
             </div>
             
@@ -277,7 +277,7 @@ ${data.companyName || "InCorp"} Team
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Welcome aboard! We're excited to have you with us. ✨
+                Welcome aboard! We're excited to have you with us.
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
@@ -292,12 +292,12 @@ ${data.companyName || "InCorp"} Team
                 <a href="${
                   data.url
                 }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Submit KYC Details
+                     Begin Your Prelim KYC 
                 </a>
             </div>
             
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                If you have any questions, feel free to reach out—we're here to help. 💬
+                If you have any questions, feel free to reach out—we're here to help. 
             </p>
         </div>
         
@@ -403,16 +403,16 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
                 <strong>What happens next?</strong><br>
-                Our team is now reviewing your information to ensure everything looks good. This quick review helps us maintain security and compliance standards. 🔐
+                Our team is now reviewing your information to ensure everything looks good. This quick review helps us maintain security and compliance standards. 
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
                 📧 <strong>We'll keep you updated!</strong><br>
-                Once our review is complete, you'll hear from us with the next steps. ⏱️
+                Once our review is complete, you'll hear from us with the next steps. ⏱
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                <strong>Questions?</strong> We're just a message away and happy to help! 💬
+                <strong>Questions?</strong> We're just a message away and happy to help! 
             </p>
         </div>
         
@@ -615,11 +615,11 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team. ✨
+                Thank you for submitting your company and shareholder details. We've received the information and it's currently under review by our team. 
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;">
-                We'll notify you as soon as the verification is complete or if any additional details are needed. 🔐
+                We'll notify you as soon as the verification is complete or if any additional details are needed. 
             </p>
             
             <div style="background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 20px; margin: 25px 0; border-radius: 8px;">
@@ -636,7 +636,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             </div>
             
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Appreciate your patience and cooperation in the meantime. 🙏
+                Appreciate your patience and cooperation in the meantime. 
             </p>
         </div>
         

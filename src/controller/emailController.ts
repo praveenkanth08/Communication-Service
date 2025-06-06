@@ -50,7 +50,7 @@ const attachmentSchema = Joi.object({
 
 const templateDataSchema = Joi.object().pattern(
   Joi.string(),
- 
+
   Joi.alternatives().try(
     Joi.string(),
     Joi.number(),
@@ -213,44 +213,44 @@ export class EmailController {
           },
         };
       }
-
-    //  Authentication
-    //   const authResult = await this.authenticateRequest(
-    //     context.headers,
-    //     context.body
-    //   );
-    //   if (!authResult.authenticated) {
-    //     const statusCode =
-    //       authResult.error === "Unauthorized user"
-    //         ? 401
-    //         : authResult.error?.includes("Forbidden")
-    //         ? 403
-    //         : 500;
-    //     return {
-    //       statusCode,
-    //       body: {
-    //         success: false,
-    //         error: authResult.error,
-    //       },
-    //     };
-    //   }
+logger.info("Email body",context.body)
+      //Authentication
+      const authResult = await this.authenticateRequest(
+        context.headers,
+        context.body
+      );
+      if (!authResult.authenticated) {
+        const statusCode =
+          authResult.error === "Unauthorized user"
+            ? 401
+            : authResult.error?.includes("Forbidden")
+            ? 403
+            : 500;
+        return {
+          statusCode,
+          body: {
+            success: false,
+            error: authResult.error,
+          },
+        };
+      }
 
       // Validation
       const validationResult = this.validateRequest(
         emailSendSchema,
         context.body
       );
-      //   if (!validationResult.isValid) {
-      //     logger.warn("Request validation failed:", validationResult.error);
-      //     return {
-      //       statusCode: 400,
-      //       body: {
-      //         success: false,
-      //         error: "Validation failed",
-      //         details: validationResult.error,
-      //       },
-      //     };
-      //   }
+    //   if (!validationResult.isValid) {
+    //     logger.warn("Request validation failed:", validationResult.error);
+    //     return {
+    //       statusCode: 400,
+    //       body: {
+    //         success: false,
+    //         error: "Validation failed",
+    //         details: validationResult.error,
+    //       },
+    //     };
+    //   }
 
       // Send email
       logger.info("Email send request received", {

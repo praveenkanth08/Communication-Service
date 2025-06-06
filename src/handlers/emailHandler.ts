@@ -83,7 +83,6 @@ export class EmailHandler {
         plainTextContent = templateContent.plainText;
         templateAttachments = templateContent.templateAttachments || [];
 
-        logger.info(`Generated content using template: ${data.templateId}`);
       } catch (templateError) {
         logger.error(
           `Template generation failed for ${data.templateId}:`,
@@ -140,7 +139,6 @@ export class EmailHandler {
       ...(updatedAttachments.length > 0 && { attachments: updatedAttachments }),
     };
 
-    logger.info("Constructed email message:", emailMessage);
     logger.info(`Sending email to: ${data.to.join(", ")}`);
     logger.info("Email message structure:", {
       senderAddress: emailMessage.senderAddress,
