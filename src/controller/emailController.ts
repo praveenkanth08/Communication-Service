@@ -213,8 +213,8 @@ export class EmailController {
           },
         };
       }
-logger.info("Email body",context.body)
-      //Authentication
+
+      // Authentication
       const authResult = await this.authenticateRequest(
         context.headers,
         context.body

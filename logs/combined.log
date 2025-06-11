@@ -9259,3 +9259,80 @@
   "service": "email-service",
   "messageId": "e327d2ef-5685-4422-b81a-4696e35d19f1"
 }
+2025-06-11 09:58:37 [INFO]: Email body {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "templateData": {
+    "recipientName": "Sarah",
+    "url": "https://portal.incorp.com/kyc-review/abc123"
+  }
+}
+2025-06-11 09:58:37 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-11 09:58:37 [INFO]: Initiating email send for event: 7598f37b-26ac-4083-af5e-2d877e314ece {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-11 09:58:37 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-11 09:58:37 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-11 09:58:37 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-11 09:58:42 [INFO]: Email sent successfully with ID: 5b4868d0-34c1-40fc-963a-8fe0dd0496c6 {
+  "service": "email-service"
+}
+2025-06-11 09:58:42 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "7598f37b-26ac-4083-af5e-2d877e314ece"
+}
+2025-06-11 10:09:31 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-11 10:09:31 [INFO]: Initiating email send for event: 312c0931-2be2-4462-8e06-314caaee84c5 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-11 10:09:31 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-11 10:09:31 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-11 10:09:31 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-11 10:09:41 [INFO]: Email sent successfully with ID: 36d9eba2-716c-435e-a22b-fa8a9d1a77ca {
+  "service": "email-service"
+}
+2025-06-11 10:09:41 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "312c0931-2be2-4462-8e06-314caaee84c5"
+}
