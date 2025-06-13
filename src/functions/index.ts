@@ -4,8 +4,9 @@
 // Import all function definitions
 import "./emailSend";
 import "./emailBulkSend";
+import "./eventProcessor";
 
 // The functions are automatically registered when imported
 // because they call app.http() in their respective files
 
-console.log("Azure Functions registered: emailSend, emailBulkSend");
+console.log("Azure Functions registered: emailSend, emailBulkSend, eventProcessor");
