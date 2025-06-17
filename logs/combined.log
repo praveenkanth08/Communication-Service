@@ -9556,3 +9556,594 @@
   "service": "email-service",
   "messageId": "a83b93f6-1cd8-48ea-8ff0-c923ccca029f"
 }
+2025-06-17 16:42:54 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-17 16:42:54 [INFO]: Initiating email send for event: add1cf77-6112-4957-b7f5-0ee368cb355a {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-17 16:42:54 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 16:42:54 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 16:42:54 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 16:43:04 [INFO]: Email sent successfully with ID: f8d88a97-2e95-423b-b3db-18d3eef1daee {
+  "service": "email-service"
+}
+2025-06-17 16:43:04 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "add1cf77-6112-4957-b7f5-0ee368cb355a"
+}
+2025-06-17 16:44:17 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "hasCustomContent": false
+}
+2025-06-17 16:44:17 [INFO]: Initiating email send for event: 549f8382-f7af-40fa-9e06-e3378306b01b {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_VERIFIED",
+  "recipientCount": 1
+}
+2025-06-17 16:44:17 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 16:44:17 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 16:44:17 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 16:44:24 [INFO]: Email sent successfully with ID: ce375e37-918c-412c-9be4-c362cdfcebc8 {
+  "service": "email-service"
+}
+2025-06-17 16:44:24 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "549f8382-f7af-40fa-9e06-e3378306b01b"
+}
+2025-06-17 16:53:33 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-17 16:53:33 [INFO]: Initiating email send for event: b36edd43-39b7-420b-958e-7fd858d85630 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-17 16:53:33 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 16:53:33 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 16:53:33 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 16:53:45 [INFO]: Email sent successfully with ID: f9eead5b-f50e-42de-b20d-d90dbd3abc5c {
+  "service": "email-service"
+}
+2025-06-17 16:53:45 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "b36edd43-39b7-420b-958e-7fd858d85630"
+}
+2025-06-17 16:54:52 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "WELCOME",
+  "hasCustomContent": false
+}
+2025-06-17 16:54:52 [INFO]: Initiating email send for event: 4b1348b4-4d51-45de-8430-2331bfa025d8 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "WELCOME",
+  "recipientCount": 1
+}
+2025-06-17 16:54:52 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 16:54:52 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 16:54:52 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 16:55:01 [INFO]: Email sent successfully with ID: f6eccb19-25c5-4a3d-9696-46384b819660 {
+  "service": "email-service"
+}
+2025-06-17 16:55:01 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "4b1348b4-4d51-45de-8430-2331bfa025d8"
+}
+2025-06-17 17:31:44 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "hasCustomContent": false
+}
+2025-06-17 17:31:44 [INFO]: Initiating email send for event: bf7d83fe-4056-44e8-aea4-cc5208684256 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "recipientCount": 1
+}
+2025-06-17 17:31:44 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 17:31:44 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:31:44 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:31:51 [INFO]: Email sent successfully with ID: 43457643-ae37-4b2d-8efa-11a664f125ab {
+  "service": "email-service"
+}
+2025-06-17 17:31:51 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "bf7d83fe-4056-44e8-aea4-cc5208684256"
+}
+2025-06-17 17:32:00 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:32:00 [INFO]: Initiating email send for event: ad262de2-634e-4281-95f8-73e6e7f51ea8 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-17 17:32:00 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:32:00 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:32:04 [INFO]: Email sent successfully with ID: d06e07bf-29cf-4035-b9f7-3444600315da {
+  "service": "email-service"
+}
+2025-06-17 17:32:04 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "ad262de2-634e-4281-95f8-73e6e7f51ea8"
+}
+2025-06-17 17:47:26 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:47:26 [INFO]: Initiating email send for event: cad60e6a-2cca-4bfd-af18-aa36687f8e58 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-17 17:47:26 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 17:47:26 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:47:26 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:47:30 [INFO]: Email sent successfully with ID: bba07f84-54b4-4a02-b18e-5f46791de3e2 {
+  "service": "email-service"
+}
+2025-06-17 17:47:30 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "cad60e6a-2cca-4bfd-af18-aa36687f8e58"
+}
+2025-06-17 17:47:36 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "hasCustomContent": false
+}
+2025-06-17 17:47:36 [INFO]: Initiating email send for event: c8396239-3d47-42b5-aa81-05e923f584ee {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "recipientCount": 1
+}
+2025-06-17 17:47:36 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:47:36 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:47:41 [INFO]: Email sent successfully with ID: c5858823-2958-4c60-93fc-86dbaea22486 {
+  "service": "email-service"
+}
+2025-06-17 17:47:41 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "c8396239-3d47-42b5-aa81-05e923f584ee"
+}
+2025-06-17 17:47:45 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:47:45 [INFO]: Initiating email send for event: e5af53f9-2487-4e0e-a907-a75378bafd67 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-17 17:47:45 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:47:45 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:47:54 [INFO]: Email sent successfully with ID: 9bbe1f39-0810-46cb-8403-de352c8e2d96 {
+  "service": "email-service"
+}
+2025-06-17 17:47:54 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "e5af53f9-2487-4e0e-a907-a75378bafd67"
+}
+2025-06-17 17:49:03 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:49:03 [INFO]: Initiating email send for event: 0bc5fce5-a3d9-4367-ac47-a8efd50a631b {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-17 17:49:03 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:49:03 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:49:10 [INFO]: Email sent successfully with ID: 1f8596f2-88b0-45dc-9d39-fb796fb8874c {
+  "service": "email-service"
+}
+2025-06-17 17:49:10 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "0bc5fce5-a3d9-4367-ac47-a8efd50a631b"
+}
+2025-06-17 17:49:21 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:49:21 [INFO]: Initiating email send for event: c244e81a-e775-4e6c-9904-5563bc43e066 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-17 17:49:21 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:49:21 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:49:26 [INFO]: Email sent successfully with ID: ecba37fe-f226-4379-b7d3-cddd80776703 {
+  "service": "email-service"
+}
+2025-06-17 17:49:26 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "c244e81a-e775-4e6c-9904-5563bc43e066"
+}
+2025-06-17 17:49:30 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED_INTERNAL_AGENT",
+  "hasCustomContent": false
+}
+2025-06-17 17:49:30 [INFO]: Initiating email send for event: bc4de369-d45d-4c74-bbb8-73629d820551 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-17 17:49:30 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:49:30 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:49:35 [INFO]: Email sent successfully with ID: 8c3e7e79-586d-4914-902e-27cd12adebf4 {
+  "service": "email-service"
+}
+2025-06-17 17:49:35 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "bc4de369-d45d-4c74-bbb8-73629d820551"
+}
+2025-06-17 17:49:41 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_SUBMITED_INTERNAL_AGENT",
+  "hasCustomContent": false
+}
+2025-06-17 17:49:41 [INFO]: Initiating email send for event: d758c6e8-80f3-4d1c-9cb5-80bb5f9e2d3d {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_SUBMITED_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-17 17:49:41 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:49:41 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:49:43 [INFO]: Email sent successfully with ID: dcd90418-b07a-4737-9cca-16bc78495849 {
+  "service": "email-service"
+}
+2025-06-17 17:49:43 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "d758c6e8-80f3-4d1c-9cb5-80bb5f9e2d3d"
+}
+2025-06-17 17:52:51 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "hasCustomContent": false
+}
+2025-06-17 17:52:51 [INFO]: Initiating email send for event: 649e42fa-1a11-4d35-b23f-349a6e7390f9 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_WELCOME_EMAIL",
+  "recipientCount": 1
+}
+2025-06-17 17:52:51 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 17:52:51 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:52:51 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:52:54 [INFO]: Email sent successfully with ID: 75f33565-4005-4cd8-8e41-7864cf709721 {
+  "service": "email-service"
+}
+2025-06-17 17:52:54 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "649e42fa-1a11-4d35-b23f-349a6e7390f9"
+}
+2025-06-17 17:52:57 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:52:57 [INFO]: Initiating email send for event: f334f942-116f-47a7-8dc7-1d742226f629 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-17 17:52:57 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:52:57 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:53:02 [INFO]: Email sent successfully with ID: 9df72766-80ab-43e1-9434-5ad937612315 {
+  "service": "email-service"
+}
+2025-06-17 17:53:02 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "f334f942-116f-47a7-8dc7-1d742226f629"
+}
+2025-06-17 17:53:05 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:53:05 [INFO]: Initiating email send for event: 29c31ea5-59d8-4ac9-bf98-6178c7473839 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-17 17:53:05 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:53:05 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:53:10 [INFO]: Email sent successfully with ID: 48bb1b2f-cc3a-4ba8-bc38-ff4acf87038c {
+  "service": "email-service"
+}
+2025-06-17 17:53:10 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "29c31ea5-59d8-4ac9-bf98-6178c7473839"
+}
+2025-06-17 17:53:13 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-17 17:53:13 [INFO]: Initiating email send for event: 4351e577-4b40-451a-af39-4e651d78449c {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-17 17:53:13 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:53:13 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:53:18 [INFO]: Email sent successfully with ID: 3607f224-d1d2-44ec-8ddc-992dccb979c8 {
+  "service": "email-service"
+}
+2025-06-17 17:53:18 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "4351e577-4b40-451a-af39-4e651d78449c"
+}
+2025-06-17 17:53:25 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED_INTERNAL_AGENT",
+  "hasCustomContent": false
+}
+2025-06-17 17:53:25 [INFO]: Initiating email send for event: a068fed4-3add-46d9-bb8c-05693133da30 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-17 17:53:25 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:53:25 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:53:33 [INFO]: Email sent successfully with ID: bda12108-f77d-4d89-81e8-3aaa8a12d3e9 {
+  "service": "email-service"
+}
+2025-06-17 17:53:33 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "a068fed4-3add-46d9-bb8c-05693133da30"
+}
+2025-06-17 17:54:03 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenusain111@gmail.com"
+  ],
+  "templateId": "ONBOARDING_SUBMITED_INTERNAL_AGENT",
+  "hasCustomContent": false
+}
+2025-06-17 17:54:03 [INFO]: Initiating email send for event: a3ac6d2d-af8c-44cb-91e0-8fb254b034cb {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_SUBMITED_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-17 17:54:03 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-17 17:54:03 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-17 17:54:15 [INFO]: Email sent successfully with ID: d43d3fa8-583d-4859-addd-40a266a81d6b {
+  "service": "email-service"
+}
+2025-06-17 17:54:15 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "a3ac6d2d-af8c-44cb-91e0-8fb254b034cb"
+}
