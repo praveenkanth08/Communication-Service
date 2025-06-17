@@ -394,7 +394,11 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
         <!-- Main Content -->
         <div style="padding: 30px;">
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                ${data?.recipientName ? `Hi <strong>${data?.recipientName}</strong>,` : "Hi there,"} 
+                ${
+                  data?.recipientName
+                    ? `Hi <strong>${data?.recipientName}</strong>,`
+                    : "Hi there,"
+                } 
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
@@ -429,8 +433,14 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
         <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
            <p style="margin: 0 0 15px 0;">This is an automated message, Please do not reply to this email.</p>
             <div style="margin-top: 15px;">
-                <p style="margin: 0 0 10px 0;">&copy; 2025 ${data?.companyName || "InCorp"}. All rights reserved.</p>
-                ${data?.companyAddress ? `<p style="margin: 0;">${data?.companyAddress}</p>` : `<p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>`}
+                <p style="margin: 0 0 10px 0;">&copy; 2025 ${
+                  data?.companyName || "InCorp"
+                }. All rights reserved.</p>
+                ${
+                  data?.companyAddress
+                    ? `<p style="margin: 0;">${data?.companyAddress}</p>`
+                    : `<p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>`
+                }
             </div>
         </div>
     </div>
@@ -684,6 +694,122 @@ ${data.companyName || "InCorp"} Team
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       `,
+      })
+    );
+
+    this.templates.set(
+      EmailTemplate.KYC_FOLLOWUP,
+      (
+        data: {
+          recipientName?: string;
+          companyName?: string;
+          logoUrl?: string;
+          url?: string;
+          supportEmail?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `Just a Quick Reminder to Complete Your KYC`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Reminder - Complete Your Process</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
+             <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" /> 
+            <h1 style="color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;">Just a Quick Reminder 📝</h1>
+        </div>
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Hi <strong>${
+                  data?.recipientName ? data?.recipientName : "[Customer Name]"
+                }</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                We noticed you started your KYC process but didn't get a chance to finish it. No worries — it happens!
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;">
+                To continue where you left off, just click the button below. It only takes a few minutes to complete, and it's an essential step to get you fully onboarded.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="${
+                  data.url
+                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                     Resume KYC Submission 
+                </a>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                If you need help or have any questions, our team is just a message away.
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 25px 0 0 0; line-height: 1.6;">
+                Looking forward to having you all set up!
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards, 
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data?.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+        <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
+            <p style="margin: 0 0 15px 0;">This is an automated reminder. Please do not reply to this email.</p>
+            <div style="margin-top: 15px;">
+                <p style="margin: 0 0 10px 0;">&copy; 2025 ${
+                  data?.companyName || "InCorp"
+                }. All rights reserved.</p>
+                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>`,
+        plainText: `
+Just a Quick Reminder to Complete Your KYC
+
+Hi ${data.recipientName ? data.recipientName : "[Customer Name]"},
+
+We noticed you started your KYC process but didn't get a chance to finish it. No worries — it happens!
+
+To continue where you left off, just click the link below. It only takes a few minutes to complete, and it's an essential step to get you fully onboarded.
+
+${
+  data.url
+    ? `Resume KYC Submission: ${data.url}`
+    : "[Resume KYC Submission Link]"
+}
+
+If you need help or have any questions, our team is just a message away.
+
+Looking forward to having you all set up!
+
+Warm regards,
+${data.companyName || "[Your Company Name]"} Team
+
+© ${new Date().getFullYear()} ${
+          data.companyName || "InCorp"
+        }. All rights reserved.
+${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
       })
     );
   }

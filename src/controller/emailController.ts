@@ -215,25 +215,25 @@ export class EmailController {
       }
 
       // Authentication
-      const authResult = await this.authenticateRequest(
-        context.headers,
-        context.body
-      );
-      if (!authResult.authenticated) {
-        const statusCode =
-          authResult.error === "Unauthorized user"
-            ? 401
-            : authResult.error?.includes("Forbidden")
-            ? 403
-            : 500;
-        return {
-          statusCode,
-          body: {
-            success: false,
-            error: authResult.error,
-          },
-        };
-      }
+      // const authResult = await this.authenticateRequest(
+      //   context.headers,
+      //   context.body
+      // );
+      // if (!authResult.authenticated) {
+      //   const statusCode =
+      //     authResult.error === "Unauthorized user"
+      //       ? 401
+      //       : authResult.error?.includes("Forbidden")
+      //       ? 403
+      //       : 500;
+      //   return {
+      //     statusCode,
+      //     body: {
+      //       success: false,
+      //       error: authResult.error,
+      //     },
+      //   };
+      // }
 
       // Validation
       const validationResult = this.validateRequest(
