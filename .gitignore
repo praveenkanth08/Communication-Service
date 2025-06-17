@@ -49,4 +49,6 @@ __azurite_db*__.json
 
 
 #npm
-.npmrc/
+.npmrc
+
+logs
