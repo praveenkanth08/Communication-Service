@@ -435,10 +435,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <!-- Header -->
-        <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
-             <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" /> 
-            <h1 style="color: #2f465a; margin: 0; font-size: 24px; font-weight: normal;">Just a Quick Reminder 📝</h1>
-        </div>
+        ${header()}
         
         <!-- Main Content -->
         <div style="padding: 30px;">
@@ -483,15 +480,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             </p>
         </div>
         
-        <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
-            <p style="margin: 0 0 15px 0;">This is an automated reminder. Please do not reply to this email.</p>
-            <div style="margin-top: 15px;">
-                <p style="margin: 0 0 10px 0;">&copy; 2025 ${
-                  data?.companyName || "InCorp"
-                }. All rights reserved.</p>
-                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
-            </div>
-        </div>
+         ${IncorpFooter(data?.companyName)}
     </div>
 </body>
 </html>`,
@@ -549,9 +538,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <!-- Logo Header - Centered and Compact -->
-        <div style="padding: 15px 30px; background-color: #ffffff; text-align: center; border-bottom: 1px solid #eeeeee;">
-           <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
-        </div>
+        ${header()}
         
         <!-- Main Blue Header -->
         <div style="background-color: #2f465a; color: #ffffff; padding: 40px 30px;">
@@ -587,13 +574,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
         </div>
         
         <!-- Email Footer -->
-        <div style="font-size: 12px; text-align: center; color: #888888; padding: 20px 30px; border-top: 1px solid #eeeeee; background-color: #f9f9f9;">
-            <p style="margin: 0 0 10px 0;">This is an automated message, Please do not reply to this email.</p>
-            <p style="margin: 0 0 10px 0;">&copy; 2025 ${
-              data?.companyName || "InCorp"
-            }. All rights reserved.</p>
-            <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
-        </div>
+        ${IncorpFooter(data?.companyName)}
     </div>
 </body>
 </html>`,
@@ -620,16 +601,16 @@ ${data.companyName || "InCorp"} Team
       })
     );
 
-    // Need clarification Template
+    // Preliminary KYC Need Clarifications
     this.templates.set(
-      EmailTemplate.NEED_CLARIFICATION,
+      EmailTemplate.PRELIM_KYC_CLARIFICATIONS,
       (data: {
         recipientName?: string;
         companyName?: string;
         clarificationNotes?: string | string[] | Record<string, string>;
         url?: string;
       }) => ({
-        subject: `KYC Clarification Required - ${data.companyName || "InCorp"}`,
+        subject: `KYC Clarification Required`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -640,12 +621,7 @@ ${data.companyName || "InCorp"} Team
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
     <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
         <!-- Header -->
-        <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
-           <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
-            <h1 style="color: #2f465a; margin: 0; font-size: 22px; font-weight: normal;">
-                Preliminary KYC Review Required 📋
-            </h1>
-        </div>
+         ${header()}
         
         <!-- Main Content -->
         <div style="padding: 30px;">
@@ -710,6 +686,121 @@ ${data.companyName || "InCorp"} Team
                 <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
             </div>
         </div>
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC CLARIFICATION REQUIRED
+
+Hello ${data.recipientName || "User"},
+
+Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
+
+CLARIFICATION NOTES:
+${
+  typeof data.clarificationNotes === "string"
+    ? data.clarificationNotes
+    : Array.isArray(data.clarificationNotes)
+    ? data.clarificationNotes.map((note) => `- ${note}`).join("\n")
+    : typeof data.clarificationNotes === "object" &&
+      data.clarificationNotes !== null
+    ? Object.entries(data.clarificationNotes)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join("\n")
+    : "Please review your submitted information."
+}
+
+To review and update your KYC information, please visit: ${
+          data.url || "your account portal"
+        }
+
+To keep the process on track, we encourage you to complete the updates as soon as possible.
+
+If you require any further clarification, please feel free to contact us.
+
+Best regards,
+${data.companyName || "InCorp"} Team
+  `,
+      })
+    );
+   
+    // Onboarding Need Clarifications
+    this.templates.set(
+      EmailTemplate.ONBOARDING_CLARIFICATIONS,
+      (data: {
+        recipientName?: string;
+        companyName?: string;
+        clarificationNotes?: string | string[] | Record<string, string>;
+        url?: string;
+      }) => ({
+        subject: `Onboarding Clarification Required`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preliminary KYC Form - Clarification Required</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+         ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${
+                  data.recipientName || "[Customer Name]"
+                }</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
+            </p>
+
+            <!-- Dynamic Clarification Notes Section -->
+            <div style="margin: 25px 0;">
+                <h3 style="color: #2f465a; font-size: 18px; margin: 0 0 15px 0; font-weight: 600;">
+                    📝 Clarification Notes:
+                </h3>
+                
+                <div style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
+                    ${this.renderClarificationNotes(data.clarificationNotes)}
+                </div>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
+                To review and update your KYC information, kindly click the button below:
+            </p>
+            
+            <!-- CTA Button -->
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="${
+                  data.url || "#"
+                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    🔗 Review & Update Your KYC
+                </a>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 15px 0; line-height: 1.6;">
+              To keep the process on track, we encourage you to complete the updates as soon as possible.
+            </p>
+            <p style="font-size: 16px; color: #2f465a; margin: 15px 0 0 0; line-height: 1.6;">If you require any further clarification, please feel free to contact us</p>
+            
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 0px 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+        <!-- Footer Information -->
+        ${IncorpFooter()}
     </div>
 </body>
 </html>`,
