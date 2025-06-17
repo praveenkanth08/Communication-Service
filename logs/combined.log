@@ -10147,3 +10147,68 @@
   "service": "email-service",
   "messageId": "a3ac6d2d-af8c-44cb-91e0-8fb254b034cb"
 }
+2025-06-17 19:36:21 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia",
+    "aswin@smartcursors.com"
+  ],
+  "templateId": "BLUEMEG_FILE_PROCESSING_REPORT",
+  "hasCustomContent": false
+}
+2025-06-17 19:36:21 [INFO]: Initiating email send for event: 30bc9e4b-4e89-4ae2-9dc9-85b74bfbde90 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "BLUEMEG_FILE_PROCESSING_REPORT",
+  "recipientCount": 2
+}
+2025-06-17 19:36:21 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-17 19:36:21 [INFO]: Sending email to: praveenkanthk@incorp.asia, aswin@smartcursors.com {
+  "service": "email-service"
+}
+2025-06-17 19:36:21 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 2,
+  "hasAttachments": false
+}
+2025-06-17 19:36:29 [INFO]: Email sent successfully with ID: d8e03158-84ac-4212-b4cf-872e78b749b8 {
+  "service": "email-service"
+}
+2025-06-17 19:36:29 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "30bc9e4b-4e89-4ae2-9dc9-85b74bfbde90"
+}
+2025-06-17 19:41:23 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia",
+    "aswin@smartcursors.com"
+  ],
+  "templateId": "BLUEMEG_FILE_PROCESSING_REPORT",
+  "hasCustomContent": false
+}
+2025-06-17 19:41:23 [INFO]: Initiating email send for event: 77e1fed1-05a5-47fa-892a-403fd04a4468 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "BLUEMEG_FILE_PROCESSING_REPORT",
+  "recipientCount": 2
+}
+2025-06-17 19:41:23 [INFO]: Sending email to: praveenkanthk@incorp.asia, aswin@smartcursors.com {
+  "service": "email-service"
+}
+2025-06-17 19:41:23 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 2,
+  "hasAttachments": false
+}
+2025-06-17 19:41:30 [INFO]: Email sent successfully with ID: 9eb807fd-7255-4349-9a9e-56a206bb8adc {
+  "service": "email-service"
+}
+2025-06-17 19:41:30 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "77e1fed1-05a5-47fa-892a-403fd04a4468"
+}
