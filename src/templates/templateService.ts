@@ -1061,131 +1061,94 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     this.templates.set(
       EmailTemplate.BLUEMEG_FILE_PROCESSING_REPORT,
       (data: {
-        recipientName?: string;
-        logoUrl?: string;
-        companyName?: string;
         reportDate?: string;
-        processingTime?: string;
         totalFiles?: string;
         successCount?: string;
         errorCount?: string;
-        companyAddress?: string;
         csvAttached?: string;
-        nextRunTime?: string;
-        reportId?: string;
+        companyAddress?: string;
       }) => ({
         subject: `BlueMeg File Processing Report`,
         html: `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BlueMeg File Processing Report - ${
-    data.companyName || "BlueMeg Orchestrator"
-  }</title>
-</head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0;">
-  <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff;">
-    <!-- Header Section -->
-    <div style="text-align: center; margin-bottom: 20px;">
-         <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
-    </div>
+              <html lang="en">
 
-    <!-- Report Header -->
-    <div style="padding: 20px; background-color: #f7f7f7; border-radius: 5px; margin-bottom: 20px;">
-      <h2 style="color: #2c5aa0; margin-top: 0;">File Processing Report</h2>
-      ${data.recipientName ? `<p>Dear ${data.recipientName},</p>` : ""}
-      <p>
-        This is your automated file processing report for the BlueMeg File Orchestrator service.
-        Below you'll find a summary of all file operations completed during the processing cycle.
-      </p>
-      <div style="background-color: #ffffff; padding: 15px; border-radius: 3px; margin: 15px 0;">
-        <strong>Processing Details:</strong>
+                <head>
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <title>BlueMeg File Bulk Uploader Report</title>
+                </head>
 
-        <span style="color: #666;">Report Date:</span> ${
-          data.reportDate || new Date().toLocaleDateString()
-        }
+                <body style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0; background-color: #f5f7fa;">
+                    <div style="max-width: 650px; margin: 0 auto; padding: 0; background-color: #ffffff; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
+                        <!-- Header Section -->
+                        <div style="text-align: center; padding: 25px 20px; background-color: #1976d2; margin-bottom: 0;">
+                            <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 180px; height: auto;" />
+                        </div>
 
-        <span style="color: #666;">Processing Time:</span> ${
-          data.processingTime || "N/A"
-        }
+                        <!-- Report Header -->
+                        <div style="padding: 30px 30px 20px; background-color: #ffffff; margin-bottom: 0;">
+                            <h2 style="color: #2c5aa0; margin-top: 0; font-size: 24px; border-bottom: 2px solid #eaeaea; padding-bottom: 15px;">File Uploader Service Report</h2>
+                            <p style="font-size: 16px; color: #555;">Dear Team,</p>
+                            <p style="font-size: 16px; color: #555; margin-bottom: 20px;">
+                                This is your automated report for the BlueMeg File Uploader service. Below you'll find a summary of all file operations completed during the processing cycle.
+                            </p>
+                            <div style="background-color: #f7f9fc; padding: 20px; border-radius: 6px; margin: 15px 0; border-left: 4px solid #2c5aa0;">
+                                <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #666; font-weight: bold; width: 40%;">Report Date:</td>
+                                        <td style="padding: 8px 0;">${data.reportDate || new Date().toLocaleDateString()}</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 8px 0; color: #666; font-weight: bold;">Total Files Processed:</td>
+                                        <td style="padding: 8px 0;">${data.totalFiles || 0}</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
 
-        <span style="color: #666;">Total Files Processed:</span> ${
-          data.totalFiles || 0
-        }
-      </div>
-    </div>
+                        <!-- Summary Statistics -->
+                        <div style="padding: 0 30px 20px; background-color: #ffffff;">
+                            <h3 style="color: #2c5aa0; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; font-size: 20px;">Processing Summary</h3>
+                            <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
+                                <div style="flex: 1; min-width: 150px; background-color: #e8f5e9; padding: 20px; border-radius: 6px; text-align: center; border-bottom: 4px solid #4caf50; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                    <div style="font-size: 32px; font-weight: bold; color: #2e7d32; margin-bottom: 5px;">${data.successCount || 0}</div>
+                                    <div style="color: #2e7d32; font-size: 15px; font-weight: 500;">Successfully Processed</div>
+                                </div>
+                                <div style="flex: 1; min-width: 150px; background-color: #ffebee; padding: 20px; border-radius: 6px; text-align: center; border-bottom: 4px solid #ef5350; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+                                    <div style="font-size: 32px; font-weight: bold; color: #c62828; margin-bottom: 5px;">${data.errorCount || 0}</div>
+                                    <div style="color: #c62828; font-size: 15px; font-weight: 500;">Failed Processing</div>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- Summary Statistics -->
-    <div style="margin-bottom: 20px;">
-      <h3 style="color: #2c5aa0; border-bottom: 2px solid #2c5aa0; padding-bottom: 5px;">Processing Summary</h3>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-        <div style="flex: 1; min-width: 150px; background-color: #d4edda; padding: 15px; border-radius: 5px; text-align: center; border-left: 4px solid #28a745;">
-          <div style="font-size: 24px; font-weight: bold; color: #155724;">${
-            data.successCount || 0
-          }</div>
-          <div style="color: #155724; font-size: 14px;">Successfully Processed</div>
-        </div>
-        <div style="flex: 1; min-width: 150px; background-color: #f8d7da; padding: 15px; border-radius: 5px; text-align: center; border-left: 4px solid #dc3545;">
-          <div style="font-size: 24px; font-weight: bold; color: #721c24;">${
-            data.errorCount || 0
-          }</div>
-          <div style="color: #721c24; font-size: 14px;">Failed Processing</div>
-        </div>
-      </div>
-    </div>
+                        <!-- CSV Attachment Notice -->
+                        ${data.csvAttached ? `
+                        <div style="padding: 0 30px 30px; background-color: #ffffff;">
+                            <div style="background-color: #e3f2fd; border-radius: 6px; padding: 20px; border-left: 4px solid #1976d2;">
+                                <h4 style="color: #0d47a1; margin-top: 0; display: flex; align-items: center; font-size: 18px;">
+                                    <span style="margin-right: 10px;">📊</span> Detailed Report Attachment
+                                </h4>
+                                <p style="margin-bottom: 0; color: #0d47a1; font-size: 15px;">
+                                    A detailed CSV report containing all file processing information has been attached to this email. This report includes complete processing logs, timestamps, and additional technical details. An additional CSV file is also attached containing only the
+                                    failed files and their paths.
+                                </p>
+                            </div>
+                        </div>
+                        ` : ""}
 
-
-
-    <!-- CSV Attachment Notice -->
-    ${
-      data.csvAttached
-        ? `
-    <div style="background-color: #e7f3ff; border: 1px solid #b8daff; border-radius: 5px; padding: 15px; margin-bottom: 20px;">
-      <h4 style="color: #0c5460; margin-top: 0;">📊 Detailed Report Attachment</h4>
-      <p style="margin-bottom: 0; color: #0c5460;">
-        A detailed CSV report containing all file processing information has been attached to this email.
-        This report includes complete processing logs, timestamps, and additional technical details.
-      </p>
-    </div>
-    `
-        : ""
-    }
-
-    <!-- Next Run Information -->
-    ${
-      data.nextRunTime
-        ? `
-    <div style="background-color: #fff3cd; border: 1px solid #ffeaa7; border-radius: 5px; padding: 15px; margin-bottom: 20px;">
-      <h4 style="color: #856404; margin-top: 0;">⏰ Next Scheduled Run</h4>
-      <p style="margin-bottom: 0; color: #856404;">
-        The next file processing cycle is scheduled for: <strong>${data.nextRunTime}</strong>
-      </p>
-    </div>
-    `
-        : ""
-    }
-
-
-
-    <!-- Footer -->
-    <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #dee2e6; padding-top: 20px;">
-      <p>&copy; ${new Date().getFullYear()} ${
-          data.companyName || "BlueMeg File Orchestrator"
-        }. All rights reserved.</p>
-      <p>This is an automated report generated by the BlueMeg File Orchestrator service.</p>
-      ${data.companyAddress ? `<p>${data.companyAddress}</p>` : "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      <p style="font-size: 10px; color: #adb5bd;">
-        Report ID: ${
-          data.reportId || Math.random().toString(36).substr(2, 9).toUpperCase()
-        } | 
-        Generated: ${new Date().toISOString()}
-      </p>
-    </div>
-  </div>
-</body>
-</html>
- `,
+                        <!-- Footer -->
+                        <div style="font-size: 13px; text-align: center; color: #757575; margin-top: 0; border-top: 1px solid #eaeaea; padding: 25px 30px; background-color: #f7f9fc;">
+                            <p style="margin-bottom: 10px;">&copy; ${new Date().getFullYear()} BlueMeg File Orchestrator. All rights reserved.</p>
+                            <p style="margin-bottom: 10px;">This is an automated report generated by the BlueMeg File Orchestrator service.</p>
+                            <p style="margin-bottom: 10px;">${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}</p>
+                            <p style="font-size: 11px; color: #9e9e9e; margin-bottom: 0;">
+                                Generated: ${new Date().toISOString()}
+                            </p>
+                        </div>
+                    </div>
+                </body>
+              </html>
+            `,
         plainText: `
     `,
       })
