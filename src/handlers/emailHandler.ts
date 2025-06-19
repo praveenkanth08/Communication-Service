@@ -115,7 +115,6 @@ export class EmailHandler {
       })) || [];
 
     const updatedAttachments = [...attachments, ...templateAttachments];
-    console.log("Updated attachments:", updatedAttachments);
     // Build email message
     const emailMessage = {
       senderAddress: data.from,
