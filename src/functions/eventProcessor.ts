@@ -8,7 +8,7 @@ export const EmailProcessor: ServiceBusQueueHandler = async (
   try {
    
     context.log(`Processing email...`);
-    context.log(`Message: ${JSON.stringify(message)}`);
+    context.log(`My Message ${JSON.stringify(message)}`);
     
     if(message.body) {
       const emailServiceInstance = new EmailService();

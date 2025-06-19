@@ -32,6 +32,7 @@ export class EmailHandler {
     try {
       // Initialize client when first needed
       this.initializeEmailClient();
+
       switch (event.type) {
         case EventType.EMAIL_SEND:
           await this.sendEmail(event);
@@ -82,7 +83,6 @@ export class EmailHandler {
         htmlContent = templateContent.html;
         plainTextContent = templateContent.plainText;
         templateAttachments = templateContent.templateAttachments || [];
-
       } catch (templateError) {
         logger.error(
           `Template generation failed for ${data.templateId}:`,
