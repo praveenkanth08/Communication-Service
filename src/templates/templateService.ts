@@ -408,6 +408,94 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
+    // Prelim KYC Failure
+    this.templates.set(
+      EmailTemplate.PRELIM_KYC_FAILURE,
+      (
+        data: {
+          recipientName?: string;
+          companyName?: string;
+          logoUrl?: string;
+          supportEmail?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Verification - Status`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Update - ${data?.companyName || "InCorp"}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+       ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                ${
+                  data?.recipientName
+                    ? `Dear <strong>${data?.recipientName}</strong>,`
+                    : "Dear User,"
+                } 
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+            </p>
+            
+           <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+  If you have any questions or require further assistance, please reach out to our support team through your usual point of contact.
+</p>
+  
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards, 
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data?.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+       ${IncorpFooter(data?.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC Verification - Update Required
+
+${data?.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
+
+We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+
+Our team will contact you shortly regarding the next steps and requirements to complete your verification process.
+
+If you have any immediate questions, please don't hesitate to contact our support team at ${
+          data?.supportEmail || "notifications@incorp.asia"
+        }.
+
+We appreciate your patience and cooperation in completing this verification process.
+
+Best regards,
+${data?.companyName || "InCorp"} Team
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
+      })
+    );
+
     // Dropoff
     this.templates.set(
       EmailTemplate.FOLLOWUP,

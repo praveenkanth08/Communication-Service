@@ -13109,3 +13109,128 @@
 2025-06-19 10:59:15 [INFO]: Email sent successfully with ID: 3515e5de-b8a2-4405-9d6b-5439aa4837b5 {
   "service": "email-service"
 }
+2025-06-19 11:01:50 [INFO]: Initiating email send for event: 4f78ff9a-e410-4903-acca-9f2254e22ec3 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-19 11:01:50 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-19 11:01:50 [INFO]: Sending email to: maheshwar@incorp.asia {
+  "service": "email-service"
+}
+2025-06-19 11:01:50 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false,
+  "hasCC": false
+}
+2025-06-19 11:01:58 [INFO]: Email sent successfully with ID: 1e8481e8-582d-4b46-80a2-8ff19ed27b17 {
+  "service": "email-service"
+}
+2025-06-19 11:15:56 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-19 11:15:56 [INFO]: Initiating email send for event: 88cac339-7ac2-422d-bc04-a4c6431dc554 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-19 11:15:56 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-19 11:15:56 [ERROR]: Template generation failed for PRELIM_KYC_FAILURE: Template PRELIM_KYC_FAILURE not found {
+  "service": "email-service",
+  "stack": "Error: Template PRELIM_KYC_FAILURE not found\n    at EmailTemplateService.generateEmailContent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\templates\\templateService.js:1144:19)\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:71:62)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-19 11:15:56 [ERROR]: Failed to handle email event 88cac339-7ac2-422d-bc04-a4c6431dc554: Template PRELIM_KYC_FAILURE failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template PRELIM_KYC_FAILURE failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:81:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-19 11:15:56 [ERROR]: Failed to send email: Template PRELIM_KYC_FAILURE failed and no fallback content provided {
+  "service": "email-service",
+  "stack": "Error: Template PRELIM_KYC_FAILURE failed and no fallback content provided\n    at EmailHandler.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:81:27)\n    at EmailHandler.handleEmailEvent (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\handlers\\emailHandler.js:36:32)\n    at EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:66:37)\n    at EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:52)\n    at emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:48)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-19 11:15:56 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Template PRELIM_KYC_FAILURE failed and no fallback content provided"
+}
+2025-06-19 11:16:24 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-19 11:16:24 [INFO]: Initiating email send for event: deb5b7bb-2e20-4247-9b5a-8d7cd2af81f7 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-19 11:16:24 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-19 11:16:24 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-19 11:16:24 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-19 11:16:30 [INFO]: Email sent successfully with ID: 0d0a74c8-1fe6-41de-9bb8-06cefdf7a80e {
+  "service": "email-service"
+}
+2025-06-19 11:16:30 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "deb5b7bb-2e20-4247-9b5a-8d7cd2af81f7"
+}
+2025-06-19 11:20:10 [ERROR]: Email validation failed: {
+  "0": "Invalid CC email address at position 1: ",
+  "service": "email-service"
+}
+2025-06-19 11:21:07 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-19 11:21:07 [INFO]: Initiating email send for event: 304d20ab-1452-48ca-bafb-7e2baea8654d {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-19 11:21:07 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-19 11:21:07 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-19 11:21:07 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-19 11:21:11 [INFO]: Email sent successfully with ID: d7769179-715d-45c5-8c8a-bad01377fc67 {
+  "service": "email-service"
+}
+2025-06-19 11:21:11 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "304d20ab-1452-48ca-bafb-7e2baea8654d"
+}
