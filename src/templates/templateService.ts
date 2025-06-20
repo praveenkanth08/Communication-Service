@@ -1376,6 +1376,115 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
+        // onboarding submission internal agent template
+    this.templates.set(
+      EmailTemplate.ONBOARDING_SUBMITTED_KYC_INTERNAL_AGENT,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          csRecipientName?: string;
+          url?: string;
+          companyName?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Processing Request – ${data?.clientName || "Client"}`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Processing Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong> KYC team</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Please proceed with initiating the CS process for the following client:
+            </p>
+            
+            <div style=" margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+                <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                    UBOs/Significant Controllers/Person having Executive Authority/Directors  Click here to review data provided by the client/ WORD doc
+                    
+                </p>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+            </p>
+            
+            <a href="${
+              data.url
+            }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                     Review KYC
+                </a>
+
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+CS Processing Request – ${data?.clientName || "Client"}
+
+Dear CS team,
+
+Please proceed with initiating the CS process for the following client:
+
+- Client Name: ${data?.clientName || "N/A"}
+- UBOs/Significant Controllers/Person having Executive Authority/Directors: ${
+          data?.url ||
+          "Click here to review data provided by the client/ WORD doc"
+        }
+
+Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+
+Please let me know if you require any additional information.
+
+Warm regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
+      })
+    );
+
     // bluemeg email template
     this.templates.set(
       EmailTemplate.BLUEMEG_FILE_PROCESSING_REPORT,
