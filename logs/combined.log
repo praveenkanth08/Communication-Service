@@ -13234,3 +13234,621 @@
   "service": "email-service",
   "messageId": "304d20ab-1452-48ca-bafb-7e2baea8654d"
 }
+2025-06-23 14:39:27 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-23 14:39:27 [ERROR]: Failed to send email: fetch failed {
+  "service": "email-service",
+  "stack": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:13510:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async getCosmosDocuments (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\utils\\fetchCosmosDocuments.js:7:22)\n    at async EmailService.sendEmail (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\services\\emailService.js:39:37)\n    at async EmailController.handleEmailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\controller\\emailController.js:181:28)\n    at async emailSend (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\dist\\functions\\emailSend.js:23:26)",
+  "cause": {
+    "library": "SSL routines",
+    "reason": "wrong version number",
+    "code": "ERR_SSL_WRONG_VERSION_NUMBER"
+  }
+}
+2025-06-23 14:39:27 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "fetch failed"
+}
+2025-06-23 15:25:45 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-23 15:25:47 [INFO]: Initiating email send for event: c10e2dfe-f94a-49bc-875a-fa9cbae97534 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-23 15:25:47 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 15:25:47 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 15:25:47 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-23 15:25:53 [INFO]: Email sent successfully with ID: 105812f9-e867-460e-81b3-a43d37687509 {
+  "service": "email-service"
+}
+2025-06-23 15:25:53 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "c10e2dfe-f94a-49bc-875a-fa9cbae97534"
+}
+2025-06-23 15:31:41 [INFO]: Initiating email send for event: ab65db65-4739-4fcd-ab55-031ad872c6dc {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 15:31:41 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 15:31:41 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-23 15:31:41 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false,
+  "hasCC": true
+}
+2025-06-23 15:31:48 [INFO]: Email sent successfully with ID: 75bc08b1-d843-4b47-be0a-2e1340ac9717 {
+  "service": "email-service"
+}
+2025-06-23 15:59:32 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-23 15:59:34 [INFO]: Initiating email send for event: 6a1c171e-8a6b-423f-aedf-0821386821de {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-23 15:59:34 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 15:59:34 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 15:59:34 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-23 15:59:45 [INFO]: Email sent successfully with ID: 17de83f2-3a61-460c-8159-69bef5e1814f {
+  "service": "email-service"
+}
+2025-06-23 15:59:45 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "6a1c171e-8a6b-423f-aedf-0821386821de"
+}
+2025-06-23 16:07:48 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_FAILURE",
+  "hasCustomContent": false
+}
+2025-06-23 16:07:53 [INFO]: Initiating email send for event: 4bf25d6d-ffa6-4663-9817-3323ebe32317 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_FAILURE",
+  "recipientCount": 1
+}
+2025-06-23 16:07:53 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:07:53 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:07:53 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-23 16:07:57 [INFO]: Email sent successfully with ID: d7ea8518-c2fd-4c15-bc06-bc30ed3ec89b {
+  "service": "email-service"
+}
+2025-06-23 16:07:57 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "4bf25d6d-ffa6-4663-9817-3323ebe32317"
+}
+2025-06-23 16:09:30 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:09:34 [INFO]: Initiating email send for event: 6297ef7b-49ce-4301-8cac-f6a3d693bdfa {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 16:09:34 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:09:34 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:09:34 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-23 16:09:36 [ERROR]: Failed to handle email event 6297ef7b-49ce-4301-8cac-f6a3d693bdfa: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:39:37 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "rkIVdfgzMEeSNIk1LH1B9Q.0",
+    "mise-correlation-id": "612e0654-ff03-4129-a73d-1f07076bf9a8",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T103934Z-16bcbdc6bd8vkx2jhC1MAAy3u80000000ggg00000000cf94",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:09:36 [ERROR]: Failed to send email: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:39:37 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "rkIVdfgzMEeSNIk1LH1B9Q.0",
+    "mise-correlation-id": "612e0654-ff03-4129-a73d-1f07076bf9a8",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T103934Z-16bcbdc6bd8vkx2jhC1MAAy3u80000000ggg00000000cf94",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:09:36 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Email payload must be less than 10 MB."
+}
+2025-06-23 16:11:06 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:11:11 [INFO]: Initiating email send for event: 7322326e-0991-4c03-b8a4-4a5f0d689778 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 16:11:11 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:11:11 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-23 16:11:16 [ERROR]: Failed to handle email event 7322326e-0991-4c03-b8a4-4a5f0d689778: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:41:16 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "zbGhMGeTqU6K3PQY6x9/IQ.0",
+    "mise-correlation-id": "3e34b88d-3c04-44e8-8d2c-13ec882195a8",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104112Z-16bcbdc6bd8hrkzlhC1MAAdchn0000000gf0000000008chu",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:11:16 [ERROR]: Failed to send email: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:41:16 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "zbGhMGeTqU6K3PQY6x9/IQ.0",
+    "mise-correlation-id": "3e34b88d-3c04-44e8-8d2c-13ec882195a8",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104112Z-16bcbdc6bd8hrkzlhC1MAAdchn0000000gf0000000008chu",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:11:16 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Email payload must be less than 10 MB."
+}
+2025-06-23 16:15:15 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:15:19 [INFO]: Initiating email send for event: d7c43da0-5e3f-4d31-bb35-b2e5a5da168e {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 16:15:19 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:15:19 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:15:19 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-23 16:15:22 [ERROR]: Failed to handle email event d7c43da0-5e3f-4d31-bb35-b2e5a5da168e: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:45:22 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "B6m/ln+Uj029GhCo5lypQw.0",
+    "mise-correlation-id": "47ffb5e0-f72e-4883-9dae-810dc96bb74b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104519Z-16bcbdc6bd8gxr69hC1MAAh3x80000000gdg000000003vsz",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:15:22 [ERROR]: Failed to send email: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:45:22 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "B6m/ln+Uj029GhCo5lypQw.0",
+    "mise-correlation-id": "47ffb5e0-f72e-4883-9dae-810dc96bb74b",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104519Z-16bcbdc6bd8gxr69hC1MAAh3x80000000gdg000000003vsz",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:15:22 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Email payload must be less than 10 MB."
+}
+2025-06-23 16:15:58 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:15:58 [INFO]: Initiating email send for event: ced351c3-924e-4131-a1b0-812875ffaaf0 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 16:15:58 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:15:58 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:15:58 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-23 16:16:05 [INFO]: Email sent successfully with ID: 2b93b236-51bd-407c-b37d-91ce3feddf29 {
+  "service": "email-service"
+}
+2025-06-23 16:16:05 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "ced351c3-924e-4131-a1b0-812875ffaaf0"
+}
+2025-06-23 16:16:33 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:16:33 [INFO]: Initiating email send for event: 141488d9-3a55-48a3-93e6-a53508266aeb {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-23 16:16:33 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:16:33 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:16:33 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false
+}
+2025-06-23 16:16:39 [INFO]: Email sent successfully with ID: a64e11e9-5d9d-425f-936c-f03720117c97 {
+  "service": "email-service"
+}
+2025-06-23 16:16:39 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "141488d9-3a55-48a3-93e6-a53508266aeb"
+}
+2025-06-23 16:16:55 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:17:03 [INFO]: Initiating email send for event: e7a88698-3c76-4178-966b-721710ed1469 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-23 16:17:03 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:17:03 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:17:03 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-23 16:17:05 [ERROR]: Failed to handle email event e7a88698-3c76-4178-966b-721710ed1469: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:47:06 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "mm57h1yLgUWK7xKjMz7B5g.0",
+    "mise-correlation-id": "27afac12-f725-4b34-a9d9-6eacf66a6e5d",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104703Z-16bcbdc6bd89skjmhC1MAAfrv80000000gf000000000h8bx",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:17:05 [ERROR]: Failed to send email: Email payload must be less than 10 MB. {
+  "service": "email-service",
+  "name": "RestError",
+  "code": "BadRequest",
+  "statusCode": 413,
+  "details": {
+    "xMsErrorCode": "BadRequest",
+    "date": "Mon, 23 Jun 2025 10:47:06 GMT",
+    "content-type": "application/json; charset=utf-8",
+    "content-length": "129",
+    "connection": "keep-alive",
+    "ms-cv": "mm57h1yLgUWK7xKjMz7B5g.0",
+    "mise-correlation-id": "27afac12-f725-4b34-a9d9-6eacf66a6e5d",
+    "api-supported-versions": "2021-10-01-preview, 2023-01-15-preview, 2023-03-31, 2024-07-01-preview, 2025-01-15-preview",
+    "x-azure-ref": "20250623T104703Z-16bcbdc6bd89skjmhC1MAAfrv80000000gf000000000h8bx",
+    "strict-transport-security": "max-age=31536000;includeSubDomains",
+    "x-cache": "CONFIG_NOCACHE",
+    "error": {
+      "code": "BadRequest",
+      "message": "Email payload must be less than 10 MB.",
+      "target": null,
+      "details": null,
+      "innererror": null
+    }
+  },
+  "stack": "RestError: Email payload must be less than 10 MB.\n    at new RestError (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-rest-pipeline\\dist\\commonjs\\restError.js:19:16)\n    at handleErrorResponse (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:148:19)\n    at deserializeResponseBody (C:\\Users\\prave\\OneDrive\\Desktop\\communication-service\\node_modules\\@azure\\core-client\\dist\\commonjs\\deserializationPolicy.js:83:45)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"
+}
+2025-06-23 16:17:05 [ERROR]: Email send failed {
+  "service": "email-service",
+  "error": "Email payload must be less than 10 MB."
+}
+2025-06-23 16:19:14 [INFO]: Email send request received {
+  "service": "email-service",
+  "to": [
+    "praveenkanthk@incorp.asia"
+  ],
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "hasCustomContent": false
+}
+2025-06-23 16:19:18 [INFO]: Initiating email send for event: 04d8bc1b-b4af-4338-91fb-46a00c86cd89 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "ONBOARDING_NOTSTARTED",
+  "recipientCount": 1
+}
+2025-06-23 16:19:18 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:19:18 [INFO]: Sending email to: praveenkanthk@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:19:18 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": true
+}
+2025-06-23 16:19:26 [INFO]: Email sent successfully with ID: 45f0d189-ee4b-46ab-bcb7-a35974add966 {
+  "service": "email-service"
+}
+2025-06-23 16:19:26 [INFO]: Email sent successfully {
+  "service": "email-service",
+  "messageId": "04d8bc1b-b4af-4338-91fb-46a00c86cd89"
+}
+2025-06-23 16:24:09 [INFO]: Initiating email send for event: bed6f6c9-4776-4d4c-9ad4-af8db69e7cb0 {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED",
+  "recipientCount": 1
+}
+2025-06-23 16:24:09 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:24:09 [INFO]: Sending email to: praveenusain111@gmail.com {
+  "service": "email-service"
+}
+2025-06-23 16:24:09 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false,
+  "hasCC": true
+}
+2025-06-23 16:24:10 [INFO]: Initiating email send for event: 5ea5954c-0f40-44a0-bcbb-06447c952aaf {
+  "service": "email-service",
+  "type": "template",
+  "templateId": "PRELIM_KYC_SUBMITTED_INTERNAL_AGENT",
+  "recipientCount": 1
+}
+2025-06-23 16:24:10 [INFO]: Azure Email Client initialized successfully {
+  "service": "email-service"
+}
+2025-06-23 16:24:10 [INFO]: Sending email to: Karynmak@incorp.asia {
+  "service": "email-service"
+}
+2025-06-23 16:24:10 [INFO]: Email message structure: {
+  "service": "email-service",
+  "senderAddress": "DoNotReply@uat-notifications.incorp.asia",
+  "recipientCount": 1,
+  "hasAttachments": false,
+  "hasCC": true
+}
+2025-06-23 16:24:14 [INFO]: Email sent successfully with ID: 898f65c1-6015-42fd-850c-272260e9992a {
+  "service": "email-service"
+}
+2025-06-23 16:24:25 [INFO]: Email sent successfully with ID: 1914bc9b-66e3-4c04-a1b0-5c242efa445b {
+  "service": "email-service"
+}

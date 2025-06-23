@@ -1042,6 +1042,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       (
         data: {
           clientName?: string;
+          recipientName?: string;
           dealOwnerName?: string;
           csRecipientName?: string;
           url?: string;
@@ -1068,7 +1069,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
         <!-- Main Content -->
         <div style="padding: 30px;">
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>KYC team</strong>,
+                Dear <strong>${data?.recipientName}</strong>,
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
@@ -1376,7 +1377,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
-        // onboarding submission internal agent template
+    // onboarding submission internal agent template
     this.templates.set(
       EmailTemplate.ONBOARDING_SUBMITTED_KYC_INTERNAL_AGENT,
       (
