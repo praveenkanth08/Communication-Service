@@ -9,7 +9,6 @@ import {
 } from "../types/events";
 import { logger } from "../utils/logger";
 import dotenv from "dotenv";
-import { getCosmosDocuments } from "@/utils/fetchCosmosDocuments";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -41,11 +40,6 @@ export class EmailService {
         };
       }
       let cosmosAttachments: EmailAttachment[] = [];
-      if (emailRequest?.templateData?.sendAllCosmosAttachments) {
-        cosmosAttachments = await getCosmosDocuments(
-          emailRequest?.templateData?.dealId
-        );
-      }
       // Create email event
       const emailEvent: EmailEvent = {
         id: uuidv4(),
