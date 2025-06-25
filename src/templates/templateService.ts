@@ -320,6 +320,108 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
+    //skip prelim KYC and direct onboarding
+    this.templates.set(
+      EmailTemplate.ONBOARDING_NOTSTARTED_WELCOME_EMAIL,
+      (
+        data: {
+          recipientName?: string;
+          companyName?: string;
+          logoUrl?: string;
+          url?: string;
+          supportEmail?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `Submission of Client Onboarding Form and Required Documents`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Complete</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+       ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName}</strong>, 
+            </p>
+            
+          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+              Thank you for choosing to engage our services.
+            </p>            
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+              To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
+             Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="${
+                  data.url
+                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                     Begin Onboarding
+                </a>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+              Should you have any questions or require clarification, please do not hesitate to contact us.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards, 
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+Welcome to ${data.companyName || "InCorp"}!
+
+${data.recipientName ? `Dear ${data.recipientName},` : ""}
+
+Thank you for choosing ${
+          data.companyName || "InCorp"
+        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+
+To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+
+${data.url ? `Start your incorporation: ${data.url}` : ""}
+
+If you have any questions, please don't hesitate to contact our support team at ${
+          data.supportEmail || "notifications@incorp.asia"
+        }.
+
+Best regards,
+${data.companyName || "InCorp"} Team
+
+© ${new Date().getFullYear()} ${
+          data.companyName || "InCorp"
+        }. All rights reserved.
+${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+      `,
+      })
+    );
+
     // Onboarding submitted Template
     this.templates.set(
       EmailTemplate.ONBOARDING_SUBMITTED,
@@ -330,7 +432,6 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           logoUrl?: string;
           supportEmail?: string;
           companyAddress?: string;
-          documentUrl?: string;
         } = {
           companyName: "InCorp",
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
@@ -361,16 +462,6 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
             </p>
             
-            ${
-              data?.documentUrl
-                ? `
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please <a href="${data.documentUrl}" style="color: #007bff; text-decoration: underline;">click here</a> to view all the uploaded documents
-            </p>
-            `
-                : ""
-            }
-            
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;">
                As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
             </p>
@@ -400,12 +491,6 @@ Welcome to ${data.companyName || "InCorp"}!
 ${data.recipientName ? `Dear ${data.recipientName},` : ""}
 
 We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
-
-${
-  data?.documentUrl
-    ? `Please click here to view all the uploaded documents: ${data.documentUrl}`
-    : ""
-}
 
 As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
 
@@ -1334,9 +1419,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                     <strong>Client Name:</strong> ${data?.clientName || "N/A"}
                 </p>
                 <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    UBOs/Significant Controllers/Person having Executive Authority/Directors: Please <a href="${
-                      data?.documentUrl
-                    }" style="color: #007bff; text-decoration: underline;">click here</a> to review data provided by the client/ WORD doc
+                    UBOs/Significant Controllers/Person having Executive Authority/Directors: Please click here to review data provided by the client/ WORD doc
                 </p>
             </div>
             
@@ -1346,11 +1429,25 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
             </p>
             
-            <a href="${
+            <div style="margin: 25px 0;">
+            ${
               data.url
-            }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Review Details
+                ? `<a href="${data.url}" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin-right: 10px;">
+                    Review KYC
+                </a>`
+                : ""
+            }
+                
+                ${
+                  data?.documentUrl
+                    ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Documents
                 </a>
+                `
+                    : ""
+                }
+            </div>
 
 
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
@@ -1408,6 +1505,101 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
+    // MSA and SOW preparation template
+    this.templates.set(
+      EmailTemplate.MSA_SOW_PREPARATION_REQUEST,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          recipientName?: string;
+          companyName?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `MSA and SOW Preparation Request – ${
+          data?.clientName || "Client"
+        }`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA and SOW Preparation Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Please proceed with preparing the MSA and SOW for the following client:
+            </p>
+            
+            <div style="margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+            </div>
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+                <strong>Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.</strong>
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+MSA and SOW Preparation Request – ${data?.clientName || "Client"}
+
+Dear ${data?.recipientName || "User"},
+
+Please proceed with preparing the MSA and SOW for the following client:
+
+- Client Name: ${data?.clientName || "N/A"}
+
+Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.
+
+Please let me know if you require any additional information.
+
+Warm regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+`,
+      })
+    );
+
     // onboarding submission kyc internal agent template
     this.templates.set(
       EmailTemplate.ONBOARDING_SUBMITTED_KYC_INTERNAL_AGENT,
@@ -1449,28 +1641,40 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 Please proceed with initiating the CS process for the following client:
             </p>
             
-            <div style=" margin: 20px 0;">
+            <div style="margin: 20px 0;">
                 <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
                     <strong>Client Name:</strong> ${data?.clientName || "N/A"}
                 </p>
                 <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    UBOs/Significant Controllers/Person having Executive Authority/Directors: Please <a href="${
-                      data?.documentUrl
-                    }" style="color: #007bff; text-decoration: underline;">click here</a> to review data provided by the client/ WORD doc
+                    <strong>UBOs/Significant Controllers/Person having Executive Authority/Directors:</strong> Review the data provided by the client using the buttons below.
                 </p>
             </div>
 
             
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+                Kindly begin data entry, name screening, and e-KYC setup
             </p>
             
-            <a href="${
+            <!-- CTA Buttons Container -->
+            <div style="margin: 25px 0;">
+            ${
               data.url
-            }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Review KYC
+                ? `<a href="${data.url}" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin-right: 10px;">
+                    Review KYC
+                </a>`
+                : ""
+            }
+                
+                ${
+                  data?.documentUrl
+                    ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Documents
                 </a>
-
+                `
+                    : ""
+                }
+            </div>
 
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
                 Please let me know if you require any additional information.
@@ -1499,16 +1703,10 @@ Dear ${data?.recipientName || "User"},
 Please proceed with initiating the CS process for the following client:
 
 - Client Name: ${data?.clientName || "N/A"}
-- UBOs/Significant Controllers/Person having Executive Authority/Directors: ${
-          data?.url ||
-          "Click here to review data provided by the client/ WORD doc"
-        }
+- UBOs/Significant Controllers/Person having Executive Authority/Directors: Review data provided by the client
 
-${
-  data?.documentUrl
-    ? `Please click here to view all the uploaded documents: ${data.documentUrl}`
-    : ""
-}
+Review KYC: ${data?.url || "N/A"}
+${data?.documentUrl ? `Download Documents: ${data.documentUrl}` : ""}
 
 Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
 
