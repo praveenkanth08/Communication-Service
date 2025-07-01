@@ -37,53 +37,166 @@ export class EmailTemplateService {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - KYC Process</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${
-                  data?.recipientName ? data?.recipientName : "User"
-                }</strong>, 
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              Thank you for choosing to engage our services.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-              To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
-            </p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Begin Onboarding
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-              Should you have any questions or require clarification, please do not hesitate to contact us.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data?.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-       ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Welcome! Please complete your onboarding process.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto; ">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName
+                                                ? data?.recipientName
+                                                : "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Thank you message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Thank you for choosing to engage our services.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 30px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; ">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Begin Onboarding
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td style="padding-top: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -93,7 +206,7 @@ ${data.recipientName ? `Dear ${data.recipientName},` : ""}
 
 Thank you for choosing ${
           data.companyName || "InCorp"
-        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+        } for your business incorporation needs. We're excited to help you start your entrepreneurial journey!
 
 To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
 
@@ -110,16 +223,7 @@ ${data.companyName || "InCorp"} Team
           data.companyName || "InCorp"
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      `,
-        // templateAttachments: [
-        //   {
-        //     name: "logo.png",
-        //     contentType: "image/png",
-        //     contentId: "incorp-logo",
-        //     contentInBase64:
-        //       "iVBORw0KGgoAAAANSUhEUgAAATYAAACiCAMAAAD84hF6AAABYlBMVEX///9EREQAAAC8IyY+Pj42Nja8vLz8/PsrKy1ubm9BQUH6+vr29vbn5+eBgYHGxsY5OTm0tLR4eHhKSkzx8fIyMjLg4ODp6enY2NjS0tKFhYWTk5Otra2lpaWenp7Ly8tgYGBYWFgeHh5oaGgOFBKWlpbbICYABgAMDAxGAADkISfEHiK6FhpSUlJ0dHZaWltZAACLAACCAAC4AAuqAADUHySqHB6lHB796t79WwD+ZgsjKyndzs2eZWWjeXm3qKiEQ0SMa2uekpKVUlN8Cg7Kt7iHJieJOzptAAB6Li+IX15iHh54TU3EoKCWJSZ+FxptExNTAADWs7XEi4toFRXCcG+zP0LOkJGXGBxlMjLhsbLFYGLnw8SZfn7z3d3HAADbdHbaTlLqoKLhgYO6c3Xtrq6gb2/mvr6nQkTBP0K2lZacAADIXV/QMDXWjIzAMDN5YmKmYWH91sX9uZ38iFH8pXm6Kj+iAAARUklEQVR4nO2diXvTRhqHpYks2ZJsSbZu2ZZPHCB2CCHQFnMWumwLtDQFspQ6hZZSoKXH7v7/OyNZ9uiwLflqeXZ+D4djHfPNq5lvvjk0oSgiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiKi9UosWkrdsUulku3UFdMQ/mqDMkqQnLKngru1NHWltM9oOZnxJec0fr/EGltLf3XpjcB6jd1OiqrSZnIMT4fFMzm6vL0Ht6LEChMYntsKNrFeyTF0onhGbn8g4Go5eqvYlIocLWe4GLmkbsGKlbXPbxObWMjNg4YkV6yNm7G6tKnBm8em0zOqZ6iq5qRN27GyuPwWsZlz6yfG7W9f3raJLSU11DQUN2vJytoiNqOSkhpsGBobtWR1bQ8b1475NRiq5WRZzsWDuFx1k6asru1hwyIdn5lMtx3WMk3TVZwGI4ePyn/vMGRr2PRIWcs1q7gDMx0mdIJc36AtqysNNkFFElfra5dCVHi+JkZOMBuhAidvq2svCEuktACbqCvOoNHsVyr9ZrvssPqymTFDTJimGT9FKODnrKnoq0XdtCwrITlK1dm6PWi3G+122a5LmbI2F5vpNOUcw/BjMXJObtSXiw1svLAx+4ljHUITaxmYwlLpYOJ0xW73aVnTtHzsZqJU6ufQGIaXMTQGw+w7SXBn3Hs2NnMgxwMtXubtJcZ3DJwaX9GTz9KxLgutcdmTwe9V30fDLH4GmHL4oFrvJwzByLl22v7JbGx1eUZHSKaz158q3ozKM693sGqqrdJV0MsM/sgj2Nj+jMCbyRVmPNGIZmETCrnEG3uPJedkzUYBewTMYOZpKpYdefnQjXMijzyEjbPnDCcwfKoyMQMb15Zn3hmdmZGbGipsc1yIm5/kiLGzpTFVsRk1HscmzM8anyrSnoHNnntrms5nq6cShm2+rzf7+ZwvrZ8pian0+Cgojq2wIGt0mkHuZGysNvuu43tniuK7mKmLhoV0VvG1ZARS1OJVEMPmzHY+EwsX+7dEbGJ/YaebKWXJCu7a+Gicu14JSQMGU2xWPn40dnZjYSOeiK0afiIwqEEhTticXIb4TaCn1/LtzCQyKdG9TLFFCgQjy17MFv5WW+jekrAJDfwuMl2os66k2M1Qq52l06hiici17CgyyEqsgxNsUsj7MExBsUzTYu1KCDZPL+oxJGEzQ+2eMylWUh+vaxk8toWPvG92xDthdApKDrDt408eC9LUeqhM5JQFySRhq2PoQ9GT2sDDr3SBIRKLPQc5/WVLyApXURj40/1ms9kfBzOhbkg4ipLwKxd6kiRsgymciOfHR38y9LWr+HPY6EBaqOtL5/brpqGKSP7hGmZINOrGny2tLehAJmDD21EmEppiZjHpQ17cWjn1VUkyDN1yJck1i4ntsYo3ozxTjboo3GnLUTJlvEwsqKUJ2IxpJvl+pCl2p48kwxAFVut5OvVVcQ2vXZdcqBs3b966zSbUdhcvMUxsgl/AwMixp47X4EXxVQI2c3p5rI7jSJups4tjq6S+Kir90zvX71q6qd/97B/X7v3z8y/u352TUFKBwQf9tDh1rCwuMjMBG9YTig644LUgQ1O6Fmz6nevm8IFuFI2Hn302vPblva8uPPouUguxsJpvxIMILGd8P34Yd8H5+SFIAjbMN8bKKo6tkjrcXwM2zrxzAxJT1a+PheHx8fDinS+//OqbR/dDDYyIjXMmeSfMxyYNFOC1NKEwhsyJY1M2iY3m014U1lv3gWFAaqPHT54/vXJycHLyEHG78C+cW3GaDJ00Q+1MC2Ni1J0+vNwKttVb0qGrI2iiaKjPvr10+fLlKycnBxcRt/vYWTrueROsw9rKxPAJCyEWhFdbwaasGrfdvamjCioKAkc93zs8fPLk0uWHXz9A3B59Nz0N61klBqyY60scO8aOLxgk3Qq2UC8h/TzHNNV7nxVR2AqpCa/eH74cvXz59NKT5w8eoHp6djg5z53WslhjhoRjS/JdpQWVeKqtYDNX7JNev/lHUNbUX0+/p0bq89Hj55feHUD/BpuFyXnzYgAkDFs+aQDH/uuwJU3Wqhi2Jabb1XtvoWND1DhK/P7F65c//DCC6YyGP57cCRW3DxXb6Om3b558/yrqvvChQ74x154k3bhpFVFh4yA26vmLo9NzRy9HI/jn8QHk9s2FW8GJGbBpSb7iL6qkL/cO96AOd57Ntpdm5rUJooUp+PL+DT0obJR4dO7cuTNnTo9enB5eenJy8sen9y48Ck7MgC3RV7RTz5utE9v7w52xDp+Gj+BzCbNnSaHYljZREBir960xNvjDq3PnPG5HR+fP7317fPDw7U/3J7U0A7ZELJX50TKmNWJ7NaEGub0OHcJnruaOZeEjLEHGh7dMDxsqbK9PzwXczp/f2Xv688nFa+43Qd80C7aE8Rsu/Trm9WFTdzDtvQm1DCo+BijPnm4X8FIZeJfhbSvAJrw4d2bMDRa3nb0nXx9cfGveCipcBmxJDw9v8BesCVgftmeHOLfD56GDA9y5zS5uWNJT76Mrk0oqvDiDY9t59+PPD3Tz9hKlLSnsxrvyC8Yp14ft8V6ouL2fyWO238BnuOh8kC/9O1cvjn3bL2NsZ3xsl98dQ2zsMtgSaiE+iKnNpbZGbL+Esf0QOhhecRQdMw6ET9ZNh/PM265ZNMal7ejojEfN8207l68c/GSYUnC7LNjio6xFLSn1TWP7dh628CD/jJVaCj5BMm3q9Ns3Jm3C6FfE7dRvSXd2rlw5GBZNKQhds2CLey98veeiBSjrw/Y+hO0wErrpoflLPj5gDV1LaA5zUkcp7vezt4tBBDL69fT0xasjRO08LGzvjlWILTAkE7bogL8bmtVaML+0PmzPQ03C3ihyZWTtruZEXLJaCoHFU649uvC5EXATRii3r0/9OvqzaujmJHLNhC1STfXQVGE++8zVsnEb7tz2HkcTiq4Ul+WuOXncnN6NrEjDRyjcs19cGHojIFxwxbPTHc+zHQuGPl2Ymw0bLTemibCh6eWFPcA1YhvtTLjtvYk379H3EmhZq5TqVUVRanZfi76WgEejwn3I7drdoH/lCbbbl6Fn+1Ed6u4krYzYYJkvsUVRVM3qfti4hWvc1tm5Gv025nb4JlpFUeajRnuv3croPZj4MtpKCHv17BdffHXvLRpw8/vzMK1LkNrJwfFPQ3PaLGfFhladajL6GzFg4VjqWrvy6vvfDqHevE8cUiqmf+cq8oqf8Dvkdu+tqgbgYJP67soJ7MgPP9WtaRazY0tWUs9rg9jg8dGz16NZw5cWn5JbrI6Y/4LV9IY/myAgUcfvILWLw+HQxJzgmrDx/MKB+62M7gayYrUxmVp8rOvG2bOPbvvzCT640cHJw4vXjaJpYmFElj7pnKKvLVpvlB1bfxVslFlZ/Lx5OcnqW2d/lyzTA+ej+/TixZs6pIYPGWQZb2NnWiKnWCiaERvXXgkbpRYWrQqW+8ljD5//zkquqUNwHjn17j/e6nqYWqZBcbUabdkDAxop8pURG1WfHFwKG7x79BXIkJhYGDwR262yqMBBchBdsagXdUsPB/pZsBlUN/EJ5tppZiSzYlMnKyqXxEap3dyM1yl4WSvNWUNgKDUFljjLROhgQTPNaAYzTsHU8jE7YO8l1RtrXIuZaLwgX9Em3+TiiRvtvL9JjUwvu+RbrDbzsViNkTW6PrNLI4iqUdTZWhWBc72ZBkkyvfEkvEnIz7M8PnNl8eEHyGjNlG8sceXSROOtclzsq6T5G73qeMfsFd74LCplWst5r3yjiDenMYXq7ILGibDD7rLVulMq2069Vqt37bLtVVrdUKdmmJjlSfOK8Qm/agWGuzAu8l5f1AYfwpY3oimx1VqtBnMfq24RQW6wy+6yCiRn22gPrm7NgxYpbguUNE9qVstN6HD2yzX3Q9vTK504AXYfVcOXH/hmvMOi6WWiRBFsS4lgW0oE21Ii2JYSwbaUCLalRLAtJYJtKRFsS4lgW0oE21Ii2JYSwbaUCLalRLAtpfAUDFFKYdjmvh3xl0ofDP5mNWGKjWmvtqneJiRYJbSIw+qAJd7m26Sm2NbyqyHq5bVu4m0B4M0bWa2UW6WYpQrfnz3btzYV5PEem9o6tqdVAZj9qoBBcR9BoY+iHuSM0yerCAwTq4m6N00Osdm6TqmmJcJvPHRFfUzQ0EXvR2yOlSsDUCj3Adj4zs52o41Urq9l55sa6AAPiGAIlO7i92S1NvXnx5988jFHCeXWbsdboCHYV3u9Vgnl3K10eh0eLZ61NbrKdzpXqwhbp9OjqToAFnUVXIUHuT5gBDOv1QudXqtq9OG/3UkaA+CgW+l5MN6HxBo/E0OkDNer56rrVwdR9Q4HVxoWtFVVQ4YbY1+vJvh8ztc6mEFVcizw5pElUGsCAKa7F9VQORxjQ0egXEqkQQ/AP7JKKf53QKGoEmQP0NcswgaAHMHGCybooVM6oOWdF9QTCYwXsxfBLsp2A93G+wq0bfix5VLov13E1AbmAH32yqWBLGpZDRAynAYeLwtseptoHdhcq+/nAOy7Zhe01OBIB6b+0b//A7EZoNe3aqBsULBOXa3VNAgLfteqWkqrBwsrwuYobdDToMm9dq3qY8v3MGwdUFb24b+04sACOa6nbYC3t8Yu6FpSASB7AMizZhWAAVB0FqD2xQYtTTGVFnrKagfYllsGeQ8baLimA1oixfq8ymDTrtKBBpWA7mHztpuoBV7G9soRRf3344+5IsRmULD2FDs9BpVzCNDx8gLpQlNL/rmVHgiahDg20EAwOh0DZWtMS9gNbd9TAK5vUxVhQ4/P9c/Ukf+1fQO5DhBhgopvrIetMjEc/Qzd9cq7HS8Qt8vAtgyg5aqSz6sYVJsK8F89+ujPP1Hph6XMKSIoge9ugw5qzSsdyAOWNpQ7iEOYjQ19nQMwPaoLgO8KBIDvXhP8pIImBOC9waP6NYFCttjAfwehCl3B7nhrDL+0eSbpyPAuOqcGNv0LPvwkK2h3Gsl/gBNsPMB27RDKnvPSIZQg6Gn4/gyqnwUbuqkzwdbCN1QRwHilUL6FfBv6JOYb3jetPMLmX+RCm4H/NdX3sHkmedhUdGClHahSqQBK9W69gipHFFsBdJCZwqDRFFA75BZ6YACrpJc1CzUDPcVyXfjHnI0N1Rmx1ZuFDTakQQsE20khCIVauXnY0KMOSikdwQbrgGqCxctvV5MIWjlN02QwiGNjQY831WIBFidB7EI/ZqDqCCMs21C7oK9Dt9NWOY4dGBSODfIZQAQetj5sMkUV8p2JzQrckAVbUk7Ley2Fi0xIwuYvfS9AW5q+c9RBFBtsRO3Osmvv0qo6rnJN6GWj2GAt7KF6CAMHhBDwsM10UEPphxoShaIBBrapnocOsIkCvKZX8bEp8DO8Q2c2NvixUOQoUdpF/kgBA9gOmHnUECZhA4pACTVU0iTQL6JtjWLYKK21m3n37qzSgP9gFFjuJ9iCtadiwXNc+7AIoYxCteHZrow+aRIKfL0v0dsXZZ9DASFEpzI+Ni/mAk0e5AJsV712BsOGTqSbeZCXfIi7jQrYRe2p773E1r531m7LK21Aa2jAe0sFtirNJhjEKiksCWCjG2BSyNGPF0yqdpXS/b6pak87ula9K3Gsg1a06lWnPg7Wpa7D+rSLilN30UfW6aref2iRpdW1a5Rr295KT8eRhJpd5wzHQTDqDoInOc40sDJqg3ZpfEPYQW20/f6pNyBACY5voeMgbEUd9pDGmydapUaBpWoltGG913MwfMONoLUg8mWnKkZ18Pf/tWxbVTpsu/mNG/JhKRU2CWx2I+kPT+U02GSw6ejjQ1OqRc7L/AImIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiKi/wP9D2xhsY5rY1rDAAAAAElFTkSuQmCC",
-        //   },
-        // ],
+    `,
       })
     );
 
@@ -146,66 +250,153 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Submission Received - ${data?.companyName || "InCorp"}</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-       ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                ${
-                  data?.recipientName
-                    ? `Dear <strong>${data?.recipientName}</strong>,`
-                    : "Dear User,"
-                } 
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-               As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              We will continue to keep you informed of the progress.
-            </p>
-  
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data?.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-       ${IncorpFooter(data?.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC submission received - next steps for verification.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            ${
+                                              data?.recipientName
+                                                ? `Dear <strong>${data?.recipientName}</strong>,`
+                                                : "Dear User,"
+                                            }
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Acknowledgement message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Next steps message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Update message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We will continue to keep you informed of the progress.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
-Welcome to ${data.companyName || "InCorp"}!
+KYC Submission Received - ${data.companyName || "InCorp"}
 
-${data.recipientName ? `Dear ${data.recipientName},` : ""}
+${data.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
 
-Thank you for choosing ${
-          data.companyName || "InCorp"
-        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
 
-To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
 
-${data.url ? `Start your incorporation: ${data.url}` : ""}
-
-If you have any questions, please don't hesitate to contact our support team at ${
-          data.supportEmail || "notifications@incorp.asia"
-        }.
+We will continue to keep you informed of the progress.
 
 Best regards,
 ${data.companyName || "InCorp"} Team
@@ -214,7 +405,7 @@ ${data.companyName || "InCorp"} Team
           data.companyName || "InCorp"
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      `,
+    `,
       })
     );
 
@@ -240,74 +431,192 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYC Verification Complete</title>
+    <title>Onboarding Process - ${data?.companyName || "InCorp"}</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-       ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName}</strong>, 
-            </p>
-            
-          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              Thank you for choosing to engage our services.
-            </p>            
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
-             Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
-            </p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Complete Next Step
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-              Should you have any questions or require clarification, please do not hesitate to contact us.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Complete your onboarding form and submit required documents.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName
+                                                ? data?.recipientName
+                                                : "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Thank you message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Thank you for choosing to engage our services.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Document checklist message -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 30px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Complete Next Step
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td style="padding-top: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
-Welcome to ${data.companyName || "InCorp"}!
+Onboarding Process - ${data.companyName || "InCorp"}
 
-${data.recipientName ? `Dear ${data.recipientName},` : ""}
+${data.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
 
-Thank you for choosing ${
-          data.companyName || "InCorp"
-        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+Thank you for choosing to engage our services.
 
-To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
 
-${data.url ? `Start your incorporation: ${data.url}` : ""}
+Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
 
-If you have any questions, please don't hesitate to contact our support team at ${
-          data.supportEmail || "notifications@incorp.asia"
-        }.
+${data.url ? `Complete your onboarding: ${data.url}` : ""}
+
+Should you have any questions or require clarification, please do not hesitate to contact us.
 
 Best regards,
 ${data.companyName || "InCorp"} Team
@@ -316,7 +625,7 @@ ${data.companyName || "InCorp"} Team
           data.companyName || "InCorp"
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      `,
+    `,
       })
     );
 
@@ -342,74 +651,194 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYC Verification Complete</title>
+    <title>Welcome - Onboarding Process - ${
+      data?.companyName || "InCorp"
+    }</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-       ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName}</strong>, 
-            </p>
-            
-          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              Thank you for choosing to engage our services.
-            </p>            
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-              To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
-             Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
-            </p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Begin Onboarding
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-              Should you have any questions or require clarification, please do not hesitate to contact us.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Welcome! Begin your onboarding process and submit required documents.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName
+                                                ? data?.recipientName
+                                                : "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Thank you message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Thank you for choosing to engage our services.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Document checklist message -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 30px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Begin Onboarding
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td style="padding-top: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
 Welcome to ${data.companyName || "InCorp"}!
 
-${data.recipientName ? `Dear ${data.recipientName},` : ""}
+${data.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
 
-Thank you for choosing ${
-          data.companyName || "InCorp"
-        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+Thank you for choosing to engage our services.
 
-To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
 
-${data.url ? `Start your incorporation: ${data.url}` : ""}
+Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
 
-If you have any questions, please don't hesitate to contact our support team at ${
-          data.supportEmail || "notifications@incorp.asia"
-        }.
+${data.url ? `Begin your onboarding: ${data.url}` : ""}
+
+Should you have any questions or require clarification, please do not hesitate to contact us.
 
 Best regards,
 ${data.companyName || "InCorp"} Team
@@ -418,7 +847,7 @@ ${data.companyName || "InCorp"} Team
           data.companyName || "InCorp"
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      `,
+    `,
       })
     );
 
@@ -444,67 +873,187 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details Under Review</title>
+    <title>Details Under Review - ${data?.companyName || "InCorp"}</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${
-                  data?.recipientName ? data?.recipientName : "User"
-                }</strong>! 
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;">
-               As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-               We will continue to keep you informed of the progress.
-            </p>
-            ${
-              data?.documentUrl
-                ? `
-                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                    Download Document
-                </a>
-                `
-                : ""
-            }
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data?.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Onboarding form received - e-KYC verification links will be sent next.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName
+                                                ? data?.recipientName
+                                                : "User"
+                                            }</strong>!
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Acknowledgement message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Next steps message -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Update message -->
+                                <tr>
+                                    <td style="padding-bottom: ${
+                                      data?.documentUrl ? "20px" : "0px"
+                                    };">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We will continue to keep you informed of the progress.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Conditional Download Button -->
+                                ${
+                                  data?.documentUrl
+                                    ? `
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 20px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #2f465a;">
+                                                    <a class="button-a" href="${data.documentUrl}" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #2f465a;">
+                                                        Download Document
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                `
+                                    : ""
+                                }
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
-Welcome to ${data.companyName || "InCorp"}!
+Onboarding Submission Received - ${data.companyName || "InCorp"}
 
-${data.recipientName ? `Dear ${data.recipientName},` : ""}
+${data.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
 
 We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
 
 As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
 
 We will continue to keep you informed of the progress.
+
+${data?.documentUrl ? `Download document: ${data.documentUrl}` : ""}
 
 If you have any questions, please don't hesitate to contact our support team at ${
           data.supportEmail || "notifications@incorp.asia"
@@ -517,7 +1066,7 @@ ${data.companyName || "InCorp"} Team
           data.companyName || "InCorp"
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-      `,
+    `,
       })
     );
 
@@ -543,44 +1092,132 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Verification Update - ${data?.companyName || "InCorp"}</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-       ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                ${
-                  data?.recipientName
-                    ? `Dear <strong>${data?.recipientName}</strong>,`
-                    : "Dear User,"
-                } 
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
-            </p>
-            
-           <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-  If you have any questions or require further assistance, please reach out to our support team through your usual point of contact.
-</p>
-  
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data?.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-       ${IncorpFooter(data?.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC verification status update - further assistance available.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            ${
+                                              data?.recipientName
+                                                ? `Dear <strong>${data?.recipientName}</strong>,`
+                                                : "Dear User,"
+                                            }
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- KYC Status message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Support contact message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            If you have any questions or require further assistance, please reach out to our support team through your usual point of contact.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -632,57 +1269,175 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Reminder - Complete Your Process</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Hi <strong>${
-                  data?.recipientName ? data?.recipientName : "[Customer Name]"
-                }</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                We noticed you started your KYC process but didn't get a chance to finish it. No worries — it happens!
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 25px 0; line-height: 1.6;">
-                To continue where you left off, just click the button below. It only takes a few minutes to complete, and it's an essential step to get you fully onboarded.
-            </p>
-            
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Resume KYC Submission 
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                If you need help or have any questions, our team is just a message away.
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 25px 0 0 0; line-height: 1.6;">
-                Looking forward to having you all set up!
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards, 
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data?.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-         ${IncorpFooter(data?.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Quick reminder to complete your KYC process - just a few minutes left!
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Casual greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Hi <strong>${
+                                              data?.recipientName
+                                                ? data?.recipientName
+                                                : "[Customer Name]"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Friendly reminder message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            We noticed you started your KYC process but didn't get a chance to finish it. No worries — it happens!
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions to continue -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To continue where you left off, just click the button below. It only takes a few minutes to complete, and it's an essential step to get you fully onboarded.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Resume Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 30px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Resume KYC Submission
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Support message -->
+                                <tr>
+                                    <td style="padding-top: 20px; padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            If you need help or have any questions, our team is just a message away.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Closing message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Looking forward to having you all set up!
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${
+                                              data?.companyName || "InCorp"
+                                            } Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -735,48 +1490,138 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your OTP for KYC Verification</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .otp-display {
+                font-size: 40px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Logo Header - Centered and Compact -->
-        ${header()}
-        
-        <!-- Main Blue Header -->
-        <div style="background-color: #2f465a; color: #ffffff; padding: 40px 30px;">
-            <h1 style="margin: 0 0 10px 0; font-size: 24px; font-weight: 600; color: #ffffff;">
-                Welcome, ${data?.recipientName || "User"}!
-            </h1>
-            
-            <p style="margin: 0 0 24px 0; font-size: 13px; color: #ffffff; line-height: 1.5;">
-                Here’s your One-Time Password (OTP) to proceed with your next step, this code expires within ${
-                  data?.expirationMinutes
-                } minutes.
-            </p>
-            
-            <!-- Large OTP Display -->
-            <div style="font-size: 50px; font-weight: bold; color: #ffffff; font-family: 'Courier New', monospace;">
-                ${data?.otp}
-            </div>
-            
-        </div>
-        
-        <!-- Footer Content -->
-        <div style="padding: 40px 30px; text-align: center; background-color: #ffffff;">
-            <div style="margin-bottom: 30px;">
-                <h3 style="margin: 0 0 10px 0; font-size: 16px; color: #666666; font-weight: 600;">
-                    Do Not Share This Email
-                </h3>
-                <p style="margin: 0; font-size: 14px; color: #888888; line-height: 1.5;">
-                    This email contains a secure code for ${
-                      data?.companyName || "InCorp"
-                    }. Please do not share this email, link, or access code with others.
-                </p>
-            </div>
-        </div>
-        
-        <!-- Email Footer -->
-        ${IncorpFooter(data?.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Your verification code: ${data?.otp} - expires in ${
+          data?.expirationMinutes
+        } minutes
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #f5f5f5; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Blue Header Section -->
+                    <tr>
+                        <td style="background-color: #2f465a; color: #ffffff; padding: 40px 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Welcome heading -->
+                                <tr>
+                                    <td style="padding-bottom: 10px;">
+                                        <h1 style="margin: 0; font-family: Arial, sans-serif; font-size: 24px; font-weight: 600; color: #ffffff;">
+                                            Welcome, ${
+                                              data?.recipientName || "User"
+                                            }!
+                                        </h1>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 24px;">
+                                        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 13px; color: #ffffff; line-height: 1.5;">
+                                            Here's your One-Time Password (OTP) to proceed with your next step, this code expires within ${
+                                              data?.expirationMinutes
+                                            } minutes.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Large OTP Display -->
+                                <tr>
+                                    <td>
+                                        <div class="otp-display" style="font-size: 50px; font-weight: bold; color: #ffffff; font-family: 'Courier New', monospace;">
+                                            ${data?.otp}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 40px 30px; text-align: center; background-color: #ffffff;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Security notice -->
+                                <tr>
+                                    <td style="margin-bottom: 30px;">
+                                        <h3 style="margin: 0 0 10px 0; font-family: Arial, sans-serif; font-size: 16px; color: #666666; font-weight: 600;">
+                                            Do Not Share This Email
+                                        </h3>
+                                        <p style="margin: 0; font-family: Arial, sans-serif; font-size: 14px; color: #888888; line-height: 1.5;">
+                                            This email contains a secure code for ${
+                                              data?.companyName || "InCorp"
+                                            }. Please do not share this email, link, or access code with others.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Email Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data?.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -798,7 +1643,7 @@ For support: ${data.supportEmail || "notifications@incorp.asia"}
 
 Best regards,
 ${data.companyName || "InCorp"} Team
-      `,
+    `,
       })
     );
 
@@ -818,76 +1663,221 @@ ${data.companyName || "InCorp"} Team
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preliminary KYC Form - Clarification Required</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-         ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${
-                  data.recipientName || "[Customer Name]"
-                }</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
-            </p>
-
-            <!-- Dynamic Clarification Notes Section -->
-            <div style="margin: 25px 0;">
-                <h3 style="color: #2f465a; font-size: 18px; margin: 0 0 15px 0; font-weight: 600;">
-                    📝 Clarification Notes:
-                </h3>
-                
-                <div style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
-                    ${this.renderClarificationNotes(data.clarificationNotes)}
-                </div>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
-                To review and update your KYC information, kindly click the button below:
-            </p>
-            
-            <!-- CTA Button -->
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url || "#"
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    🔗 Review & Update Your KYC
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 15px 0; line-height: 1.6;">
-              To keep the process on track, we encourage you to complete the updates as soon as possible.
-            </p>
-            <p style="font-size: 16px; color: #2f465a; margin: 15px 0 0 0; line-height: 1.6;">If you require any further clarification, please feel free to contact us</p>
-            
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 0px 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-        <!-- Footer Information -->
-        <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding-top: 20px; padding-left: 25px; padding-right: 25px; padding-bottom: 25px;">
-           <p style="margin: 0 0 15px 0;">This is an automated message, Please do not reply to this email.</p>
-            <div style="margin-top: 15px;">
-                <p style="margin: 0 0 10px 0;">&copy; 2025 ${
-                  data.companyName || "InCorp"
-                }. All rights reserved.</p>
-                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
-            </div>
-        </div>
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC clarification required - please review and update your information.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data.recipientName ||
+                                              "[Customer Name]"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Introduction message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Clarification Notes Section -->
+                                <tr>
+                                    <td style="padding: 25px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <!-- Section heading -->
+                                            <tr>
+                                                <td style="padding-bottom: 15px;">
+                                                    <h3 style="font-family: Arial, sans-serif; color: #2f465a; font-size: 18px; margin: 0; font-weight: 600;">
+                                                        📝 Clarification Notes:
+                                                    </h3>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- Notes content -->
+                                            <tr>
+                                                <td style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
+                                                    <div style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; line-height: 1.6;">
+                                                        ${this.renderClarificationNotes(
+                                                          data.clarificationNotes
+                                                        )}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Review instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To review and update your KYC information, kindly click the button below:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- CTA Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 30px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 6px; background-color: #bb2121; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                    <a class="button-a" href="${
+                                                      data.url || "#"
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; background-color: #bb2121;">
+                                                        🔗 Review & Update Your KYC
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Urgency message -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To keep the process on track, we encourage you to complete the updates as soon as possible.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            If you require any further clarification, please feel free to contact us.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0px 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${data.companyName || "InCorp"} Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Information -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; margin: 0; font-size: 12px; color: #888888;">
+                                            This is an automated message, Please do not reply to this email.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="margin-top: 15px;">
+                                            <p style="font-family: Arial, sans-serif; margin: 0 0 10px 0; font-size: 12px; color: #888888;">
+                                                &copy; 2025 ${
+                                                  data.companyName || "InCorp"
+                                                }. All rights reserved.
+                                            </p>
+                                            <p style="font-family: Arial, sans-serif; margin: 0; font-size: 12px; color: #888888;">
+                                                36 Robinson Rd, #20-01 City House, Singapore 068877
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -921,7 +1911,7 @@ If you require any further clarification, please feel free to contact us.
 
 Best regards,
 ${data.companyName || "InCorp"} Team
-  `,
+    `,
       })
     );
 
@@ -940,69 +1930,200 @@ ${data.companyName || "InCorp"} Team
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preliminary KYC Form - Clarification Required</title>
+    <title>Onboarding Clarification Required</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-         ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${
-                  data.recipientName || "[Customer Name]"
-                }</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
-            </p>
-
-            <!-- Dynamic Clarification Notes Section -->
-            <div style="margin: 25px 0;">
-                <h3 style="color: #2f465a; font-size: 18px; margin: 0 0 15px 0; font-weight: 600;">
-                    📝 Clarification Notes:
-                </h3>
-                
-                <div style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
-                    ${this.renderClarificationNotes(data.clarificationNotes)}
-                </div>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
-                To review and update your KYC information, kindly click the button below:
-            </p>
-            
-            <!-- CTA Button -->
-            <div style="text-align: center; margin: 30px 0;">
-                <a href="${
-                  data.url || "#"
-                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                    🔗 Review & Update Your KYC
-                </a>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 15px 0; line-height: 1.6;">
-              To keep the process on track, we encourage you to complete the updates as soon as possible.
-            </p>
-            <p style="font-size: 16px; color: #2f465a; margin: 15px 0 0 0; line-height: 1.6;">If you require any further clarification, please feel free to contact us</p>
-            
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 0px 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
-                ${data.companyName || "InCorp"} Team
-            </p>
-        </div>
-        
-        <!-- Footer Information -->
-        ${IncorpFooter()}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Onboarding clarification required - please review and update your information.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data.recipientName ||
+                                              "[Customer Name]"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Introduction message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Thank you for submitting your preliminary KYC form. Upon review, our team has identified a few details that require clarification to proceed with your KYC verification.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Clarification Notes Section -->
+                                <tr>
+                                    <td style="padding: 25px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <!-- Section heading -->
+                                            <tr>
+                                                <td style="padding-bottom: 15px;">
+                                                    <h3 style="font-family: Arial, sans-serif; color: #2f465a; font-size: 18px; margin: 0; font-weight: 600;">
+                                                        📝 Clarification Notes:
+                                                    </h3>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- Notes content -->
+                                            <tr>
+                                                <td style="background-color: #f0f8ff; padding: 18px; border-radius: 6px; border-left: 4px solid #4a90e2;">
+                                                    <div style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; line-height: 1.6;">
+                                                        ${this.renderClarificationNotes(
+                                                          data.clarificationNotes
+                                                        )}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Review instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To review and update your KYC information, kindly click the button below:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- CTA Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: center; padding: 30px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
+                                            <tr>
+                                                <td style="border-radius: 6px; background-color: #bb2121; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                                                    <a class="button-a" href="${
+                                                      data.url || "#"
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 14px 30px; border-radius: 6px; background-color: #bb2121;">
+                                                        🔗 Review & Update Your KYC
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Urgency message -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            To keep the process on track, we encourage you to complete the updates as soon as possible.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            If you require any further clarification, please feel free to contact us.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 0px 25px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            ${data.companyName || "InCorp"} Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer Information -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter()}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1036,7 +2157,7 @@ If you require any further clarification, please feel free to contact us.
 
 Best regards,
 ${data.companyName || "InCorp"} Team
-  `,
+    `,
       })
     );
 
@@ -1063,60 +2184,187 @@ ${data.companyName || "InCorp"} Team
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Processing Request</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong> KYC team</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please proceed with initiating the CS process for the following client:
-            </p>
-            
-            <div style=" margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    UBOs/Significant Controllers/Person having Executive Authority/Directors  Click here to review data provided by the client/ WORD doc
-                    
-                </p>
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
-            </p>
-            
-            <a href="${
-              data.url
-            }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Review KYC
-                </a>
-
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please let me know if you require any additional information.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC processing request for ${
+          data?.clientName || "client"
+        } - action required.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>KYC team</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instruction message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please proceed with initiating the CS process for the following client:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding-bottom: 10px;">
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        <strong>Client Name:</strong> ${
+                                                          data?.clientName ||
+                                                          "N/A"
+                                                        }
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        UBOs/Significant Controllers/Person having Executive Authority/Directors Click here to review data provided by the client/ WORD doc
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Process instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 30px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Button -->
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Review KYC
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please let me know if you require any additional information.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1149,7 +2397,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
-    // prelim KYC suucess internal agent template
+    // prelim KYC success internal agent template
     this.templates.set(
       EmailTemplate.PRELIM_KYC_SUCCESS_INTERNAL_AGENT,
       (
@@ -1173,63 +2421,199 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Verification Complete</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName || "User"}</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                The preliminary KYC for the following client has been <strong style="color: #28a745;">successfully completed</strong>. Please verify and proceed the client to the next onboarding stage:
-            </p>
-            
-            <div style="background-color: #f8f9fa; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Verification Status:</strong> <span style="color: #28a745; font-weight: 600;">Approved</span>
-                </p>
-                
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-                Please verify the completed KYC documentation and proceed with moving the client to the next onboarding stage.
-            </p>
-            
-            ${
-              data?.url
-                ? `
-                <a href="${data.url}" style="display: inline-block; background-color: #28a745; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin: 10px 0;">
-                    View Client Profile
-                </a>
-            `
-                : ""
-            }
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please confirm once you have verified the KYC and moved the client to the next onboarding stage.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC verification complete for ${
+          data?.clientName || "client"
+        } - ready for next stage.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName || "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Success message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            The preliminary KYC for the following client has been <strong style="color: #28a745;">successfully completed</strong>. Please verify and proceed the client to the next onboarding stage:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details with success styling -->
+                                <tr>
+                                    <td style="padding: 20px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="background-color: #f8f9fa; padding: 20px; border-left: 4px solid #28a745;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td style="padding-bottom: 10px;">
+                                                                <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                                    <strong>Client Name:</strong> ${
+                                                                      data?.clientName ||
+                                                                      "N/A"
+                                                                    }
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                                    <strong>Verification Status:</strong> <span style="color: #28a745; font-weight: 600;">Approved</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Next steps message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please verify the completed KYC documentation and proceed with moving the client to the next onboarding stage.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Conditional Button -->
+                                ${
+                                  data?.url
+                                    ? `
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #28a745;">
+                                                    <a class="button-a" href="${data.url}" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #28a745;">
+                                                        View Client Profile
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                `
+                                    : ""
+                                }
+                                
+                                <!-- Confirmation request -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please confirm once you have verified the KYC and moved the client to the next onboarding stage.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1289,70 +2673,210 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KYC Verification Failed</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${
-                  data?.recipientName || "Client Support"
-                }</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                The preliminary KYC for the following client has <strong style="color: #dc3545;">failed verification</strong>. Please review and take appropriate action:
-            </p>
-            
-            <div style="background-color: #fff5f5; padding: 20px; border-left: 4px solid #dc3545; margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Verification Status:</strong> <span style="color: #dc3545; font-weight: 600;">Failed</span>
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Review Date:</strong> ${
-                      data?.reviewDate || new Date().toLocaleDateString()
-                    }
-                </p>
-               
-            </div>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-                Please review the failed KYC documentation and determine the next course of action. This may require additional documentation from the client or escalation to management.
-            </p>
-            
-            ${
-              data?.url
-                ? `
-                <a href="${data.url}" style="display: inline-block; background-color: #dc3545; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin: 10px 0;">
-                    Review Failed KYC
-                </a>
-            `
-                : ""
-            }
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please confirm the actions taken and inform the client accordingly. Let me know if you need any additional information or support.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Best regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC verification failed for ${
+          data?.clientName || "client"
+        } - action required.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName ||
+                                              "Client Support"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Failure message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            The preliminary KYC for the following client has <strong style="color: #dc3545;">failed verification</strong>. Please review and take appropriate action:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details with failure styling -->
+                                <tr>
+                                    <td style="padding: 20px 0;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="background-color: #fff5f5; padding: 20px; border-left: 4px solid #dc3545;">
+                                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                                        <tr>
+                                                            <td style="padding-bottom: 10px;">
+                                                                <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                                    <strong>Client Name:</strong> ${
+                                                                      data?.clientName ||
+                                                                      "N/A"
+                                                                    }
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="padding-bottom: 10px;">
+                                                                <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                                    <strong>Verification Status:</strong> <span style="color: #dc3545; font-weight: 600;">Failed</span>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                                    <strong>Review Date:</strong> ${
+                                                                      data?.reviewDate ||
+                                                                      new Date().toLocaleDateString()
+                                                                    }
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Action required message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please review the failed KYC documentation and determine the next course of action. This may require additional documentation from the client or escalation to management.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Conditional Button -->
+                                ${
+                                  data?.url
+                                    ? `
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #dc3545;">
+                                                    <a class="button-a" href="${data.url}" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #dc3545;">
+                                                        Review Failed KYC
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                `
+                                    : ""
+                                }
+                                
+                                <!-- Follow-up request -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please confirm the actions taken and inform the client accordingly. Let me know if you need any additional information or support.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Best regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1408,67 +2932,191 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS Processing Request</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>CS team</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please proceed with initiating the CS process for the following client:
-            </p>
-            
-            <div style=" margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    UBOs/Significant Controllers/Person having Executive Authority/Directors: Please click here to review data provided by the client/ WORD doc
-                </p>
-            </div>
-            
-            
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-                Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
-            </p>
-            
-            <div style="margin: 25px 0;">
-                ${
-                  data?.documentUrl
-                    ? `
-                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                    Download Documents
-                </a>
-                `
-                    : ""
-                }
-            </div>
-
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please let me know if you require any additional information.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                 Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        CS processing request for ${
+          data?.clientName || "client"
+        } - documents ready for review.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>CS team</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instruction message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please proceed with initiating the CS process for the following client:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding-bottom: 10px;">
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        <strong>Client Name:</strong> ${
+                                                          data?.clientName ||
+                                                          "N/A"
+                                                        }
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        UBOs/Significant Controllers/Person having Executive Authority/Directors: Please click here to review data provided by the client/ WORD doc
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Process instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Conditional Download Button -->
+                                ${
+                                  data?.documentUrl
+                                    ? `
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #2f465a;">
+                                                    <a class="button-a" href="${data.documentUrl}" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #2f465a;">
+                                                        Download Documents
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                `
+                                    : ""
+                                }
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please let me know if you require any additional information.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1531,49 +3179,148 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MSA and SOW Preparation Request</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName || "User"}</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please proceed with preparing the MSA and SOW for the following client:
-            </p>
-            
-            <div style="margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-            </div>
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-                <strong>Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.</strong>
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please let me know if you require any additional information.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        MSA and SOW preparation request for ${data?.clientName || "client"}.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName || "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Request message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please proceed with preparing the MSA and SOW for the following client:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            <strong>Client Name:</strong> ${
+                                              data?.clientName || "N/A"
+                                            }
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            <strong>Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.</strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please let me know if you require any additional information.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1627,50 +3374,151 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MSA and SOW Preparation Request</title>
+    <title>MSA and SOW Upload Request</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName || "User"}</strong>,
-            </p>
-            
-          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-  Hope you have prepared the MSA and SOW documents for the following client:
-</p>
-
-<div style="margin: 20px 0;">
-  <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-  </p>
-</div>
-
-<p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-  Kindly upload the finalized documents to the respective HubSpot deal at your earliest convenience.
-</p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please let me know if you require any additional information.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        Upload MSA and SOW documents for ${
+          data?.clientName || "client"
+        } to HubSpot.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName || "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Hope message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Hope you have prepared the MSA and SOW documents for the following client:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            <strong>Client Name:</strong> ${
+                                              data?.clientName || "N/A"
+                                            }
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Upload instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Kindly upload the finalized documents to the respective HubSpot deal at your earliest convenience.
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please let me know if you require any additional information.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
@@ -1743,67 +3591,194 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Processing Request</title>
+    <title>KYC Processing Request</title>
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Client-specific styles */
+        .ReadMsgBody { width: 100%; }
+        .ExternalClass { width: 100%; }
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+            line-height: 100%;
+        }
+        
+        /* Mobile styles */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .mobile-padding {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            .button-td {
+                padding: 20px 0 !important;
+            }
+            .button-a {
+                padding: 15px 30px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
-    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
-        <!-- Header -->
-        ${header()}
-        
-        <!-- Main Content -->
-        <div style="padding: 30px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
-                Dear <strong>${data?.recipientName || "User"}</strong>,
-            </p>
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please proceed with initiating the CS process for the following client:
-            </p>
-            
-            <div style="margin: 20px 0;">
-                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
-                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
-                </p>
-                <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    <strong>UBOs/Significant Controllers/Person having Executive Authority/Directors:</strong> Review the data provided by the client using the buttons below.
-                </p>
-            </div>
-
-            
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
-                Kindly begin data entry, name screening, and e-KYC setup
-            </p>
-            
-            <!-- CTA Buttons Container -->
-            <div style="margin: 25px 0;">
-                ${
-                  data?.documentUrl
-                    ? `
-                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                    Download Documents
-                </a>
-                `
-                    : ""
-                }
-            </div>
-
-            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
-                Please let me know if you require any additional information.
-            </p>
-        </div>
-        
-        <!-- Footer -->
-        <div style="padding: 25px;">
-            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
-                Warm regards,
-            </p>
-            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
-            </p>
-        </div>
-        
-        ${IncorpFooter(data.companyName)}
+    <!-- Preheader text (hidden) -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+        KYC processing request for ${
+          data?.clientName || "client"
+        } - data entry and screening required.
     </div>
+    
+    <!-- Email Container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #ffffff; max-width: 600px; margin: 0 auto;">
+        <tr>
+            <td style="padding: 20px 0;">
+                <!-- Main Email Table -->
+                <table class="email-container" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: 0 auto; background-color: #ffffff; max-width: 600px;">
+                    
+                    <!-- Header -->
+                    <tr>
+                        ${header()}
+                    </tr>
+                    
+                    <!-- Main Content -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 30px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <!-- Greeting -->
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Dear <strong>${
+                                              data?.recipientName || "User"
+                                            }</strong>,
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Instruction message -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please proceed with initiating the CS process for the following client:
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Client details -->
+                                <tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                            <tr>
+                                                <td style="padding-bottom: 10px;">
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        <strong>Client Name:</strong> ${
+                                                          data?.clientName ||
+                                                          "N/A"
+                                                        }
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                                        <strong>UBOs/Significant Controllers/Person having Executive Authority/Directors:</strong> Review the data provided by the client using the buttons below.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Process instructions -->
+                                <tr>
+                                    <td style="padding-bottom: 25px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Kindly begin data entry, name screening, and e-KYC setup
+                                        </p>
+                                    </td>
+                                </tr>
+                                
+                                <!-- Conditional Download Button -->
+                                ${
+                                  data?.documentUrl
+                                    ? `
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #2f465a;">
+                                                    <a class="button-a" href="${data.documentUrl}" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #2f465a;">
+                                                        Download Documents
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                `
+                                    : ""
+                                }
+                                
+                                <!-- Contact message -->
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Please let me know if you require any additional information.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Signature -->
+                    <tr>
+                        <td class="mobile-padding" style="padding: 20px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0 0 5px 0;">
+                                            Warm regards,
+                                        </p>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
+                                            Incorp Team
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td class="mobile-padding" style="font-size: 12px; text-align: center; color: #888888; border-top: 1px solid #eeeeee; padding: 20px 25px 25px 25px;">
+                            ${IncorpFooter(data.companyName)}
+                        </td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>`,
         plainText: `
