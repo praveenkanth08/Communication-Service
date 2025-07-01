@@ -1081,8 +1081,8 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 <body style="font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0; background-color: #f5f7fa;">
                     <div style="max-width: 650px; margin: 0 auto; padding: 0; background-color: #ffffff; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                         <!-- Header Section -->
-                        <div style="text-align: center; padding: 25px 20px; background-color: #1976d2; margin-bottom: 0;">
-                            <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 180px; height: auto;" />
+                        <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
+                          <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
                         </div>
 
                         <!-- Report Header -->
