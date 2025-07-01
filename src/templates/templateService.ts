@@ -432,6 +432,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           logoUrl?: string;
           supportEmail?: string;
           companyAddress?: string;
+          documentUrl?: string;
         } = {
           companyName: "InCorp",
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
@@ -469,6 +470,15 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
                We will continue to keep you informed of the progress.
             </p>
+            ${
+              data?.documentUrl
+                ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Document
+                </a>
+                `
+                : ""
+            }
         </div>
         
         <!-- Footer -->
@@ -1430,14 +1440,6 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             </p>
             
             <div style="margin: 25px 0;">
-            ${
-              data.url
-                ? `<a href="${data.url}" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin-right: 10px;">
-                    Review KYC
-                </a>`
-                : ""
-            }
-                
                 ${
                   data?.documentUrl
                     ? `
@@ -1600,6 +1602,123 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
+    //MSA and SOW upload requiest Template
+    this.templates.set(
+      EmailTemplate.MSA_SOW_UPLOAD_REQUEST,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          recipientName?: string;
+          companyName?: string;
+          companyAddress?: string;
+          hubspotDealLink?: string;
+          dealId?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `Action Required: Upload MSA & SOW Documents – ${
+          data?.clientName || "Client"
+        }`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA and SOW Preparation Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+  Hope you have prepared the MSA and SOW documents for the following client:
+</p>
+
+<div style="margin: 20px 0;">
+  <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+  </p>
+</div>
+
+<p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+  Kindly upload the finalized documents to the respective HubSpot deal at your earliest convenience.
+</p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+Action Required: Upload MSA & SOW Documents – ${data?.clientName || "Client"}
+
+Dear ${data?.recipientName || "User"},
+
+I hope the MSA and SOW preparation for ${
+          data?.clientName || "Client"
+        } is progressing well.
+
+Action Required:
+Please upload the completed MSA and SOW documents to the HubSpot Deal at your earliest convenience.
+
+Upload Details:
+- Client Name: ${data?.clientName || "N/A"}
+- Deal ID: ${data?.dealId || "Please check HubSpot"}
+${data?.hubspotDealLink ? `- HubSpot Deal Link: ${data.hubspotDealLink}` : ""}
+
+Documents to Upload:
+1. Master Service Agreement (MSA)
+2. Statement of Work (SOW)
+
+Instructions:
+• Navigate to the HubSpot Deal
+• Upload documents in the "Attachments" section
+• Ensure both MSA and SOW are clearly labeled
+• Update deal stage once uploaded
+
+Please confirm once the documents have been successfully uploaded to HubSpot.
+
+If you encounter any issues or need assistance with the upload process, please don't hesitate to reach out.
+
+Thank you for your prompt attention to this matter.
+
+Best regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+`,
+      })
+    );
+
     // onboarding submission kyc internal agent template
     this.templates.set(
       EmailTemplate.ONBOARDING_SUBMITTED_KYC_INTERNAL_AGENT,
@@ -1657,14 +1776,6 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             
             <!-- CTA Buttons Container -->
             <div style="margin: 25px 0;">
-            ${
-              data.url
-                ? `<a href="${data.url}" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin-right: 10px;">
-                    Review KYC
-                </a>`
-                : ""
-            }
-                
                 ${
                   data?.documentUrl
                     ? `
