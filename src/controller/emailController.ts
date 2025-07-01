@@ -156,15 +156,6 @@ export class EmailController {
     body: any
   ): Promise<{ authenticated: boolean; error?: string }> {
     try {
-      const apiKey = headers["x-api-key"];
-      if (!apiKey) {
-        return { authenticated: false, error: "Unauthorized user" };
-      }
-      if (apiKey !== process.env.API_KEY) {
-        logger.warn("Invalid API key provided");
-        return { authenticated: false, error: "Forbidden: Invalid API key" };
-      }
-
       const signature = headers["x-signature"];
       const timestamp = headers["x-timestamp"];
       const nonce = headers["x-nonce"];
@@ -240,17 +231,17 @@ export class EmailController {
         emailSendSchema,
         context.body
       );
-    //   if (!validationResult.isValid) {
-    //     logger.warn("Request validation failed:", validationResult.error);
-    //     return {
-    //       statusCode: 400,
-    //       body: {
-    //         success: false,
-    //         error: "Validation failed",
-    //         details: validationResult.error,
-    //       },
-    //     };
-    //   }
+      //   if (!validationResult.isValid) {
+      //     logger.warn("Request validation failed:", validationResult.error);
+      //     return {
+      //       statusCode: 400,
+      //       body: {
+      //         success: false,
+      //         error: "Validation failed",
+      //         details: validationResult.error,
+      //       },
+      //     };
+      //   }
 
       // Send email
       logger.info("Email send request received", {

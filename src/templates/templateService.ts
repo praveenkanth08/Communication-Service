@@ -139,7 +139,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Acknowledgement of Onboarding Form and Document Submission`,
+        subject: `Acknowledgement of Prelim KYC Submission`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -320,7 +320,109 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
-    // Submission Success Template
+    //skip prelim KYC and direct onboarding
+    this.templates.set(
+      EmailTemplate.ONBOARDING_NOTSTARTED_WELCOME_EMAIL,
+      (
+        data: {
+          recipientName?: string;
+          companyName?: string;
+          logoUrl?: string;
+          url?: string;
+          supportEmail?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `Submission of Client Onboarding Form and Required Documents`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Complete</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+       ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName}</strong>, 
+            </p>
+            
+          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+              Thank you for choosing to engage our services.
+            </p>            
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+              To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 25px 0; line-height: 1.6;">
+             Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+            </p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="${
+                  data.url
+                }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                     Begin Onboarding
+                </a>
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+              Should you have any questions or require clarification, please do not hesitate to contact us.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards, 
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+Welcome to ${data.companyName || "InCorp"}!
+
+${data.recipientName ? `Dear ${data.recipientName},` : ""}
+
+Thank you for choosing ${
+          data.companyName || "InCorp"
+        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+
+To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+
+${data.url ? `Start your incorporation: ${data.url}` : ""}
+
+If you have any questions, please don't hesitate to contact our support team at ${
+          data.supportEmail || "notifications@incorp.asia"
+        }.
+
+Best regards,
+${data.companyName || "InCorp"} Team
+
+© ${new Date().getFullYear()} ${
+          data.companyName || "InCorp"
+        }. All rights reserved.
+${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+      `,
+      })
+    );
+
+    // Onboarding submitted Template
     this.templates.set(
       EmailTemplate.ONBOARDING_SUBMITTED,
       (
@@ -330,6 +432,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           logoUrl?: string;
           supportEmail?: string;
           companyAddress?: string;
+          documentUrl?: string;
         } = {
           companyName: "InCorp",
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
@@ -367,6 +470,15 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
                We will continue to keep you informed of the progress.
             </p>
+            ${
+              data?.documentUrl
+                ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Document
+                </a>
+                `
+                : ""
+            }
         </div>
         
         <!-- Footer -->
@@ -388,11 +500,12 @@ Welcome to ${data.companyName || "InCorp"}!
 
 ${data.recipientName ? `Dear ${data.recipientName},` : ""}
 
-Thank you for choosing ${
-          data.companyName || "InCorp"
-        } for your business inorporation needs. We're excited to help you start your entrepreneurial journey!
+We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
 
-To begin your incorporation process, please visit the link below to start the onboarding flow. The process is simple and should take just a few minutes to complete.
+As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
+
+We will continue to keep you informed of the progress.
+
 If you have any questions, please don't hesitate to contact our support team at ${
           data.supportEmail || "notifications@incorp.asia"
         }.
@@ -405,6 +518,94 @@ ${data.companyName || "InCorp"} Team
         }. All rights reserved.
 ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       `,
+      })
+    );
+
+    // Prelim KYC Failure
+    this.templates.set(
+      EmailTemplate.PRELIM_KYC_FAILURE,
+      (
+        data: {
+          recipientName?: string;
+          companyName?: string;
+          logoUrl?: string;
+          supportEmail?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Verification - Status`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Update - ${data?.companyName || "InCorp"}</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+       ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                ${
+                  data?.recipientName
+                    ? `Dear <strong>${data?.recipientName}</strong>,`
+                    : "Dear User,"
+                } 
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+            </p>
+            
+           <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+  If you have any questions or require further assistance, please reach out to our support team through your usual point of contact.
+</p>
+  
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards, 
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0; font-weight: 600; text-align: left;">
+                ${data?.companyName || "InCorp"} Team
+            </p>
+        </div>
+        
+       ${IncorpFooter(data?.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC Verification - Update Required
+
+${data?.recipientName ? `Dear ${data.recipientName},` : "Dear User,"}
+
+We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+
+Our team will contact you shortly regarding the next steps and requirements to complete your verification process.
+
+If you have any immediate questions, please don't hesitate to contact our support team at ${
+          data?.supportEmail || "notifications@incorp.asia"
+        }.
+
+We appreciate your patience and cooperation in completing this verification process.
+
+Best regards,
+${data?.companyName || "InCorp"} Team
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
       })
     );
 
@@ -948,15 +1149,251 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
       })
     );
 
-    // onboarding submission  internal agent template
+    // prelim KYC suucess internal agent template
     this.templates.set(
-      EmailTemplate.ONBOARDING_SUBMITED_INTERNAL_AGENT,
+      EmailTemplate.PRELIM_KYC_SUCCESS_INTERNAL_AGENT,
+      (
+        data: {
+          clientName?: string;
+          recipientName?: string;
+          dealOwnerName?: string;
+          csRecipientName?: string;
+          url?: string;
+          companyName?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Verification Complete – ${data?.clientName || "Client"}`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Complete</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                The preliminary KYC for the following client has been <strong style="color: #28a745;">successfully completed</strong>. Please verify and proceed the client to the next onboarding stage:
+            </p>
+            
+            <div style="background-color: #f8f9fa; padding: 20px; border-left: 4px solid #28a745; margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Verification Status:</strong> <span style="color: #28a745; font-weight: 600;">Approved</span>
+                </p>
+                
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+                Please verify the completed KYC documentation and proceed with moving the client to the next onboarding stage.
+            </p>
+            
+            ${
+              data?.url
+                ? `
+                <a href="${data.url}" style="display: inline-block; background-color: #28a745; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin: 10px 0;">
+                    View Client Profile
+                </a>
+            `
+                : ""
+            }
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please confirm once you have verified the KYC and moved the client to the next onboarding stage.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC Verification Complete – ${data?.clientName || "Client"}
+
+Dear KYC team,
+
+The preliminary KYC for the following client has been successfully completed. Please verify and proceed the client to the next onboarding stage:
+
+- Client Name: ${data?.clientName || "N/A"}
+- Verification Status: Approved
+
+Please verify the completed KYC documentation and proceed with moving the client to the next onboarding stage. All screening processes have been completed successfully.
+
+${data?.url ? `View Client Profile: ${data.url}` : ""}
+
+Please confirm once you have verified the KYC and moved the client to the next onboarding stage. Let me know if you need any additional information.
+
+Best regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
+      })
+    );
+
+    // prelim KYC failure internal agent template
+    this.templates.set(
+      EmailTemplate.PRELIM_KYC_FAILURE_INTERNAL_AGENT,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          csRecipientName?: string;
+          recipientName?: string;
+          url?: string;
+          companyName?: string;
+          companyAddress?: string;
+          failureReason?: string;
+          reviewDate?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Verification Failed – ${
+          data?.clientName || "Client"
+        } - Action Required`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYC Verification Failed</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${
+                  data?.recipientName || "Client Support"
+                }</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                The preliminary KYC for the following client has <strong style="color: #dc3545;">failed verification</strong>. Please review and take appropriate action:
+            </p>
+            
+            <div style="background-color: #fff5f5; padding: 20px; border-left: 4px solid #dc3545; margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Verification Status:</strong> <span style="color: #dc3545; font-weight: 600;">Failed</span>
+                </p>
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Review Date:</strong> ${
+                      data?.reviewDate || new Date().toLocaleDateString()
+                    }
+                </p>
+               
+            </div>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+                Please review the failed KYC documentation and determine the next course of action. This may require additional documentation from the client or escalation to management.
+            </p>
+            
+            ${
+              data?.url
+                ? `
+                <a href="${data.url}" style="display: inline-block; background-color: #dc3545; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600; margin: 10px 0;">
+                    Review Failed KYC
+                </a>
+            `
+                : ""
+            }
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please confirm the actions taken and inform the client accordingly. Let me know if you need any additional information or support.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Best regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC Verification Failed – ${data?.clientName || "Client"} - Action Required
+
+Dear KYC team,
+
+The preliminary KYC for the following client has failed verification. Please review and take appropriate action:
+
+- Client Name: ${data?.clientName || "N/A"}
+- Verification Status: Failed
+
+Please review the failed KYC documentation and determine the next course of action. This may require additional documentation from the client or escalation to management.
+
+${data?.url ? `Review Failed KYC: ${data.url}` : ""}
+
+Please confirm the actions taken and inform the client accordingly. Let me know if you need any additional information or support.
+
+Best regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+    `,
+      })
+    );
+
+    // onboarding submission cs team internal agent template
+    this.templates.set(
+      EmailTemplate.ONBOARDING_SUBMITTED_INTERNAL_AGENT,
       (
         data: {
           clientName?: string;
           dealOwnerName?: string;
           csRecipientName?: string;
           url?: string;
+          documentUrl?: string;
           companyName?: string;
           companyAddress?: string;
         } = {
@@ -992,20 +1429,27 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                     <strong>Client Name:</strong> ${data?.clientName || "N/A"}
                 </p>
                 <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                    UBOs/Significant Controllers/Person having Executive Authority/Directors:  Click here to review data provided by the client/ WORD doc
-                    
+                    UBOs/Significant Controllers/Person having Executive Authority/Directors: Please click here to review data provided by the client/ WORD doc
                 </p>
             </div>
+            
+            
             
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
                 Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
             </p>
             
-            <a href="${
-              data.url
-            }" style="display: inline-block; background-color: #bb2121; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
-                     Review Details
+            <div style="margin: 25px 0;">
+                ${
+                  data?.documentUrl
+                    ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Documents
                 </a>
+                `
+                    : ""
+                }
+            </div>
 
 
             <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
@@ -1040,6 +1484,12 @@ Please proceed with initiating the CS process for the following client:
           "Click here to review data provided by the client/ WORD doc"
         }
 
+${
+  data?.documentUrl
+    ? `Please click here to view all the uploaded documents: ${data.documentUrl}`
+    : ""
+}
+
 Kindly begin data entry, incorporation documents preparation. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
 
 Please let me know if you require any additional information.
@@ -1053,7 +1503,336 @@ ${data?.companyName || "InCorp"} Global Pte. Ltd.
           data?.companyName || "InCorp"
         }. All rights reserved.
 ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
-    `,
+`,
+      })
+    );
+
+    // MSA and SOW preparation template
+    this.templates.set(
+      EmailTemplate.MSA_SOW_PREPARATION_REQUEST,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          recipientName?: string;
+          companyName?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `MSA and SOW Preparation Request – ${
+          data?.clientName || "Client"
+        }`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA and SOW Preparation Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Please proceed with preparing the MSA and SOW for the following client:
+            </p>
+            
+            <div style="margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+            </div>
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+                <strong>Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.</strong>
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+MSA and SOW Preparation Request – ${data?.clientName || "Client"}
+
+Dear ${data?.recipientName || "User"},
+
+Please proceed with preparing the MSA and SOW for the following client:
+
+- Client Name: ${data?.clientName || "N/A"}
+
+Please start preparing MSA and SOW. When ready, upload into HubSpot Deal.
+
+Please let me know if you require any additional information.
+
+Warm regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+`,
+      })
+    );
+
+    //MSA and SOW upload requiest Template
+    this.templates.set(
+      EmailTemplate.MSA_SOW_UPLOAD_REQUEST,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          recipientName?: string;
+          companyName?: string;
+          companyAddress?: string;
+          hubspotDealLink?: string;
+          dealId?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `Action Required: Upload MSA & SOW Documents – ${
+          data?.clientName || "Client"
+        }`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSA and SOW Preparation Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+          <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+  Hope you have prepared the MSA and SOW documents for the following client:
+</p>
+
+<div style="margin: 20px 0;">
+  <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+  </p>
+</div>
+
+<p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+  Kindly upload the finalized documents to the respective HubSpot deal at your earliest convenience.
+</p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+Action Required: Upload MSA & SOW Documents – ${data?.clientName || "Client"}
+
+Dear ${data?.recipientName || "User"},
+
+I hope the MSA and SOW preparation for ${
+          data?.clientName || "Client"
+        } is progressing well.
+
+Action Required:
+Please upload the completed MSA and SOW documents to the HubSpot Deal at your earliest convenience.
+
+Upload Details:
+- Client Name: ${data?.clientName || "N/A"}
+- Deal ID: ${data?.dealId || "Please check HubSpot"}
+${data?.hubspotDealLink ? `- HubSpot Deal Link: ${data.hubspotDealLink}` : ""}
+
+Documents to Upload:
+1. Master Service Agreement (MSA)
+2. Statement of Work (SOW)
+
+Instructions:
+• Navigate to the HubSpot Deal
+• Upload documents in the "Attachments" section
+• Ensure both MSA and SOW are clearly labeled
+• Update deal stage once uploaded
+
+Please confirm once the documents have been successfully uploaded to HubSpot.
+
+If you encounter any issues or need assistance with the upload process, please don't hesitate to reach out.
+
+Thank you for your prompt attention to this matter.
+
+Best regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+`,
+      })
+    );
+
+    // onboarding submission kyc internal agent template
+    this.templates.set(
+      EmailTemplate.ONBOARDING_SUBMITTED_KYC_INTERNAL_AGENT,
+      (
+        data: {
+          clientName?: string;
+          dealOwnerName?: string;
+          csRecipientName?: string;
+          recipientName?: string;
+          url?: string;
+          documentUrl?: string;
+          companyName?: string;
+          companyAddress?: string;
+        } = {
+          companyName: "InCorp",
+          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+        }
+      ) => ({
+        subject: `KYC Processing Request – ${data?.clientName || "Client"}`,
+        html: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Processing Request</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff;">
+        <!-- Header -->
+        ${header()}
+        
+        <!-- Main Content -->
+        <div style="padding: 30px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 15px 0; line-height: 1.6;">
+                Dear <strong>${data?.recipientName || "User"}</strong>,
+            </p>
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
+                Please proceed with initiating the CS process for the following client:
+            </p>
+            
+            <div style="margin: 20px 0;">
+                <p style="font-size: 16px; color: #2f465a; margin: 0 0 10px 0; line-height: 1.6;">
+                    <strong>Client Name:</strong> ${data?.clientName || "N/A"}
+                </p>
+                <p style="font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                    <strong>UBOs/Significant Controllers/Person having Executive Authority/Directors:</strong> Review the data provided by the client using the buttons below.
+                </p>
+            </div>
+
+            
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0; line-height: 1.6;">
+                Kindly begin data entry, name screening, and e-KYC setup
+            </p>
+            
+            <!-- CTA Buttons Container -->
+            <div style="margin: 25px 0;">
+                ${
+                  data?.documentUrl
+                    ? `
+                <a href="${data.documentUrl}" style="display: inline-block; background-color: #2f465a; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; font-weight: 600;">
+                    Download Documents
+                </a>
+                `
+                    : ""
+                }
+            </div>
+
+            <p style="font-size: 16px; color: #2f465a; margin: 20px 0 0 0; line-height: 1.6;">
+                Please let me know if you require any additional information.
+            </p>
+        </div>
+        
+        <!-- Footer -->
+        <div style="padding: 25px;">
+            <p style="font-size: 16px; color: #2f465a; margin: 0 0 5px 0; text-align: left;">
+                Warm regards,
+            </p>
+            <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
+                Incorp Team
+            </p>
+        </div>
+        
+        ${IncorpFooter(data.companyName)}
+    </div>
+</body>
+</html>`,
+        plainText: `
+KYC Processing Request – ${data?.clientName || "Client"}
+
+Dear ${data?.recipientName || "User"},
+
+Please proceed with initiating the CS process for the following client:
+
+- Client Name: ${data?.clientName || "N/A"}
+- UBOs/Significant Controllers/Person having Executive Authority/Directors: Review data provided by the client
+
+Review KYC: ${data?.url || "N/A"}
+${data?.documentUrl ? `Download Documents: ${data.documentUrl}` : ""}
+
+Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
+
+Please let me know if you require any additional information.
+
+Warm regards,
+${data?.dealOwnerName || "Alex Teo"}
+Senior Business Development Manager
+${data?.companyName || "InCorp"} Global Pte. Ltd.
+
+© ${new Date().getFullYear()} ${
+          data?.companyName || "InCorp"
+        }. All rights reserved.
+${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+`,
       })
     );
 
@@ -1096,11 +1875,16 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
                                     <tr>
                                         <td style="padding: 8px 0; color: #666; font-weight: bold; width: 40%;">Report Date:</td>
-                                        <td style="padding: 8px 0;">${data.reportDate || new Date().toLocaleDateString()}</td>
+                                        <td style="padding: 8px 0;">${
+                                          data.reportDate ||
+                                          new Date().toLocaleDateString()
+                                        }</td>
                                     </tr>
                                     <tr>
                                         <td style="padding: 8px 0; color: #666; font-weight: bold;">Total Files Processed:</td>
-                                        <td style="padding: 8px 0;">${data.totalFiles || 0}</td>
+                                        <td style="padding: 8px 0;">${
+                                          data.totalFiles || 0
+                                        }</td>
                                     </tr>
                                 </table>
                             </div>
@@ -1111,18 +1895,24 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                             <h3 style="color: #2c5aa0; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; font-size: 20px;">Processing Summary</h3>
                             <div style="display: flex; flex-wrap: wrap; gap: 15px; margin-top: 20px;">
                                 <div style="flex: 1; min-width: 150px; background-color: #e8f5e9; padding: 20px; border-radius: 6px; text-align: center; border-bottom: 4px solid #4caf50; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                                    <div style="font-size: 32px; font-weight: bold; color: #2e7d32; margin-bottom: 5px;">${data.successCount || 0}</div>
+                                    <div style="font-size: 32px; font-weight: bold; color: #2e7d32; margin-bottom: 5px;">${
+                                      data.successCount || 0
+                                    }</div>
                                     <div style="color: #2e7d32; font-size: 15px; font-weight: 500;">Successfully Processed</div>
                                 </div>
                                 <div style="flex: 1; min-width: 150px; background-color: #ffebee; padding: 20px; border-radius: 6px; text-align: center; border-bottom: 4px solid #ef5350; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-                                    <div style="font-size: 32px; font-weight: bold; color: #c62828; margin-bottom: 5px;">${data.errorCount || 0}</div>
+                                    <div style="font-size: 32px; font-weight: bold; color: #c62828; margin-bottom: 5px;">${
+                                      data.errorCount || 0
+                                    }</div>
                                     <div style="color: #c62828; font-size: 15px; font-weight: 500;">Failed Processing</div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- CSV Attachment Notice -->
-                        ${data.csvAttached ? `
+                        ${
+                          data.csvAttached
+                            ? `
                         <div style="padding: 0 30px 30px; background-color: #ffffff;">
                             <div style="background-color: #e3f2fd; border-radius: 6px; padding: 20px; border-left: 4px solid #1976d2;">
                                 <h4 style="color: #0d47a1; margin-top: 0; display: flex; align-items: center; font-size: 18px;">
@@ -1134,13 +1924,18 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 </p>
                             </div>
                         </div>
-                        ` : ""}
+                        `
+                            : ""
+                        }
 
                         <!-- Footer -->
                         <div style="font-size: 13px; text-align: center; color: #757575; margin-top: 0; border-top: 1px solid #eaeaea; padding: 25px 30px; background-color: #f7f9fc;">
                             <p style="margin-bottom: 10px;">&copy; ${new Date().getFullYear()} BlueMeg File Orchestrator. All rights reserved.</p>
                             <p style="margin-bottom: 10px;">This is an automated report generated by the BlueMeg File Orchestrator service.</p>
-                            <p style="margin-bottom: 10px;">${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}</p>
+                            <p style="margin-bottom: 10px;">${
+                              data.companyAddress ||
+                              "36 Robinson Rd, #20-01 City House, Singapore 068877"
+                            }</p>
                             <p style="font-size: 11px; color: #9e9e9e; margin-bottom: 0;">
                                 Generated: ${new Date().toISOString()}
                             </p>

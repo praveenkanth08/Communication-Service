@@ -5,6 +5,7 @@ import {
   EventType,
   EmailSendRequest,
   EmailSendResponse,
+  EmailAttachment,
 } from "../types/events";
 import { logger } from "../utils/logger";
 import dotenv from "dotenv";
@@ -38,7 +39,7 @@ export class EmailService {
           details: validationErrors,
         };
       }
-
+      let cosmosAttachments: EmailAttachment[] = [];
       // Create email event
       const emailEvent: EmailEvent = {
         id: uuidv4(),
@@ -55,7 +56,10 @@ export class EmailService {
           content: emailRequest.content,
           templateId: emailRequest.templateId,
           templateData: emailRequest.templateData,
-          attachments: emailRequest.attachments,
+          attachments: [
+            ...cosmosAttachments,
+            ...(emailRequest.attachments || []),
+          ],
         },
         timestamp: new Date(),
         metadata: {
@@ -154,7 +158,13 @@ export class EmailService {
    * @returns Array of available template information
    */
   getAvailableTemplates(): string[] {
-    return ["OTP_VERIFICATION", "DOCUMENT_GENERATION", "WELCOME","PRELIM_KYC_SUBMITTED","SUBMISSION_SUCCESS"];
+    return [
+      "OTP_VERIFICATION",
+      "DOCUMENT_GENERATION",
+      "WELCOME",
+      "PRELIM_KYC_SUBMITTED",
+      "SUBMISSION_SUCCESS",
+    ];
   }
 
   /**
