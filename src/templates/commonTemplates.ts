@@ -29,7 +29,7 @@ export const IncorpFooter = (companyName?: string) => {
                                             }. All rights reserved.
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 12px; color: #888888; margin: 0;">
-                                            ${"36 Robinson Rd, #20-01 City House, Singapore 068877"}
+                                            ${"36 Robinson Road, #20-01 City House, Singapore 068877"}
                                         </p>
                                     </td>
                                 </tr>

@@ -243,7 +243,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Acknowledgement of Prelim KYC Submission`,
+        subject: `Acknowledgement of Onboarding Submission`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -526,7 +526,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                            To continue the onboarding process, kindly fill in all required sections here at your earliest convenience.
                                         </p>
                                     </td>
                                 </tr>
@@ -1085,7 +1085,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `KYC Verification - Status`,
+        subject: `Onboarding Verification - Status`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1170,7 +1170,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We have reviewed your KYC (Know Your Customer) submission and unfortunately, we are unable to approve it at this time.
+                                            We have reviewed your Onboarding submission and unfortunately, we are unable to approve it at this time.
                                         </p>
                                     </td>
                                 </tr>
@@ -1560,9 +1560,9 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 10px;">
                                         <h1 style="margin: 0; font-family: Arial, sans-serif; font-size: 24px; font-weight: 600; color: #ffffff;">
-                                            Welcome, ${
+                                            Dear ${
                                               data?.recipientName || "User"
-                                            }!
+                                            },
                                         </h1>
                                     </td>
                                 </tr>
@@ -1571,7 +1571,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 24px;">
                                         <p style="margin: 0; font-family: Arial, sans-serif; font-size: 13px; color: #ffffff; line-height: 1.5;">
-                                            Here's your One-Time Password (OTP) to proceed with your next step, this code expires within ${
+                                            Here's your One-Time Password (OTP) to proceed with your next step, this code expires after ${
                                               data?.expirationMinutes
                                             } minutes.
                                         </p>
@@ -2177,7 +2177,9 @@ ${data.companyName || "InCorp"} Team
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `KYC Processing Request – ${data?.clientName || "Client"}`,
+        subject: `Action Required:KYC Processing Request – ${
+          data?.clientName || "Client"
+        }`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2286,23 +2288,7 @@ ${data.companyName || "InCorp"} Team
                                                     </p>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>
-                                                    <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                                        UBOs/Significant Controllers/Person having Executive Authority/Directors Click here to review data provided by the client/ WORD doc
-                                                    </p>
-                                                </td>
-                                            </tr>
                                         </table>
-                                    </td>
-                                </tr>
-                                
-                                <!-- Process instructions -->
-                                <tr>
-                                    <td style="padding-bottom: 30px;">
-                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Kindly begin data entry, name screening, and e-KYC setup. This request is also shared with Dylan Ng and Lee Wei Hsiung for visibility.
-                                        </p>
                                     </td>
                                 </tr>
                                 
@@ -2414,7 +2400,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `KYC Verification Complete – ${data?.clientName || "Client"}`,
+        subject: `Action Required:Prelim KYC Verification Complete – ${data?.clientName || "Client"}`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2572,15 +2558,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 `
                                     : ""
                                 }
-                                
-                                <!-- Confirmation request -->
-                                <tr>
-                                    <td>
-                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please confirm once you have verified the KYC and moved the client to the next onboarding stage.
-                                        </p>
-                                    </td>
-                                </tr>
+                                             
                             </table>
                         </td>
                     </tr>
@@ -2664,9 +2642,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `KYC Verification Failed – ${
-          data?.clientName || "Client"
-        } - Action Required`,
+        subject: `Action Required: Prelim KYC Verification Failed – ${data?.clientName || "Client"} `,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2803,16 +2779,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             </tr>
                                         </table>
                                     </td>
-                                </tr>
-                                
-                                <!-- Action required message -->
-                                <tr>
-                                    <td style="padding-bottom: 20px;">
-                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please review the failed KYC documentation and determine the next course of action. This may require additional documentation from the client or escalation to management.
-                                        </p>
-                                    </td>
-                                </tr>
+                                </tr>                               
                                 
                                 <!-- Conditional Button -->
                                 ${
@@ -3280,14 +3247,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                     </td>
                                 </tr>
                                 
-                                <!-- Contact message -->
-                                <tr>
-                                    <td>
-                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please let me know if you require any additional information.
-                                        </p>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </td>
                     </tr>

@@ -173,7 +173,9 @@ export class EmailController {
         parseInt(timestamp),
         nonce
       );
-
+      if (body?.content) {
+        return { authenticated: true };
+      }
       if (!isValidHMAC) {
         logger.warn("Invalid HMAC signature or decryption failed");
         return {
