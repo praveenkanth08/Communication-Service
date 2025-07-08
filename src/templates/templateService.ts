@@ -30,7 +30,7 @@ export class EmailTemplateService {
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Submission of Client Onboarding Form`,
+        subject: `Let’s Get Started with Your Onboarding​`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,7 +122,8 @@ export class EmailTemplateService {
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Thank you for choosing to engage our services.
+                                           Thank you for choosing to work with InCorp. We’re happy to
+support you on this journey.​
                                         </p>
                                     </td>
                                 </tr>
@@ -131,7 +132,9 @@ export class EmailTemplateService {
                                 <tr>
                                     <td style="padding-bottom: 30px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                           To get things started, please complete the onboarding form
+by filling in all the required sections at your earliest
+convenience.
                                         </p>
                                     </td>
                                 </tr>
@@ -158,7 +161,8 @@ export class EmailTemplateService {
                                 <tr>
                                     <td style="padding-top: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                           If you have any questions or need any assistance along the
+way, feel free to reach out. We're here to help.​
                                         </p>
                                     </td>
                                 </tr>
@@ -243,7 +247,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Acknowledgement of Onboarding Submission`,
+        subject: `Onboarding Submission Received​`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -328,7 +332,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
+                                           Thanks for your Onboarding submission. We appreciate your
+prompt response.
                                         </p>
                                     </td>
                                 </tr>
@@ -337,8 +342,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
-                                        </p>
+                                            Our team is now reviewing the information, and we’ll keep
+you updated on the next steps as we move forward.​                                        </p>
                                     </td>
                                 </tr>
                                 
@@ -346,7 +351,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We will continue to keep you informed of the progress.
+                                          If you have any questions in the meantime, feel free to reach
+out.
                                         </p>
                                     </td>
                                 </tr>
@@ -425,7 +431,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Submission of Client Onboarding Form and Required Documents`,
+        subject: `Onboarding Process – Next Steps​`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -517,7 +523,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Thank you for choosing to engage our services.
+                                           Thank you for choosing to engage our services. We are
+pleased to support you through the onboarding process.​
                                         </p>
                                     </td>
                                 </tr>
@@ -526,7 +533,9 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            To continue the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                           To continue your Onboarding process, please complete all
+required sections of the Onboarding form at your earliest
+convenience.​
                                         </p>
                                     </td>
                                 </tr>
@@ -535,7 +544,10 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 25px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+                                           For your reference, we have also attached a checklist of the
+necessary corporate documents. Kindly ensure that all
+relevant documents are submitted along with the
+completed form.​
                                         </p>
                                     </td>
                                 </tr>
@@ -562,7 +574,10 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-top: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                          Should you require any assistance or clarification, please do
+not hesitate to contact us. We will be glad to support you.​
+
+​
                                         </p>
                                     </td>
                                 </tr>
@@ -867,7 +882,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Acknowledgement of Onboarding Form and Document Submission`,
+        subject: `Onboarding Submission Received – Next Steps`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -959,7 +974,9 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We acknowledge receipt of your completed Onboarding form and the accompanying documents. Thank you for your prompt response.
+                                          We acknowledge receipt of your completed onboarding
+form and accompanying documents. Thank you for your
+prompt response.​
                                         </p>
                                     </td>
                                 </tr>
@@ -968,43 +985,35 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 25px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            As the next step, electronic Know Your Customer (e-KYC) verification links will be sent to the Ultimate Beneficial Owners (UBOs), Significant Controllers, Person having Executive Authority and Directors listed in your submission. Kindly inform the relevant individuals to complete the verification process at their earliest convenience.
+                                            As the next step, electronic Know Your Customer (e-KYC)
+verification links will be sent to the Ultimate Beneficial
+Owners (UBOs), Significant Controllers, Persons with
+Executive Authority, and Directors listed in your submission.
                                         </p>
                                     </td>
                                 </tr>
                                 
                                 <!-- Update message -->
                                 <tr>
-                                    <td style="padding-bottom: ${
-                                      data?.documentUrl ? "20px" : "0px"
-                                    };">
+                                    <td>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We will continue to keep you informed of the progress.
+                                            We kindly ask that you inform the relevant individuals to
+complete the verification at their earliest convenience to
+avoid delays.​
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                 <tr>
+                                    <td>
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                           We will continue to keep you updated on the progress of
+your onboarding.
                                         </p>
                                     </td>
                                 </tr>
                                 
-                                <!-- Conditional Download Button -->
-                                ${
-                                  data?.documentUrl
-                                    ? `
-                                <tr>
-                                    <td class="button-td" style="text-align: center; padding: 20px 0;">
-                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: 0 auto;">
-                                            <tr>
-                                                <td style="border-radius: 5px; background-color: #2f465a;">
-                                                    <a class="button-a" href="${data.documentUrl}" 
-                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #2f465a;">
-                                                        Download Document
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                `
-                                    : ""
-                                }
+                                
                             </table>
                         </td>
                     </tr>
@@ -1085,7 +1094,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Onboarding Verification - Status`,
+        subject: `Outcome of Onboarding Submission Review​`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1170,7 +1179,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            We have reviewed your Onboarding submission and unfortunately, we are unable to approve it at this time.
+                                           Thank you for your Onboarding submission.​
                                         </p>
                                     </td>
                                 </tr>
@@ -1179,7 +1188,18 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            If you have any questions or require further assistance, please reach out to our support team through your usual point of contact.
+                                            Following our review, we regret to inform you that we are
+unable to onboard you at this time.​
+                                        </p>
+                                    </td>
+                                </tr>
+                                tr>
+                                    <td style="padding-bottom: 20px;">
+                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
+                                            Should you have any questions or require further
+clarification, please do not hesitate to contact your usual
+point of contact. We remain available to assist you as
+needed.​
                                         </p>
                                     </td>
                                 </tr>
@@ -2177,7 +2197,7 @@ ${data.companyName || "InCorp"} Team
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Action Required:KYC Processing Request – ${
+        subject: `Action Required: KYC Processing Request – ${
           data?.clientName || "Client"
         }`,
         html: `<!DOCTYPE html>
@@ -2260,7 +2280,7 @@ ${data.companyName || "InCorp"} Team
                                 <tr>
                                     <td style="padding-bottom: 15px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Dear <strong>KYC team</strong>,
+                                            Dear <strong>COE Compliance​ team</strong>,
                                         </p>
                                     </td>
                                 </tr>
@@ -2400,7 +2420,9 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Action Required:Prelim KYC Verification Complete – ${data?.clientName || "Client"}`,
+        subject: `Action Required: Prelim KYC Verification Complete – ${
+          data?.clientName || "Client"
+        }`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2642,7 +2664,9 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Action Required: Prelim KYC Verification Failed – ${data?.clientName || "Client"} `,
+        subject: `Action Required: Prelim KYC Verification Failed – ${
+          data?.clientName || "Client"
+        } `,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -2803,14 +2827,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                     : ""
                                 }
                                 
-                                <!-- Follow-up request -->
-                                <tr>
-                                    <td>
-                                        <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please confirm the actions taken and inform the client accordingly. Let me know if you need any additional information or support.
-                                        </p>
-                                    </td>
-                                </tr>
+                                
                             </table>
                         </td>
                     </tr>
@@ -2892,7 +2909,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `CS Processing Request – ${data?.clientName || "Client"}`,
+        subject: `Action Required: CS Processing Request – ${data?.clientName || "Client"}`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3137,7 +3154,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `MSA and SOW Preparation Request – ${
+        subject: `Action Required: MSA and SOW Preparation Request – ${
           data?.clientName || "Client"
         }`,
         html: `<!DOCTYPE html>
@@ -3320,6 +3337,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyName?: string;
           companyAddress?: string;
           hubspotDealLink?: string;
+          url?: string;
           dealId?: string;
         } = {
           companyName: "InCorp",
@@ -3437,6 +3455,23 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                         </p>
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td class="button-td" style="text-align: left; padding-bottom: 20px;">
+                                        <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                            <tr>
+                                                <td style="border-radius: 5px; background-color: #bb2121;">
+                                                    <a class="button-a" href="${
+                                                      data.url
+                                                    }" 
+                                                       style="display: inline-block; font-family: Arial, sans-serif; font-size: 16px; font-weight: 600; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 5px; background-color: #bb2121;">
+                                                        Review
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
                                 
                                 <!-- Contact message -->
                                 <tr>
@@ -3545,7 +3580,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `KYC Processing Request – ${data?.clientName || "Client"}`,
+        subject: `Action Required: KYC Processing Request – ${data?.clientName || "Client"}`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
