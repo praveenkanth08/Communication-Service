@@ -1193,7 +1193,7 @@ unable to onboard you at this time.​
                                         </p>
                                     </td>
                                 </tr>
-                                tr>
+                                <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
                                             Should you have any questions or require further
@@ -2197,7 +2197,7 @@ ${data.companyName || "InCorp"} Team
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Action Required: KYC Processing Request – ${
+        subject: `Action Required: COE Compliance​ Processing Request – ${
           data?.clientName || "Client"
         }`,
         html: `<!DOCTYPE html>
