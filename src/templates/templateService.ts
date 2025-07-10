@@ -660,7 +660,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
         }
       ) => ({
-        subject: `Submission of Client Onboarding Form and Required Documents`,
+        subject: `Onboarding Process – Next Steps​`,
         html: `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -754,7 +754,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Thank you for choosing to engage our services.
+                                           Thank you for choosing to engage our services. We are
+pleased to support you through the onboarding process.​
                                         </p>
                                     </td>
                                 </tr>
@@ -763,7 +764,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            To initiate the onboarding process, kindly fill in all required sections here at your earliest convenience.
+                                            To begin, please complete all required sections of the
+onboarding form at your earliest convenience.​
                                         </p>
                                     </td>
                                 </tr>
@@ -772,7 +774,10 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 25px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Additionally, we have attached a checklist outlining the required corporate documents. Please ensure that all applicable documents are submitted together with the completed Onboarding form.
+                                           For your reference, we have also attached a checklist of the
+necessary corporate documents. Kindly ensure that all
+relevant documents are submitted along with the
+completed form.
                                         </p>
                                     </td>
                                 </tr>
@@ -799,7 +804,8 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-top: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Should you have any questions or require clarification, please do not hesitate to contact us.
+                                            SShould you require any assistance or clarification, please do
+not hesitate to contact us. We will be glad to support you.​
                                         </p>
                                     </td>
                                 </tr>
@@ -995,7 +1001,7 @@ Executive Authority, and Directors listed in your submission.
                                 
                                 <!-- Update message -->
                                 <tr>
-                                    <td>
+                                    <td style="padding-bottom: 25px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
                                             We kindly ask that you inform the relevant individuals to
 complete the verification at their earliest convenience to
