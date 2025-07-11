@@ -971,7 +971,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                               data?.recipientName
                                                 ? data?.recipientName
                                                 : "User"
-                                            }</strong>!
+                                            }</strong>,
                                         </p>
                                     </td>
                                 </tr>
