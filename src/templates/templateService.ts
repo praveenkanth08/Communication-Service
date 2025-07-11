@@ -2358,7 +2358,7 @@ ${data.companyName || "InCorp"} Team
                                             Warm regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -2601,7 +2601,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Best regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -2848,7 +2848,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Best regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -3088,7 +3088,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Warm regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -3285,7 +3285,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Warm regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -3501,7 +3501,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Warm regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -3678,7 +3678,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please proceed with initiating the CS process for the following client:
+                                            Please proceed with initiating the KYC process for the following client:
                                         </p>
                                     </td>
                                 </tr>
@@ -3761,7 +3761,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                                             Warm regards,
                                         </p>
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #bb2121; margin: 0; font-weight: 600;">
-                                            Incorp Team
+                                            InCorp Team
                                         </p>
                                     </td>
                                 </tr>
@@ -3837,7 +3837,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                     <div style="max-width: 650px; margin: 0 auto; padding: 0; background-color: #ffffff; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                         <!-- Header Section -->
                         <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
-                          <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
+                          <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="InCorp" style="max-width: 150px; height: auto;" />
                         </div>
 
                         <!-- Report Header -->
