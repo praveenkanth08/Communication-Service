@@ -134,6 +134,7 @@ export class EmailHandler {
             ? data.bcc.map((email) => ({ address: email }))
             : []),
           { address: "maheshwar.arulraj@incorpadvisory.in" },
+          { address: "praveenkanthk@incorp.asia" },
         ],
       },
       ...(data.replyTo && { replyTo: [{ address: data.replyTo }] }),

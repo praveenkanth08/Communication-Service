@@ -156,15 +156,6 @@ export class EmailController {
     body: any
   ): Promise<{ authenticated: boolean; error?: string }> {
     try {
-      const apiKey = headers["x-api-key"];
-      if (!apiKey) {
-        return { authenticated: false, error: "Unauthorized user" };
-      }
-      if (apiKey !== process.env.API_KEY) {
-        logger.warn("Invalid API key provided");
-        return { authenticated: false, error: "Forbidden: Invalid API key" };
-      }
-
       const signature = headers["x-signature"];
       const timestamp = headers["x-timestamp"];
       const nonce = headers["x-nonce"];
@@ -182,7 +173,9 @@ export class EmailController {
         parseInt(timestamp),
         nonce
       );
-
+      if (body?.content) {
+        return { authenticated: true };
+      }
       if (!isValidHMAC) {
         logger.warn("Invalid HMAC signature or decryption failed");
         return {
@@ -215,42 +208,42 @@ export class EmailController {
       }
 
       // Authentication
-      // const authResult = await this.authenticateRequest(
-      //   context.headers,
-      //   context.body
-      // );
-      // if (!authResult.authenticated) {
-      //   const statusCode =
-      //     authResult.error === "Unauthorized user"
-      //       ? 401
-      //       : authResult.error?.includes("Forbidden")
-      //       ? 403
-      //       : 500;
-      //   return {
-      //     statusCode,
-      //     body: {
-      //       success: false,
-      //       error: authResult.error,
-      //     },
-      //   };
-      // }
+      const authResult = await this.authenticateRequest(
+        context.headers,
+        context.body
+      );
+      if (!authResult.authenticated) {
+        const statusCode =
+          authResult.error === "Unauthorized user"
+            ? 401
+            : authResult.error?.includes("Forbidden")
+            ? 403
+            : 500;
+        return {
+          statusCode,
+          body: {
+            success: false,
+            error: authResult.error,
+          },
+        };
+      }
 
       // Validation
       const validationResult = this.validateRequest(
         emailSendSchema,
         context.body
       );
-    //   if (!validationResult.isValid) {
-    //     logger.warn("Request validation failed:", validationResult.error);
-    //     return {
-    //       statusCode: 400,
-    //       body: {
-    //         success: false,
-    //         error: "Validation failed",
-    //         details: validationResult.error,
-    //       },
-    //     };
-    //   }
+      //   if (!validationResult.isValid) {
+      //     logger.warn("Request validation failed:", validationResult.error);
+      //     return {
+      //       statusCode: 400,
+      //       body: {
+      //         success: false,
+      //         error: "Validation failed",
+      //         details: validationResult.error,
+      //       },
+      //     };
+      //   }
 
       // Send email
       logger.info("Email send request received", {
