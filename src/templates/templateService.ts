@@ -27,7 +27,7 @@ export class EmailTemplateService {
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `Submission of Client Onboarding Form`,
@@ -109,7 +109,7 @@ ${data.companyName || "InCorp"} Team
 © ${new Date().getFullYear()} ${
           data.companyName || "InCorp"
         }. All rights reserved.
-${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
       `,
         // templateAttachments: [
         //   {
@@ -136,7 +136,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `Acknowledgement of Onboarding Form and Document Submission`,
@@ -213,7 +213,7 @@ ${data.companyName || "InCorp"} Team
 © ${new Date().getFullYear()} ${
           data.companyName || "InCorp"
         }. All rights reserved.
-${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
       `,
       })
     );
@@ -231,7 +231,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `Submission of Client Onboarding Form and Required Documents`,
@@ -315,7 +315,7 @@ ${data.companyName || "InCorp"} Team
 © ${new Date().getFullYear()} ${
           data.companyName || "InCorp"
         }. All rights reserved.
-${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
       `,
       })
     );
@@ -332,7 +332,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `Acknowledgement of Onboarding Form and Document Submission`,
@@ -403,7 +403,7 @@ ${data.companyName || "InCorp"} Team
 © ${new Date().getFullYear()} ${
           data.companyName || "InCorp"
         }. All rights reserved.
-${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
       `,
       })
     );
@@ -420,7 +420,7 @@ ${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `KYC Verification - Status`,
@@ -491,7 +491,7 @@ ${data?.companyName || "InCorp"} Team
 © ${new Date().getFullYear()} ${
           data?.companyName || "InCorp"
         }. All rights reserved.
-${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -509,7 +509,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `Just a Quick Reminder to Complete Your KYC`,
@@ -597,7 +597,7 @@ ${data.companyName || "[Your Company Name]"} Team
 © ${new Date().getFullYear()} ${
           data.companyName || "InCorp"
         }. All rights reserved.
-${data.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -771,7 +771,7 @@ ${data.companyName || "InCorp"} Team
                 <p style="margin: 0 0 10px 0;">&copy; 2025 ${
                   data.companyName || "InCorp"
                 }. All rights reserved.</p>
-                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
+                <p style="margin: 0;">36 Robinson Road, #20-01 City House, Singapore 068877</p>
             </div>
         </div>
     </div>
@@ -940,7 +940,7 @@ ${data.companyName || "InCorp"} Team
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `KYC Processing Request – ${data?.clientName || "Client"}`,
@@ -963,7 +963,7 @@ ${data.companyName || "InCorp"} Team
             </p>
             
             <p style="font-size: 16px; color: #2f465a; margin: 0 0 20px 0; line-height: 1.6;">
-                Please proceed with initiating the CS process for the following client:
+                Please proceed with initiating the KYC process for the following client:
             </p>
             
             <div style=" margin: 20px 0;">
@@ -998,7 +998,7 @@ Kindly begin data entry, name screening, and e-KYC setup. This request is also s
                 Warm regards,
             </p>
             <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
+                InCorp Team
             </p>
         </div>
         
@@ -1031,7 +1031,7 @@ ${data?.companyName || "InCorp"} Global Pte. Ltd.
 © ${new Date().getFullYear()} ${
           data?.companyName || "InCorp"
         }. All rights reserved.
-${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -1049,7 +1049,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `KYC Verification Complete – ${data?.clientName || "Client"}`,
@@ -1110,7 +1110,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 Best regards,
             </p>
             <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
+                InCorp Team
             </p>
         </div>
         
@@ -1142,7 +1142,7 @@ ${data?.companyName || "InCorp"} Global Pte. Ltd.
 © ${new Date().getFullYear()} ${
           data?.companyName || "InCorp"
         }. All rights reserved.
-${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -1162,7 +1162,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           reviewDate?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `KYC Verification Failed – ${
@@ -1230,7 +1230,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 Best regards,
             </p>
             <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                Incorp Team
+                InCorp Team
             </p>
         </div>
         
@@ -1262,7 +1262,7 @@ ${data?.companyName || "InCorp"} Global Pte. Ltd.
 © ${new Date().getFullYear()} ${
           data?.companyName || "InCorp"
         }. All rights reserved.
-${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -1280,7 +1280,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
           companyAddress?: string;
         } = {
           companyName: "InCorp",
-          companyAddress: "36 Robinson Rd, #20-01 City House, Singapore 068877",
+          companyAddress: "36 Robinson Road, #20-01 City House, Singapore 068877",
         }
       ) => ({
         subject: `CS Processing Request – ${data?.clientName || "Client"}`,
@@ -1338,7 +1338,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                 Warm regards,
             </p>
             <p style="font-size: 16px; color: #bb2121; margin: 0 0 5px 0; font-weight: 600; text-align: left;">
-                 Incorp Team
+                 InCorp Team
             </p>
         </div>
         
@@ -1371,7 +1371,7 @@ ${data?.companyName || "InCorp"} Global Pte. Ltd.
 © ${new Date().getFullYear()} ${
           data?.companyName || "InCorp"
         }. All rights reserved.
-${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
+${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877"}
     `,
       })
     );
@@ -1401,7 +1401,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                     <div style="max-width: 650px; margin: 0 auto; padding: 0; background-color: #ffffff; box-shadow: 0 3px 10px rgba(0,0,0,0.1); border-radius: 8px; overflow: hidden;">
                         <!-- Header Section -->
                         <div style="text-align: center; padding: 25px 20px; background-color: #1976d2; margin-bottom: 0;">
-                            <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 180px; height: auto;" />
+                            <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="InCorp" style="max-width: 180px; height: auto;" />
                         </div>
 
                         <!-- Report Header -->
@@ -1474,7 +1474,7 @@ ${data?.companyAddress || "36 Robinson Rd, #20-01 City House, Singapore 068877"}
                             <p style="margin-bottom: 10px;">This is an automated report generated by the BlueMeg File Orchestrator service.</p>
                             <p style="margin-bottom: 10px;">${
                               data.companyAddress ||
-                              "36 Robinson Rd, #20-01 City House, Singapore 068877"
+                              "36 Robinson Road, #20-01 City House, Singapore 068877"
                             }</p>
                             <p style="font-size: 11px; color: #9e9e9e; margin-bottom: 0;">
                                 Generated: ${new Date().toISOString()}

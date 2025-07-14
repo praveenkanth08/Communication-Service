@@ -1,6 +1,6 @@
 export const header = () => {
   return ` <div style="background-color: #ffffff; padding: 30px; text-align: center; border-bottom: 2px solid #bb2121;">
-           <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="Incorp" style="max-width: 150px; height: auto;" />
+           <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" alt="InCorp" style="max-width: 150px; height: auto;" />
         </div>`;
 };
 
@@ -11,7 +11,7 @@ export const IncorpFooter = (companyName?: string) => {
                 <p style="margin: 0 0 10px 0;">&copy; 2025 ${
                   companyName || "InCorp"
                 }. All rights reserved.</p>
-                <p style="margin: 0;">36 Robinson Rd, #20-01 City House, Singapore 068877</p>
+                <p style="margin: 0;">36 Robinson Road, #20-01 City House, Singapore 068877</p>
             </div>
         </div>`;
 };

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to ${data.companyName || "Incorp"}</title>
+  <title>Welcome to ${data.companyName || "InCorp"}</title>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333333; margin: 0; padding: 0;">
   <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #ffffff;">
@@ -11,18 +11,18 @@
       ${
         data.logoUrl
           ? `<img src="${data.logoUrl}" alt="${
-              data.companyName || "Incorp"
+              data.companyName || "InCorp"
             } - An ascentium Company" style="max-width: 150px; height: auto;" />`
-          : `<h2>${data.companyName || "Incorp"}</h2>`
+          : `<h2>${data.companyName || "InCorp"}</h2>`
       }
     </div>
 
     <div style="padding: 20px; background-color: #f7f7f7; border-radius: 5px; margin-bottom: 20px;">
-      <h2>Welcome to ${data.companyName || "Incorp"}!</h2>
+      <h2>Welcome to ${data.companyName || "InCorp"}!</h2>
       ${data.recipientName ? `<p>Dear ${data.recipientName},</p>` : ""}
       <p>
         Thank you for choosing ${
-          data.companyName || "Incorp"
+          data.companyName || "InCorp"
         } for your business incorporation needs.
         We're excited to help you start your entrepreneurial journey!
       </p>
@@ -55,7 +55,7 @@
 
     <div style="font-size: 12px; text-align: center; color: #888888; margin-top: 30px;">
       <p>&copy; ${new Date().getFullYear()} ${
-  data.companyName || "Incorp"
+  data.companyName || "InCorp"
 }. All rights reserved.</p>
       ${
         data.companyAddress
