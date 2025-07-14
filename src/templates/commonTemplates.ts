@@ -3,7 +3,7 @@ export const header = () => {
             <tr>
                 <td style="background-color: #ffffff; padding: 20px; text-align: center; border-bottom: 2px solid #bb2121;">
                     <img src="https://www.incorp.asia/wp-content/themes/incorpbeta/assets/images/logo-incorp-global.png" 
-                         alt="Incorp" 
+                         alt="InCorp" 
                          width="150" 
                          height="auto" 
                          style="display: block; margin: 0 auto; max-width: 150px; height: auto;" />
