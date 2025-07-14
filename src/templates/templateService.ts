@@ -2304,7 +2304,7 @@ ${data.companyName || "InCorp"} Team
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please proceed with initiating the COE process for the following client:
+                                            Please proceed with initiating the Prelim KYC process for the following client:
                                         </p>
                                     </td>
                                 </tr>
