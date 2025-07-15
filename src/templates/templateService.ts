@@ -813,7 +813,7 @@ completed form.
                                 <tr>
                                     <td style="padding-top: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            SShould you require any assistance or clarification, please do
+                                            Should you require any assistance or clarification, please do
 not hesitate to contact us. We will be glad to support you.​
                                         </p>
                                     </td>
