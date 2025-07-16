@@ -3,5 +3,5 @@ import { EncryptionConfig } from "@Mahe-5563/commons";
 
 
 export const encryptionConfig: EncryptionConfig = {
-  secret: process.env.SECRET || "",
+  secret: process.env.ENCRYPT_TOKEN || "",
 };

@@ -3687,7 +3687,7 @@ ${data?.companyAddress || "36 Robinson Road, #20-01 City House, Singapore 068877
                                 <tr>
                                     <td style="padding-bottom: 20px;">
                                         <p style="font-family: Arial, sans-serif; font-size: 16px; color: #2f465a; margin: 0; line-height: 1.6;">
-                                            Please proceed with initiating the KYC process for the following client:
+                                            Please proceed with initiating the Full KYC process for the following client:
                                         </p>
                                     </td>
                                 </tr>
